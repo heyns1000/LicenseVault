@@ -6,6 +6,7 @@ import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Skeleton } from "@/components/ui/skeleton";
 import Header from "@/components/header";
+import { FruitfulPreFooter } from "@/components/fruitful-pre-footer";
 
 export default function BrandDetails() {
   const { id } = useParams<{ id: string }>();
@@ -118,7 +119,7 @@ export default function BrandDetails() {
                     <CardTitle className="text-2xl mb-2">{brand.displayName}</CardTitle>
                     <div className="flex items-center space-x-2 mb-4">
                       <Badge className={getTierColor(brand.tier)}>
-                        {brand.tier.toUpperCase()}
+                        {brand.tier?.toUpperCase() || 'UNKNOWN'}
                       </Badge>
                       <Badge variant="outline">
                         Division {brand.geographicDivision} - {getDivisionName(brand.geographicDivision)}
@@ -227,6 +228,9 @@ export default function BrandDetails() {
           </div>
         </div>
       </div>
+      
+      {/* Fruitful Pre-Footer */}
+      <FruitfulPreFooter />
     </div>
   );
 }

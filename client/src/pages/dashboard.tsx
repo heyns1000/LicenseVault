@@ -7,6 +7,7 @@ import Header from "@/components/header";
 import Sidebar from "@/components/sidebar";
 import BrandCard from "@/components/brand-card";
 import LicensingCalculator from "@/components/licensing-calculator";
+import { FruitfulPreFooter } from "@/components/fruitful-pre-footer";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Skeleton } from "@/components/ui/skeleton";
@@ -330,6 +331,9 @@ export default function Dashboard() {
           </Card>
         </main>
       </div>
+
+      {/* Fruitful Pre-Footer */}
+      <FruitfulPreFooter />
 
       {/* Licensing Calculator Modal */}
       {showLicenseCalculator && (

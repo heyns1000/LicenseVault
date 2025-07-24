@@ -18,8 +18,12 @@ export default function Header({ user, waterTheSeedStatus, onLicenseCalculator }
         <div className="flex items-center justify-between">
           <div className="flex items-center space-x-4">
             <div className="flex items-center space-x-3">
-              <div className="w-10 h-10 bg-blue-600 rounded-lg flex items-center justify-center">
-                <i className="fas fa-certificate text-white text-lg"></i>
+              <div className="w-12 h-10 flex items-center justify-center">
+                <img 
+                  src="/assets/Fruitful_HighRes_1753372356058.png" 
+                  alt="Fruitful™" 
+                  className="h-8 w-auto object-contain"
+                />
               </div>
               <div>
                 <h1 className="text-xl font-bold text-blue-600">FAA™ Brand Licensing</h1>
