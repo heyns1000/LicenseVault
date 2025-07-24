@@ -1,151 +1,134 @@
 import { storage } from "./storage";
 import { BRAND_TIERS, GEOGRAPHIC_DIVISIONS } from "@shared/schema";
 
-// Sample brand data matching the design reference
+// Real brand data based on user's assets
 const sampleBrands = [
   {
-    name: "AUREUM_PATH",
-    displayName: "AUREUM PATH™",
+    name: "FRUITFUL",
+    displayName: "Fruitful™",
+    tier: "market" as const,
+    description: "If you don't like the fruits you are growing, change the seeds...",
+    category: "Lifestyle & Wellness",
+    geographicDivision: "A" as const,
+    licenseFeeECR: "3950.00",
+    licenseFeeUSD: "13430.00",
+    royaltyRate: "7.00",
+    isActive: true,
+    faaSystemsIntegration: ["ClaimRoot™", "VaultPay™"],
+    iconClass: "fas fa-seedling",
+    metadata: {
+      marketSegment: "Global Wellness Markets",
+      specialFeatures: ["Brand Philosophy", "Lifestyle Integration"],
+      brandColors: ["#FF6B6B", "#4ECDC4", "#FFE66D"]
+    }
+  },
+  {
+    name: "LIONS_SEEDWAVE",
+    displayName: "The Lion's Seedwave™",
     tier: "sovereign" as const,
-    description: "Legacy Scroll / Wealthline Expansion",
-    category: "Wealth Management",
+    description: "Advanced Brand Bloodline Sovereignty Analysis",
+    category: "Strategic Consulting",
     geographicDivision: "A" as const,
     licenseFeeECR: "18800.00",
     licenseFeeUSD: "63920.00",
     royaltyRate: "27.00",
     isActive: true,
-    faaSystemsIntegration: ["ClaimRoot™", "VaultPay™", "GhostTrace™", "GoldShield™"],
+    faaSystemsIntegration: ["ClaimRoot™", "VaultPay™", "GhostTrace™", "PulseTrade™"],
     iconClass: "fas fa-crown",
     metadata: {
       marketSegment: "Sovereign Markets Only",
-      specialFeatures: ["Legacy Integration", "Wealth Analytics"]
+      specialFeatures: ["Bloodline Analysis", "Sovereignty Metrics"],
+      brandPhilosophy: "Strategic brand sovereignty through analytical precision"
     }
   },
   {
-    name: "SOLVEMIND",
-    displayName: "SOLVEMIND™",
-    tier: "dynastic" as const,
-    description: "Cognitive Tools / Strategy Scroll",
-    category: "AI Strategy",
-    geographicDivision: "B" as const,
-    licenseFeeECR: "12000.00",
-    licenseFeeUSD: "40800.00",
-    royaltyRate: "22.00",
-    isActive: true,
-    faaSystemsIntegration: ["ClaimRoot™", "VaultPay™", "AI Core"],
-    iconClass: "fas fa-chess-king",
-    metadata: {
-      marketSegment: "Baobab West ∆ + OuterZone",
-      specialFeatures: ["Cognitive Analytics", "Strategy Engine"]
-    }
-  },
-  {
-    name: "LIONSTREAM",
-    displayName: "LIONSTREAM™",
+    name: "WATER_THE_SEED",
+    displayName: "Water The Seed™",
     tier: "operational" as const,
-    description: "Cultural Broadcast Engine / Scroll TV",
-    category: "Media Technology",
-    geographicDivision: "C" as const,
+    description: "Active Growth Protocol & Brand Development System",
+    category: "Growth Technology",
+    geographicDivision: "A" as const,
     licenseFeeECR: "7700.00",
     licenseFeeUSD: "26180.00",
     royaltyRate: "19.00",
     isActive: true,
-    faaSystemsIntegration: ["ClaimRoot™", "VaultPay™", "Live 9s"],
-    iconClass: "fas fa-broadcast-tower",
+    faaSystemsIntegration: ["ClaimRoot™", "VaultPay™", "GhostTrace™"],
+    iconClass: "fas fa-tint",
     metadata: {
-      marketSegment: "Global + MetaCast",
-      specialFeatures: ["Live Streaming", "Cultural Analytics"]
+      marketSegment: "Global Growth Markets",
+      specialFeatures: ["Growth Analytics", "Brand Development", "Active Protocol"]
     }
   },
   {
-    name: "AURACRATE",
-    displayName: "AURACRATE™",
-    tier: "market" as const,
-    description: "Sensory-Encoded Packaging (Ritual-Aware)",
-    category: "Smart Packaging",
-    geographicDivision: "E" as const,
-    licenseFeeECR: "3950.00",
-    licenseFeeUSD: "13430.00",
-    royaltyRate: "7.00",
-    isActive: true,
-    faaSystemsIntegration: ["ClaimRoot™", "AuraIndex"],
-    iconClass: "fas fa-leaf",
-    metadata: {
-      marketSegment: "Herbal Divs, LSM+ Markets",
-      specialFeatures: ["Sensory Integration", "Ritual Analytics"]
-    }
-  },
-  {
-    name: "GLYPHFRAME",
-    displayName: "GLYPHFRAME™",
-    tier: "operational" as const,
-    description: "Creative Stack Tool / AI-integrated Design",
-    category: "Design Software",
+    name: "CLAIMROOT",
+    displayName: "ClaimRoot™",
+    tier: "dynastic" as const,
+    description: "Core Authentication & Verification System",
+    category: "Security Technology",
     geographicDivision: "A" as const,
-    licenseFeeECR: "9400.00",
-    licenseFeeUSD: "31960.00",
-    royaltyRate: "17.00",
-    isActive: true,
-    faaSystemsIntegration: ["ClaimRoot™", "VaultPay™", "AI SyncPort"],
-    iconClass: "fas fa-microchip",
-    metadata: {
-      marketSegment: "North VaultMesh + MetaScroll",
-      specialFeatures: ["AI Design Tools", "Creative Analytics"]
-    }
-  },
-  {
-    name: "VAULTSKIN",
-    displayName: "VAULTSKIN™",
-    tier: "market" as const,
-    description: "Digital Identity Overlay Layer",
-    category: "Identity Management",
-    geographicDivision: "B" as const,
-    licenseFeeECR: "4800.00",
-    licenseFeeUSD: "16320.00",
-    royaltyRate: "9.00",
+    licenseFeeECR: "12000.00",
+    licenseFeeUSD: "40800.00",
+    royaltyRate: "22.00",
     isActive: true,
     faaSystemsIntegration: ["ClaimRoot™", "VaultPay™", "GhostTrace™"],
-    iconClass: "fas fa-shield",
+    iconClass: "fas fa-shield-alt",
     metadata: {
-      marketSegment: "Div B, E, Digital Retail Grid",
-      specialFeatures: ["Identity Overlay", "Digital Security"]
+      marketSegment: "Security & Authentication",
+      specialFeatures: ["Identity Verification", "Core Security"]
     }
   },
-  // Additional brands to reach realistic numbers
   {
-    name: "DESIGNROOT",
-    displayName: "DESIGNROOT™",
+    name: "VAULTPAY",
+    displayName: "VaultPay™",
     tier: "operational" as const,
-    description: "Multi-format Creative Platform",
-    category: "Design Software",
-    geographicDivision: "A" as const,
+    description: "Secure Payment Processing & Vault Management",
+    category: "Financial Technology",
+    geographicDivision: "B" as const,
     licenseFeeECR: "8500.00",
     licenseFeeUSD: "28900.00",
-    royaltyRate: "15.00",
+    royaltyRate: "18.50",
     isActive: true,
     faaSystemsIntegration: ["ClaimRoot™", "VaultPay™"],
-    iconClass: "fas fa-palette",
+    iconClass: "fas fa-vault",
     metadata: {
-      marketSegment: "Creative Professionals",
-      specialFeatures: ["Multi-format Support", "Creative Suite"]
+      marketSegment: "Global Payment Solutions",
+      specialFeatures: ["Secure Transactions", "Vault Management"]
     }
   },
   {
-    name: "BARECART",
-    displayName: "BARECART™",
-    tier: "market" as const,
-    description: "Stripped-down Retail Kiosk Model",
-    category: "Micro-Retail",
-    geographicDivision: "E" as const,
-    licenseFeeECR: "2800.00",
-    licenseFeeUSD: "9520.00",
-    royaltyRate: "5.00",
+    name: "GHOSTTRACE",
+    displayName: "GhostTrace™",
+    tier: "operational" as const,
+    description: "Advanced Analytics & Tracking Protocol",
+    category: "Analytics Technology",
+    geographicDivision: "C" as const,
+    licenseFeeECR: "6800.00",
+    licenseFeeUSD: "23120.00",
+    royaltyRate: "16.00",
     isActive: true,
-    faaSystemsIntegration: ["ClaimRoot™", "PulseTrade™"],
-    iconClass: "fas fa-shopping-cart",
+    faaSystemsIntegration: ["ClaimRoot™", "GhostTrace™"],
+    iconClass: "fas fa-ghost",
     metadata: {
-      marketSegment: "Micro-Entrepreneur Ecosystem",
-      specialFeatures: ["Minimal Setup", "Mobile Retail"]
+      marketSegment: "Analytics & Tracking",
+      specialFeatures: ["Advanced Analytics", "Stealth Tracking"]
+    }
+  },
+  {
+    name: "PULSETRADE",
+    displayName: "PulseTrade™",
+    tier: "market" as const,
+    description: "Real-time Trading & Market Pulse System",
+    category: "Trading Technology",
+    geographicDivision: "D" as const,
+    licenseFeeECR: "4200.00",
+    licenseFeeUSD: "14280.00",
+    royaltyRate: "9.50",
+    isActive: true,
+    faaSystemsIntegration: ["ClaimRoot™", "VaultPay™", "PulseTrade™"],
+    iconClass: "fas fa-heartbeat",
+    metadata: {
+      marketSegment: "Trading & Markets",
+      specialFeatures: ["Real-time Trading", "Market Analytics"]
     }
   }
 ];
@@ -157,10 +140,10 @@ const generateAdditionalBrands = () => {
   const suffixes = ["CORE", "TECH", "SYNC", "FLOW", "MESH", "GRID", "LINK", "NODE", "WAVE", "PULSE"];
   const categories = ["Technology", "Finance", "Healthcare", "Education", "Retail", "Manufacturing", "Energy", "Transport"];
   
-  for (let i = 0; i < 4635; i++) {
+  for (let i = 0; i < 4636; i++) { // 4636 + 7 real brands = 4643 total
     const prefix = prefixes[i % prefixes.length];
     const suffix = suffixes[Math.floor(i / prefixes.length) % suffixes.length];
-    const name = `${prefix}_${suffix}_${i + 1}`;
+    const name = `${prefix}_${suffix}_${String(i + 1).padStart(4, '0')}`;
     const displayName = `${prefix} ${suffix}™`;
     
     // Distribute across tiers realistically
@@ -168,40 +151,43 @@ const generateAdditionalBrands = () => {
     let licenseFee: string;
     let royalty: string;
     
-    if (i < 10) {
+    if (i < 127) { // Sovereign: 127 brands
       tier = "sovereign";
       licenseFee = (15000 + Math.random() * 10000).toFixed(2);
       royalty = (25 + Math.random() * 5).toFixed(2);
-    } else if (i < 30) {
+    } else if (i < 1019) { // Dynastic: 892 brands (127 + 892 = 1019)
       tier = "dynastic";
       licenseFee = (8000 + Math.random() * 6000).toFixed(2);
       royalty = (18 + Math.random() * 6).toFixed(2);
-    } else if (i < 70) {
+    } else if (i < 3486) { // Operational: 2467 brands (1019 + 2467 = 3486)
       tier = "operational";
       licenseFee = (5000 + Math.random() * 4000).toFixed(2);
       royalty = (12 + Math.random() * 8).toFixed(2);
-    } else {
+    } else { // Market: 1150 brands (3486 + 1150 = 4636)
       tier = "market";
       licenseFee = (2000 + Math.random() * 3000).toFixed(2);
       royalty = (5 + Math.random() * 5).toFixed(2);
     }
     
+    const division = GEOGRAPHIC_DIVISIONS[i % GEOGRAPHIC_DIVISIONS.length];
+    const category = categories[i % categories.length];
+    
     additionalBrands.push({
-      name: name,
-      displayName: displayName,
-      tier: tier,
-      description: `Advanced ${categories[i % categories.length]} Solution`,
-      category: categories[i % categories.length],
-      geographicDivision: GEOGRAPHIC_DIVISIONS[i % GEOGRAPHIC_DIVISIONS.length],
+      name,
+      displayName,
+      tier,
+      description: `Advanced ${category.toLowerCase()} solution for modern enterprises`,
+      category,
+      geographicDivision: division,
       licenseFeeECR: licenseFee,
-      licenseFeeUSD: (Number(licenseFee) * 3.4).toFixed(2),
+      licenseFeeUSD: (parseFloat(licenseFee) * 3.4).toFixed(2),
       royaltyRate: royalty,
       isActive: true,
       faaSystemsIntegration: ["ClaimRoot™", "VaultPay™"],
-      iconClass: "fas fa-certificate",
+      iconClass: "fas fa-cube",
       metadata: {
-        marketSegment: "Global Markets",
-        specialFeatures: ["Standard Integration"]
+        marketSegment: `Division ${division} Markets`,
+        specialFeatures: ["Standard Integration", "Core Features"]
       }
     });
   }
@@ -209,63 +195,46 @@ const generateAdditionalBrands = () => {
   return additionalBrands;
 };
 
+// Seed the database
 export async function seedDatabase() {
   try {
-    console.log("Starting database seeding...");
+    console.log("🌱 Starting database seed...");
     
-    // Create sample organization
-    const organization = await storage.createOrganization({
-      name: "FAA Global Licensing Corp",
-      type: "enterprise",
-      contactEmail: "licensing@faa-global.com"
-    });
+    // Combine real brands with generated ones
+    const allBrands = [...sampleBrands, ...generateAdditionalBrands()];
+    console.log(`📊 Generated ${allBrands.length} brands total`);
     
-    console.log("Created sample organization:", organization.id);
-    
-    // Seed the main featured brands
-    console.log("Seeding featured brands...");
-    for (const brandData of sampleBrands) {
-      try {
-        await storage.createBrand(brandData);
-        console.log(`Created brand: ${brandData.displayName}`);
-      } catch (error) {
-        console.error(`Error creating brand ${brandData.displayName}:`, error);
+    // Create brands in batches to avoid overwhelming the database
+    const batchSize = 100;
+    for (let i = 0; i < allBrands.length; i += batchSize) {
+      const batch = allBrands.slice(i, i + batchSize);
+      console.log(`📦 Processing batch ${Math.ceil((i + 1) / batchSize)} of ${Math.ceil(allBrands.length / batchSize)}`);
+      
+      for (const brandData of batch) {
+        try {
+          await storage.createBrand(brandData as any);
+        } catch (error) {
+          // Skip if brand already exists
+          if (!error.message?.includes('duplicate') && !error.message?.includes('unique')) {
+            console.error(`Error creating brand ${brandData.displayName}:`, error);
+          }
+        }
       }
     }
     
-    // Seed additional brands
-    console.log("Seeding additional brands...");
-    const additionalBrands = generateAdditionalBrands();
-    for (const brandData of additionalBrands) {
-      try {
-        await storage.createBrand(brandData);
-      } catch (error) {
-        console.error(`Error creating brand ${brandData.displayName}:`, error);
-      }
-    }
-    
-    // Set system settings for Water The Seed Protocol
-    await storage.setSystemSetting("water_the_seed_active", "true", "boolean", "Water The Seed Protocol Status");
-    await storage.setSystemSetting("target_brands", "9000", "number", "Target number of brands for Water The Seed Protocol");
-    await storage.setSystemSetting("growth_rate_72h", "82", "number", "Brand growth in last 72 hours");
-    
-    console.log("Database seeding completed successfully!");
+    console.log("✅ Database seed completed successfully!");
+    console.log(`🎯 Total brands seeded: ${allBrands.length}`);
+    console.log("🌟 Featured brands include: Fruitful™, The Lion's Seedwave™, Water The Seed™");
     
   } catch (error) {
-    console.error("Error seeding database:", error);
+    console.error("❌ Error seeding database:", error);
     throw error;
   }
 }
 
-// Run seeding if this file is executed directly
-if (import.meta.url === `file://${process.argv[1]}`) {
+// Run seed if called directly
+if (require.main === module) {
   seedDatabase()
-    .then(() => {
-      console.log("Seeding completed!");
-      process.exit(0);
-    })
-    .catch((error) => {
-      console.error("Seeding failed:", error);
-      process.exit(1);
-    });
+    .then(() => process.exit(0))
+    .catch(() => process.exit(1));
 }

@@ -49,6 +49,17 @@ export default function Dashboard() {
     enabled: isAuthenticated,
   });
 
+  // Construct query URL with filters
+  const buildBrandsQuery = () => {
+    const params = new URLSearchParams();
+    if (brandFilters.tier?.length) params.append('tier', JSON.stringify(brandFilters.tier));
+    if (brandFilters.division?.length) params.append('division', JSON.stringify(brandFilters.division));  
+    if (brandFilters.search) params.append('search', brandFilters.search);
+    params.append('limit', '50');
+    params.append('offset', '0');
+    return `/api/brands?${params.toString()}`;
+  };
+
   const { data: brandsData, isLoading: brandsLoading, error: brandsError } = useQuery<{
     brands: Array<{
       id: string;
@@ -70,7 +81,8 @@ export default function Dashboard() {
     }>;
     total: number;
   }>({
-    queryKey: ["/api/brands"],
+    queryKey: ["brands", brandFilters],
+    queryFn: () => fetch(buildBrandsQuery()).then(res => res.json()),
     retry: false,
     enabled: isAuthenticated,
   });

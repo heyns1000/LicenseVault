@@ -36,20 +36,52 @@ export async function registerRoutes(app: Express): Promise<Server> {
     }
   });
 
-  // Brand routes
+  // Brand routes  
   app.get('/api/brands', isAuthenticated, async (req, res) => {
     try {
-      const { tier, division, search, limit = 50, offset = 0 } = req.query;
-      
-      console.log('Fetching brands with filters:', { tier, division, search, limit, offset });
-      
-      const filters = {
-        tier: tier ? (Array.isArray(tier) ? tier as string[] : [tier as string]) : undefined,
-        division: division ? (Array.isArray(division) ? division as string[] : [division as string]) : undefined,
-        search: search as string,
-        limit: Number(limit),
-        offset: Number(offset),
-      };
+      // Parse filters from query parameters - they come in as JSON strings from the frontend
+      let filters = {};
+      try {
+        // Extract filter parameters from the stringified query
+        const queryString = new URLSearchParams(req.url?.split('?')[1] || '').toString();
+        console.log('Raw query string:', queryString);
+        
+        // Parse individual parameters
+        const { tier, division, search, limit = 50, offset = 0 } = req.query;
+        
+        // Handle tier filter (can be JSON array string)
+        let tierFilter = undefined;
+        if (tier) {
+          try {
+            tierFilter = typeof tier === 'string' && tier.startsWith('[') ? JSON.parse(tier) : [tier];
+          } catch {
+            tierFilter = Array.isArray(tier) ? tier : [tier as string];
+          }
+        }
+        
+        // Handle division filter (can be JSON array string)  
+        let divisionFilter = undefined;
+        if (division) {
+          try {
+            divisionFilter = typeof division === 'string' && division.startsWith('[') ? JSON.parse(division) : [division];
+          } catch {
+            divisionFilter = Array.isArray(division) ? division : [division as string];
+          }
+        }
+        
+        filters = {
+          tier: tierFilter,
+          division: divisionFilter,
+          search: search as string || undefined,
+          limit: Number(limit),
+          offset: Number(offset),
+        };
+        
+        console.log('Parsed filters:', filters);
+      } catch (parseError) {
+        console.error('Error parsing filters:', parseError);
+        filters = { limit: 50, offset: 0 };
+      }
 
       const result = await storage.getAllBrands(filters);
       console.log('Brands result:', { total: result.total, returned: result.brands.length });
