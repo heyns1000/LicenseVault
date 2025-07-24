@@ -122,7 +122,10 @@ export default function BrandCard({ brand, onCalculateLicense }: BrandCardProps)
             variant="secondary" 
             size="sm" 
             className="w-full"
-            onClick={() => window.location.href = `/brands/${brand.id}`}
+            onClick={() => {
+              console.log('Brand ID:', brand.id);
+              window.location.href = `/brands/${encodeURIComponent(brand.id)}`;
+            }}
           >
             View Details
           </Button>

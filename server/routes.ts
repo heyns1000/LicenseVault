@@ -59,10 +59,21 @@ export async function registerRoutes(app: Express): Promise<Server> {
 
   app.get('/api/brands/:id', isAuthenticated, async (req, res) => {
     try {
-      const brand = await storage.getBrand(req.params.id);
+      const { id } = req.params;
+      console.log('Fetching brand with ID:', id, 'Type:', typeof id);
+      
+      // Validate UUID format
+      const uuidRegex = /^[0-9a-f]{8}-[0-9a-f]{4}-[1-5][0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$/i;
+      if (!uuidRegex.test(id)) {
+        console.log('Invalid UUID format:', id);
+        return res.status(400).json({ message: "Invalid brand ID format" });
+      }
+      
+      const brand = await storage.getBrand(id);
       if (!brand) {
         return res.status(404).json({ message: "Brand not found" });
       }
+      
       res.json(brand);
     } catch (error) {
       console.error("Error fetching brand:", error);
