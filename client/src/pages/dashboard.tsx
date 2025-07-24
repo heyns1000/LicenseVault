@@ -305,7 +305,7 @@ export default function Dashboard() {
                     </div>
                   )}
 
-                  {brandsData?.total > brandsData?.brands?.length && (
+                  {brandsData?.total && brandsData?.brands?.length && brandsData.total > brandsData.brands.length && (
                     <div className="mt-8 text-center">
                       <Button variant="outline">
                         Load More Brands™ ({(brandsData.total - brandsData.brands.length).toLocaleString()} remaining)

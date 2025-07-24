@@ -118,9 +118,6 @@ export class DatabaseStorage implements IStorage {
     limit?: number;
     offset?: number;
   }): Promise<{ brands: Brand[]; total: number }> {
-    let baseQuery = db.select().from(brands);
-    let baseCountQuery = db.select({ count: count() }).from(brands);
-
     const conditions = [eq(brands.isActive, true)];
 
     if (filters?.tier?.length) {
@@ -139,18 +136,18 @@ export class DatabaseStorage implements IStorage {
 
     const whereClause = and(...conditions);
     
-    let query = baseQuery.where(whereClause);
-    let countQuery = baseCountQuery.where(whereClause);
-
-    // Apply ordering, limit and offset
-    query = query.orderBy(desc(brands.createdAt));
+    // Build count query
+    const countQuery = db.select({ count: count() }).from(brands).where(whereClause);
+    
+    // Build main query with all chaining at once
+    let query = db.select().from(brands).where(whereClause).orderBy(desc(brands.createdAt));
     
     if (filters?.limit) {
-      query = query.limit(filters.limit);
+      query = query.limit(filters.limit) as typeof query;
     }
 
     if (filters?.offset) {
-      query = query.offset(filters.offset);
+      query = query.offset(filters.offset) as typeof query;
     }
 
     const [brandsResult, countResult] = await Promise.all([
@@ -170,7 +167,7 @@ export class DatabaseStorage implements IStorage {
   }
 
   async createBrand(brandData: InsertBrand): Promise<Brand> {
-    const [brand] = await db.insert(brands).values([brandData]).returning();
+    const [brand] = await db.insert(brands).values(brandData as any).returning();
     return brand;
   }
 
