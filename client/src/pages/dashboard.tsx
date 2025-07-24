@@ -253,6 +253,14 @@ export default function Dashboard() {
                       <p>Total brands available: {brandsData.total}</p>
                       <p>Brands returned: {brandsData.brands?.length || 0}</p>
                       <p>First brand: {brandsData.brands?.[0]?.displayName || 'None'}</p>
+                      <p>First brand ID: {brandsData.brands?.[0]?.id || 'No ID'}</p>
+                      <p>Brands loading: {brandsLoading ? 'Yes' : 'No'}</p>
+                    </div>
+                  )}
+                  
+                  {!brandsData && !brandsLoading && (
+                    <div className="mb-4 p-4 bg-red-50 rounded">
+                      <p>No brands data received - check API response</p>
                     </div>
                   )}
                   

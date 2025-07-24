@@ -7,6 +7,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
+import FruitfulFooter from "@/components/fruitful-footer";
 
 interface LicensingCalculatorProps {
   onClose: () => void;
@@ -240,6 +241,9 @@ export default function LicensingCalculator({ onClose }: LicensingCalculatorProp
             </div>
           </div>
         </CardContent>
+        
+        {/* Add Fruitful footer at bottom of pricing */}
+        <FruitfulFooter />
       </Card>
     </div>
   );
