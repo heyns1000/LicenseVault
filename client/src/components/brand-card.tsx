@@ -1,6 +1,7 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
+import { CurrencyConverter } from "@/components/currency-converter";
 
 interface BrandCardProps {
   brand: {
@@ -12,6 +13,7 @@ interface BrandCardProps {
     category?: string;
     geographicDivision: string;
     licenseFeeECR: string;
+    licenseFeeUSD?: string;
     royaltyRate: string;
     iconClass?: string;
     faaSystemsIntegration?: string[];
@@ -92,16 +94,18 @@ export default function BrandCard({ brand, onCalculateLicense }: BrandCardProps)
           {brand.description || brand.category || 'Premium Brand License'}
         </p>
 
-        <div className="grid grid-cols-2 gap-4 text-sm mb-4">
-          <div>
-            <span className="opacity-80 text-white">License Fee</span>
-            <div className="font-bold text-white">
-              {Number(brand.licenseFeeECR).toLocaleString()} ECR
-            </div>
+        <div className="mb-4">
+          <span className="opacity-80 text-white text-sm">License Fee</span>
+          <div className="text-white">
+            <CurrencyConverter 
+              ecrAmount={brand.licenseFeeECR}
+              usdAmount={brand.licenseFeeUSD || (parseFloat(brand.licenseFeeECR) * 3.4).toFixed(2)}
+              compact={true}
+            />
           </div>
-          <div>
-            <span className="opacity-80 text-white">Royalty</span>
-            <div className="font-bold text-white">{brand.royaltyRate}%</div>
+          <div className="mt-2">
+            <span className="opacity-80 text-white text-sm">Royalty Rate: </span>
+            <span className="font-bold text-white">{brand.royaltyRate}%</span>
           </div>
         </div>
 

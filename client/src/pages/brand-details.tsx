@@ -7,6 +7,8 @@ import { Badge } from "@/components/ui/badge";
 import { Skeleton } from "@/components/ui/skeleton";
 import Header from "@/components/header";
 import { FruitfulPreFooter } from "@/components/fruitful-pre-footer";
+import { CurrencyConverter } from "@/components/currency-converter";
+import { ProductDetails } from "@/components/product-details";
 
 export default function BrandDetails() {
   const { id } = useParams<{ id: string }>();
@@ -126,8 +128,16 @@ export default function BrandDetails() {
                       </Badge>
                     </div>
                   </div>
-                  <div className="w-16 h-16 bg-blue-100 rounded-lg flex items-center justify-center">
-                    <i className={`${brand.iconClass || 'fas fa-certificate'} text-blue-600 text-2xl`}></i>
+                  <div className="w-16 h-16 bg-white rounded-lg flex items-center justify-center shadow-sm border">
+                    {brand.name === 'FRUITFUL' ? (
+                      <img 
+                        src="/assets/Fruitful_HighRes_1753372356058.png" 
+                        alt="Fruitful™" 
+                        className="h-12 w-auto object-contain"
+                      />
+                    ) : (
+                      <i className={`${brand.iconClass || 'fas fa-certificate'} text-blue-600 text-2xl`}></i>
+                    )}
                   </div>
                 </div>
               </CardHeader>
@@ -156,6 +166,9 @@ export default function BrandDetails() {
                       </div>
                     </div>
                   )}
+
+                  {/* Product Details Section */}
+                  <ProductDetails brand={brand} />
                 </div>
               </CardContent>
             </Card>
@@ -169,21 +182,17 @@ export default function BrandDetails() {
               </CardHeader>
               <CardContent>
                 <div className="space-y-4">
-                  <div className="flex justify-between items-center">
-                    <span className="text-gray-600">License Fee</span>
-                    <span className="font-bold text-lg">{Number(brand.licenseFeeECR).toLocaleString()} ECR</span>
+                  {/* Currency Converter */}
+                  <div className="mb-4">
+                    <CurrencyConverter 
+                      ecrAmount={brand.licenseFeeECR}
+                      usdAmount={brand.licenseFeeUSD}
+                    />
                   </div>
-                  
-                  {brand.licenseFeeUSD && (
-                    <div className="flex justify-between items-center">
-                      <span className="text-gray-600">USD Equivalent</span>
-                      <span className="text-gray-600">${Number(brand.licenseFeeUSD).toLocaleString()}</span>
-                    </div>
-                  )}
                   
                   <div className="flex justify-between items-center">
                     <span className="text-gray-600">Royalty Rate</span>
-                    <span className="font-bold">{brand.royaltyRate}%</span>
+                    <span className="font-bold text-purple-600">{brand.royaltyRate}%</span>
                   </div>
 
                   <div className="pt-4 border-t">
