@@ -49,7 +49,7 @@ export default function Dashboard() {
     enabled: isAuthenticated,
   });
 
-  const { data: brandsData, isLoading: brandsLoading } = useQuery<{
+  const { data: brandsData, isLoading: brandsLoading, error: brandsError } = useQuery<{
     brands: Array<{
       id: string;
       name: string;
@@ -70,7 +70,7 @@ export default function Dashboard() {
     }>;
     total: number;
   }>({
-    queryKey: ["/api/brands", brandFilters],
+    queryKey: ["/api/brands", { ...brandFilters, limit: 50 }],
     retry: false,
     enabled: isAuthenticated,
   });
@@ -261,6 +261,8 @@ export default function Dashboard() {
                   {!brandsData && !brandsLoading && (
                     <div className="mb-4 p-4 bg-red-50 rounded">
                       <p>No brands data received - check API response</p>
+                      {brandsError && <p>Error: {String(brandsError)}</p>}
+                      <p>Auth status: {isAuthenticated ? 'Authenticated' : 'Not authenticated'}</p>
                     </div>
                   )}
                   

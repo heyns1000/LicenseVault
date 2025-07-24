@@ -41,6 +41,8 @@ export async function registerRoutes(app: Express): Promise<Server> {
     try {
       const { tier, division, search, limit = 50, offset = 0 } = req.query;
       
+      console.log('Fetching brands with filters:', { tier, division, search, limit, offset });
+      
       const filters = {
         tier: tier ? (Array.isArray(tier) ? tier as string[] : [tier as string]) : undefined,
         division: division ? (Array.isArray(division) ? division as string[] : [division as string]) : undefined,
@@ -50,6 +52,8 @@ export async function registerRoutes(app: Express): Promise<Server> {
       };
 
       const result = await storage.getAllBrands(filters);
+      console.log('Brands result:', { total: result.total, returned: result.brands.length });
+      
       res.json(result);
     } catch (error) {
       console.error("Error fetching brands:", error);

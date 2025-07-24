@@ -139,12 +139,12 @@ export class DatabaseStorage implements IStorage {
 
     const whereClause = and(...conditions);
     
-    let query = baseQuery
-      .where(whereClause)
-      .orderBy(desc(brands.createdAt));
-
+    let query = baseQuery.where(whereClause);
     let countQuery = baseCountQuery.where(whereClause);
 
+    // Apply ordering, limit and offset
+    query = query.orderBy(desc(brands.createdAt));
+    
     if (filters?.limit) {
       query = query.limit(filters.limit);
     }
@@ -170,14 +170,15 @@ export class DatabaseStorage implements IStorage {
   }
 
   async createBrand(brandData: InsertBrand): Promise<Brand> {
-    const [brand] = await db.insert(brands).values(brandData).returning();
+    const [brand] = await db.insert(brands).values([brandData]).returning();
     return brand;
   }
 
   async updateBrand(id: string, updates: Partial<InsertBrand>): Promise<Brand> {
+    const updateData = { ...updates, updatedAt: new Date() } as any;
     const [brand] = await db
       .update(brands)
-      .set({ ...updates, updatedAt: new Date() })
+      .set(updateData)
       .where(eq(brands.id, id))
       .returning();
     return brand;
