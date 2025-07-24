@@ -20,7 +20,7 @@ export default function Header({ user, waterTheSeedStatus, onLicenseCalculator }
             <div className="flex items-center space-x-3">
               <div className="w-12 h-10 flex items-center justify-center">
                 <img 
-                  src="/assets/Fruitful_HighRes_1753372356058.png" 
+                  src="/assets/Fruiful_1753374425252.png" 
                   alt="Fruitful™" 
                   className="h-8 w-auto object-contain"
                 />

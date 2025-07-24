@@ -132,8 +132,14 @@ export default function BrandDetails() {
                   <div className="w-16 h-16 bg-white rounded-lg flex items-center justify-center shadow-sm border">
                     {brand.name === 'FRUITFUL' ? (
                       <img 
-                        src="/assets/Fruitful_HighRes_1753372356058.png" 
+                        src="/assets/Fruiful_1753374425252.png" 
                         alt="Fruitful™" 
+                        className="h-12 w-auto object-contain"
+                      />
+                    ) : brand.name === 'LIONS_SEEDWAVE' ? (
+                      <img 
+                        src="/assets/Seedwave.png_1753374449890.PNG" 
+                        alt="Seedwave™" 
                         className="h-12 w-auto object-contain"
                       />
                     ) : (

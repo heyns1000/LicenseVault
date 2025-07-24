@@ -16,7 +16,7 @@ export function ProductDetails({ brand }: ProductDetailsProps) {
     if (brand.name === 'FRUITFUL') {
       return {
         brandPhilosophy: "If you don't like the fruits you are growing, change the seeds...",
-        brandColors: ['#FF6B6B', '#4ECDC4', '#FFE66D'],
+        brandColors: ['#4ECDC4', '#FFE66D', '#FF6B6B'],
         brandValues: ['Growth Mindset', 'Natural Development', 'Positive Transformation'],
         targetAudience: 'Individuals and organizations focused on personal and professional growth',
         keyFeatures: [
@@ -51,11 +51,19 @@ export function ProductDetails({ brand }: ProductDetailsProps) {
         brandPhilosophy: "Strategic brand sovereignty through analytical precision",
         specialization: "Advanced Brand Bloodline Sovereignty Analysis",
         targetMarket: "Sovereign-tier enterprises requiring premium strategic consulting",
+        brandColors: ['#1E7B3D', '#FFFFFF', '#000000'],
         keyCapabilities: [
           'Brand Bloodline Analysis',
           'Sovereignty Metrics Development',
           'Strategic Market Positioning',
           'Premium Consulting Services'
+        ],
+        brandAssets: [
+          {
+            type: 'Logo',
+            description: 'Professional Seedwave logo with green circular design',
+            available: true
+          }
         ]
       };
     }

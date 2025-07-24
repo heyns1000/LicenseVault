@@ -18,9 +18,11 @@ This is a full-stack web application for managing FAA™ brand licensing with a 
   - Added Fruitful.thank.you pre-footer image to all main pages
   - Fixed sidebar filter functionality - now properly connects to backend API
   - Added real brand data: Fruitful™, The Lion's Seedwave™, Water The Seed™
-  - Implemented global currency converter defaulting to USD
-  - Enhanced brand details with rich product information and Fruitful logo display
-  - Fixed runtime errors in brand details page
+  - Implemented global currency converter defaulting to USD with ECR explanation
+  - Enhanced brand details with rich product information and brand logo display
+  - Fixed runtime errors in brand details page and NaN currency display
+  - Updated with latest brand assets: new Fruitful™ and Seedwave logos
+  - Added proper individual brand API endpoint for detailed brand information
 
 ## User Preferences
 

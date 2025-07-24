@@ -78,7 +78,21 @@ export default function BrandCard({ brand, onCalculateLicense }: BrandCardProps)
         <div className="flex items-start justify-between mb-4">
           <div className="flex items-center space-x-2">
             <div className="w-8 h-8 bg-white bg-opacity-20 rounded-lg flex items-center justify-center">
-              <i className={`${brand.iconClass || tierClasses.icon} text-white text-sm`}></i>
+              {brand.name === 'FRUITFUL' ? (
+                <img 
+                  src="/assets/Fruiful_1753374425252.png" 
+                  alt="Fruitful™" 
+                  className="h-6 w-auto object-contain"
+                />
+              ) : brand.name === 'LIONS_SEEDWAVE' ? (
+                <img 
+                  src="/assets/Seedwave.png_1753374449890.PNG" 
+                  alt="Seedwave™" 
+                  className="h-6 w-auto object-contain"
+                />
+              ) : (
+                <i className={`${brand.iconClass || tierClasses.icon} text-white text-sm`}></i>
+              )}
             </div>
             <Badge className={tierClasses.badge}>
               {brand.tier.toUpperCase()}
