@@ -123,8 +123,13 @@ export default function BrandCard({ brand, onCalculateLicense }: BrandCardProps)
             size="sm" 
             className="w-full"
             onClick={() => {
-              console.log('Brand ID:', brand.id);
-              window.location.href = `/brands/${encodeURIComponent(brand.id)}`;
+              console.log('Brand ID:', brand.id, 'Type:', typeof brand.id);
+              if (brand.id && typeof brand.id === 'string') {
+                window.location.href = `/brands/${encodeURIComponent(brand.id)}`;
+              } else {
+                console.error('Invalid brand ID:', brand.id);
+                alert('Invalid brand ID');
+              }
             }}
           >
             View Details

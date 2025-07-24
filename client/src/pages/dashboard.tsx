@@ -247,6 +247,15 @@ export default function Dashboard() {
                 </div>
               ) : (
                 <>
+                  {/* Debug info */}
+                  {brandsData && (
+                    <div className="mb-4 p-4 bg-blue-50 rounded">
+                      <p>Total brands available: {brandsData.total}</p>
+                      <p>Brands returned: {brandsData.brands?.length || 0}</p>
+                      <p>First brand: {brandsData.brands?.[0]?.displayName || 'None'}</p>
+                    </div>
+                  )}
+                  
                   <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                     {brandsData?.brands?.map((brand: any) => (
                       <BrandCard 

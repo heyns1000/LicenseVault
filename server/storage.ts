@@ -118,10 +118,10 @@ export class DatabaseStorage implements IStorage {
     limit?: number;
     offset?: number;
   }): Promise<{ brands: Brand[]; total: number }> {
-    let query = db.select().from(brands).where(eq(brands.isActive, true));
-    let countQuery = db.select({ count: count() }).from(brands).where(eq(brands.isActive, true));
+    let baseQuery = db.select().from(brands);
+    let baseCountQuery = db.select({ count: count() }).from(brands);
 
-    const conditions = [];
+    const conditions = [eq(brands.isActive, true)];
 
     if (filters?.tier?.length) {
       conditions.push(inArray(brands.tier, filters.tier));
@@ -137,13 +137,13 @@ export class DatabaseStorage implements IStorage {
       );
     }
 
-    if (conditions.length > 0) {
-      const whereClause = and(eq(brands.isActive, true), ...conditions);
-      query = db.select().from(brands).where(whereClause);
-      countQuery = db.select({ count: count() }).from(brands).where(whereClause);
-    }
+    const whereClause = and(...conditions);
+    
+    let query = baseQuery
+      .where(whereClause)
+      .orderBy(desc(brands.createdAt));
 
-    query = query.orderBy(desc(brands.createdAt));
+    let countQuery = baseCountQuery.where(whereClause);
 
     if (filters?.limit) {
       query = query.limit(filters.limit);
@@ -170,7 +170,7 @@ export class DatabaseStorage implements IStorage {
   }
 
   async createBrand(brandData: InsertBrand): Promise<Brand> {
-    const [brand] = await db.insert(brands).values([brandData]).returning();
+    const [brand] = await db.insert(brands).values(brandData).returning();
     return brand;
   }
 
