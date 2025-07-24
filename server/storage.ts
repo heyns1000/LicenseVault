@@ -163,7 +163,7 @@ export class DatabaseStorage implements IStorage {
 
   async getBrand(id: string): Promise<Brand | undefined> {
     const [brand] = await db.select().from(brands).where(eq(brands.id, id));
-    return brand;
+    return brand || undefined;
   }
 
   async createBrand(brandData: InsertBrand): Promise<Brand> {

@@ -36,6 +36,24 @@ export async function registerRoutes(app: Express): Promise<Server> {
     }
   });
 
+  // Get single brand by ID
+  app.get('/api/brands/:id', isAuthenticated, async (req, res) => {
+    try {
+      const { id } = req.params;
+      console.log('Fetching brand with ID:', id);
+      
+      const brand = await storage.getBrand(id);
+      if (!brand) {
+        return res.status(404).json({ error: 'Brand not found' });
+      }
+      
+      res.json(brand);
+    } catch (error) {
+      console.error('Error fetching brand:', error);
+      res.status(500).json({ error: 'Internal server error' });
+    }
+  });
+
   // Brand routes  
   app.get('/api/brands', isAuthenticated, async (req, res) => {
     try {

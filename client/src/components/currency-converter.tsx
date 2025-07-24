@@ -13,7 +13,10 @@ export function CurrencyConverter({ ecrAmount, usdAmount, compact = false }: Cur
   const [exchangeRate] = useState(3.4); // ECR to USD rate
 
   const formatCurrency = (amount: string, currency: 'USD' | 'ECR') => {
-    const numAmount = parseFloat(amount);
+    const numAmount = parseFloat(amount) || 0;
+    if (isNaN(numAmount)) {
+      return currency === 'USD' ? '$0.00' : '0.00 ECR';
+    }
     if (currency === 'USD') {
       return `$${numAmount.toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}`;
     } else {
@@ -22,11 +25,13 @@ export function CurrencyConverter({ ecrAmount, usdAmount, compact = false }: Cur
   };
 
   const getCurrentAmount = () => {
-    return displayCurrency === 'USD' ? usdAmount : ecrAmount;
+    const amount = displayCurrency === 'USD' ? usdAmount : ecrAmount;
+    return amount || '0';
   };
 
   const getAlternateAmount = () => {
-    return displayCurrency === 'USD' ? ecrAmount : usdAmount;
+    const amount = displayCurrency === 'USD' ? ecrAmount : usdAmount;
+    return amount || '0';
   };
 
   if (compact) {

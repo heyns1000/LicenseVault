@@ -32,7 +32,7 @@ export default function BrandDetails() {
     createdAt: string;
     updatedAt: string;
   }>({
-    queryKey: ["/api/brands", id],
+    queryKey: [`/api/brands/${id}`],
     retry: false,
     enabled: isAuthenticated && !!id && id !== '[object Object]',
   });
