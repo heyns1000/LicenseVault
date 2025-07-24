@@ -10,7 +10,7 @@ interface CurrencyConverterProps {
 
 export function CurrencyConverter({ ecrAmount, usdAmount, compact = false }: CurrencyConverterProps) {
   const [displayCurrency, setDisplayCurrency] = useState<'USD' | 'ECR'>('USD');
-  const [exchangeRate] = useState(3.4); // ECR to USD rate
+  const [exchangeRate] = useState(3.4); // ECR to USD rate (Enterprise Credit Rating)
 
   const formatCurrency = (amount: string, currency: 'USD' | 'ECR') => {
     const numAmount = parseFloat(amount) || 0;

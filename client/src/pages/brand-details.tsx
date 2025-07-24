@@ -9,6 +9,7 @@ import Header from "@/components/header";
 import { FruitfulPreFooter } from "@/components/fruitful-pre-footer";
 import { CurrencyConverter } from "@/components/currency-converter";
 import { ProductDetails } from "@/components/product-details";
+import { CurrencyInfo } from "@/components/currency-info";
 
 export default function BrandDetails() {
   const { id } = useParams<{ id: string }>();
@@ -204,6 +205,9 @@ export default function BrandDetails() {
                 </div>
               </CardContent>
             </Card>
+
+            {/* Currency Information */}
+            <CurrencyInfo />
 
             <Card>
               <CardHeader>
