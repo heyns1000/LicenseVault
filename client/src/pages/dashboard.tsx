@@ -70,7 +70,7 @@ export default function Dashboard() {
     }>;
     total: number;
   }>({
-    queryKey: ["/api/brands", { ...brandFilters, limit: 50 }],
+    queryKey: ["/api/brands"],
     retry: false,
     enabled: isAuthenticated,
   });
@@ -263,8 +263,29 @@ export default function Dashboard() {
                       <p>No brands data received - check API response</p>
                       {brandsError && <p>Error: {String(brandsError)}</p>}
                       <p>Auth status: {isAuthenticated ? 'Authenticated' : 'Not authenticated'}</p>
+                      <p>Query key: ["/api/brands"]</p>
+                      <p>Loading state: {brandsLoading ? 'Loading' : 'Not loading'}</p>
                     </div>
                   )}
+                  
+                  {/* Manual fetch test */}
+                  <div className="mb-4">
+                    <button 
+                      onClick={async () => {
+                        try {
+                          const response = await fetch('/api/brands');
+                          console.log('Manual fetch result:', response.status, response.statusText);
+                          const data = await response.json();
+                          console.log('Manual fetch data:', data);
+                        } catch (error) {
+                          console.error('Manual fetch error:', error);
+                        }
+                      }}
+                      className="px-4 py-2 bg-blue-500 text-white rounded"
+                    >
+                      Test Manual Fetch
+                    </button>
+                  </div>
                   
                   <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                     {brandsData?.brands?.map((brand: any) => (
