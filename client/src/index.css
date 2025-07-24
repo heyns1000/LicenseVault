@@ -1,0 +1,110 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: hsl(0, 0%, 100%);
+  --foreground: hsl(20, 14.3%, 4.1%);
+  --muted: hsl(60, 4.8%, 95.9%);
+  --muted-foreground: hsl(25, 5.3%, 44.7%);
+  --popover: hsl(0, 0%, 100%);
+  --popover-foreground: hsl(20, 14.3%, 4.1%);
+  --card: hsl(0, 0%, 100%);
+  --card-foreground: hsl(20, 14.3%, 4.1%);
+  --border: hsl(20, 5.9%, 90%);
+  --input: hsl(20, 5.9%, 90%);
+  --primary: hsl(207, 90%, 54%);
+  --primary-foreground: hsl(211, 100%, 99%);
+  --secondary: hsl(60, 4.8%, 95.9%);
+  --secondary-foreground: hsl(24, 9.8%, 10%);
+  --accent: hsl(60, 4.8%, 95.9%);
+  --accent-foreground: hsl(24, 9.8%, 10%);
+  --destructive: hsl(0, 84.2%, 60.2%);
+  --destructive-foreground: hsl(60, 9.1%, 97.8%);
+  --ring: hsl(20, 14.3%, 4.1%);
+  --radius: 0.5rem;
+
+  /* FAA Brand Colors */
+  --faa-primary: hsl(210, 60%, 22%);
+  --faa-gold: hsl(45, 80%, 55%);
+  --faa-silver: hsl(0, 0%, 75%);
+  --faa-blue: hsl(207, 62%, 49%);
+  --faa-green: hsl(154, 50%, 45%);
+  --faa-bg: hsl(210, 40%, 98%);
+}
+
+.dark {
+  --background: hsl(240, 10%, 3.9%);
+  --foreground: hsl(0, 0%, 98%);
+  --muted: hsl(240, 3.7%, 15.9%);
+  --muted-foreground: hsl(240, 5%, 64.9%);
+  --popover: hsl(240, 10%, 3.9%);
+  --popover-foreground: hsl(0, 0%, 98%);
+  --card: hsl(240, 10%, 3.9%);
+  --card-foreground: hsl(0, 0%, 98%);
+  --border: hsl(240, 3.7%, 15.9%);
+  --input: hsl(240, 3.7%, 15.9%);
+  --primary: hsl(207, 90%, 54%);
+  --primary-foreground: hsl(211, 100%, 99%);
+  --secondary: hsl(240, 3.7%, 15.9%);
+  --secondary-foreground: hsl(0, 0%, 98%);
+  --accent: hsl(240, 3.7%, 15.9%);
+  --accent-foreground: hsl(0, 0%, 98%);
+  --destructive: hsl(0, 62.8%, 30.6%);
+  --destructive-foreground: hsl(0, 0%, 98%);
+  --ring: hsl(240, 4.9%, 83.9%);
+  --radius: 0.5rem;
+
+  /* FAA Brand Colors - Dark Mode */
+  --faa-primary: hsl(210, 60%, 30%);
+  --faa-gold: hsl(45, 80%, 60%);
+  --faa-silver: hsl(0, 0%, 70%);
+  --faa-blue: hsl(207, 62%, 55%);
+  --faa-green: hsl(154, 50%, 50%);
+  --faa-bg: hsl(240, 10%, 3.9%);
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply font-sans antialiased bg-background text-foreground;
+    font-family: 'Inter', sans-serif;
+  }
+}
+
+@layer utilities {
+  .tier-sovereign {
+    @apply bg-gradient-to-br from-yellow-400 to-yellow-600 text-white;
+  }
+  
+  .tier-dynastic {
+    @apply bg-gradient-to-br from-gray-400 to-gray-600 text-white;
+  }
+  
+  .tier-operational {
+    @apply bg-gradient-to-br from-blue-500 to-blue-700 text-white;
+  }
+  
+  .tier-market {
+    @apply bg-gradient-to-br from-green-500 to-green-700 text-white;
+  }
+
+  .tier-border-sovereign {
+    @apply border-yellow-500;
+  }
+  
+  .tier-border-dynastic {
+    @apply border-gray-500;
+  }
+  
+  .tier-border-operational {
+    @apply border-blue-500;
+  }
+  
+  .tier-border-market {
+    @apply border-green-500;
+  }
+}
