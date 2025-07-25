@@ -10,6 +10,8 @@ import { FruitfulPreFooter } from "@/components/fruitful-pre-footer";
 import { CurrencyConverter } from "@/components/currency-converter";
 import { ProductDetails } from "@/components/product-details";
 import { CurrencyInfo } from "@/components/currency-info";
+import fruitfulLogo from "@assets/Fruiful_1753374425252.png";
+import seedwaveLogo from "@assets/Seedwave.png_1753374449890.png";
 
 export default function BrandDetails() {
   const { id } = useParams<{ id: string }>();
@@ -132,13 +134,13 @@ export default function BrandDetails() {
                   <div className="w-16 h-16 bg-white rounded-lg flex items-center justify-center shadow-sm border">
                     {brand.name === 'FRUITFUL' ? (
                       <img 
-                        src="/assets/Fruiful_1753374425252.png" 
+                        src={fruitfulLogo} 
                         alt="Fruitful™" 
                         className="h-12 w-auto object-contain"
                       />
                     ) : brand.name === 'LIONS_SEEDWAVE' ? (
                       <img 
-                        src="/assets/Seedwave.png_1753374449890.PNG" 
+                        src={seedwaveLogo} 
                         alt="Seedwave™" 
                         className="h-12 w-auto object-contain"
                       />

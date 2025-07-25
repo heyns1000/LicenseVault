@@ -2,6 +2,8 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { CurrencyConverter } from "@/components/currency-converter";
+import fruitfulLogo from "@assets/Fruiful_1753374425252.png";
+import seedwaveLogo from "@assets/Seedwave.png_1753374449890.png";
 
 interface BrandCardProps {
   brand: {
@@ -80,13 +82,13 @@ export default function BrandCard({ brand, onCalculateLicense }: BrandCardProps)
             <div className="w-8 h-8 bg-white bg-opacity-20 rounded-lg flex items-center justify-center">
               {brand.name === 'FRUITFUL' ? (
                 <img 
-                  src="/assets/Fruiful_1753374425252.png" 
+                  src={fruitfulLogo} 
                   alt="Fruitful™" 
                   className="h-6 w-auto object-contain"
                 />
               ) : brand.name === 'LIONS_SEEDWAVE' ? (
                 <img 
-                  src="/assets/Seedwave.png_1753374449890.PNG" 
+                  src={seedwaveLogo} 
                   alt="Seedwave™" 
                   className="h-6 w-auto object-contain"
                 />

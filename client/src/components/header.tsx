@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
+import fruitfulLogo from "@assets/Fruiful_1753374425252.png";
 
 interface HeaderProps {
   user?: any;
@@ -20,7 +21,7 @@ export default function Header({ user, waterTheSeedStatus, onLicenseCalculator }
             <div className="flex items-center space-x-3">
               <div className="w-12 h-10 flex items-center justify-center">
                 <img 
-                  src="/assets/Fruiful_1753374425252.png" 
+                  src={fruitfulLogo} 
                   alt="Fruitful™" 
                   className="h-8 w-auto object-contain"
                 />
