@@ -44,6 +44,38 @@ export default function LicensingCalculator({ onClose }: LicensingCalculatorProp
     },
   });
 
+  const generateAgreementMutation = useMutation({
+    mutationFn: async () => {
+      if (!result || !formData.brandId) {
+        throw new Error("No calculation result available");
+      }
+      
+      const response = await apiRequest("POST", "/api/generate-license-agreement", {
+        brandId: formData.brandId,
+        calculationData: result
+      });
+      return response.json();
+    },
+    onSuccess: (data) => {
+      toast({
+        title: "Agreement Generated",
+        description: "License agreement generated successfully!",
+      });
+      
+      // Automatically download the agreement
+      if (data.downloadUrl) {
+        window.open(data.downloadUrl, '_blank');
+      }
+    },
+    onError: (error) => {
+      toast({
+        title: "Generation Failed",
+        description: error.message,
+        variant: "destructive",
+      });
+    },
+  });
+
   const handleCalculate = () => {
     if (!formData.brandId) {
       toast({
@@ -225,10 +257,24 @@ export default function LicensingCalculator({ onClose }: LicensingCalculatorProp
                     </div>
                   </div>
 
-                  <Button className="w-full" size="lg">
-                    <i className="fas fa-file-contract mr-2"></i>
-                    Generate License Agreement
-                  </Button>
+                  <Button 
+                  className="w-full" 
+                  size="lg"
+                  onClick={() => generateAgreementMutation.mutate()}
+                  disabled={generateAgreementMutation.isPending}
+                >
+                  {generateAgreementMutation.isPending ? (
+                    <>
+                      <i className="fas fa-spinner fa-spin mr-2"></i>
+                      Generating Agreement...
+                    </>
+                  ) : (
+                    <>
+                      <i className="fas fa-file-contract mr-2"></i>
+                      Generate License Agreement
+                    </>
+                  )}
+                </Button>
                 </div>
               ) : (
                 <Card>
