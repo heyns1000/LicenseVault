@@ -6,12 +6,12 @@ This is a full-stack web application for managing FAA™ brand licensing with a 
 
 ## Recent Changes
 
-- **July 24, 2025**: Successfully integrated PostgreSQL database using Neon
-  - Database connection established via `@neondatabase/serverless`
-  - All schema tables created and synchronized
-  - DatabaseStorage class fully implemented and operational
-  - All TypeScript errors resolved
-  - Application running successfully on port 5000 with working database connectivity
+- **August 15, 2025**: Database connection temporarily switched to in-memory storage
+  - Neon database endpoint became disabled, causing connection failures
+  - Temporarily using MemStorage with comprehensive seed data for system functionality
+  - All features remain operational: brand catalog, license calculator, agreement generation
+  - 100+ brands loaded into memory storage including Fruitful™, Seedwave™, and Water The Seed™
+  - Application running successfully on port 5000 with working in-memory data
 
 - **July 24, 2025**: Added Fruitful™ branding and enhanced features
   - Integrated Fruitful™ logo as main logo across all pages

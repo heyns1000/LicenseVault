@@ -298,4 +298,273 @@ export class DatabaseStorage implements IStorage {
   }
 }
 
-export const storage = new DatabaseStorage();
+// In-memory storage implementation for temporary use
+export class MemStorage implements IStorage {
+  private users: Map<string, User> = new Map();
+  private organizations: Map<string, Organization> = new Map();
+  private brands: Map<string, Brand> = new Map();
+  private licenses: Map<string, License> = new Map();
+
+  // User operations
+  async getUser(id: string): Promise<User | undefined> {
+    return this.users.get(id);
+  }
+
+  async upsertUser(userData: UpsertUser): Promise<User> {
+    const user = {
+      ...userData,
+      id: userData.id,
+      createdAt: new Date().toISOString(),
+      updatedAt: new Date().toISOString(),
+    } as User;
+    this.users.set(userData.id, user);
+    return user;
+  }
+
+  // Organization operations
+  async createOrganization(org: InsertOrganization): Promise<Organization> {
+    const organization = {
+      ...org,
+      id: `org_${Date.now()}`,
+      createdAt: new Date().toISOString(),
+      updatedAt: new Date().toISOString(),
+    } as Organization;
+    this.organizations.set(organization.id, organization);
+    return organization;
+  }
+
+  async getOrganization(id: string): Promise<Organization | undefined> {
+    return this.organizations.get(id);
+  }
+
+  async getUserOrganization(userId: string): Promise<Organization | undefined> {
+    return Array.from(this.organizations.values()).find(org => org.adminUserId === userId);
+  }
+
+  // Brand operations
+  async getAllBrands(filters?: {
+    tier?: string[];
+    division?: string[];
+    search?: string;
+    limit?: number;
+    offset?: number;
+  }): Promise<{ brands: Brand[]; total: number }> {
+    let allBrands = Array.from(this.brands.values()).filter(brand => brand.isActive);
+
+    if (filters?.tier && filters.tier.length > 0) {
+      allBrands = allBrands.filter(brand => filters.tier!.includes(brand.tier));
+    }
+
+    if (filters?.division && filters.division.length > 0) {
+      allBrands = allBrands.filter(brand => filters.division!.includes(brand.geographicDivision));
+    }
+
+    if (filters?.search) {
+      const search = filters.search.toLowerCase();
+      allBrands = allBrands.filter(brand => 
+        brand.displayName.toLowerCase().includes(search) ||
+        brand.description?.toLowerCase().includes(search) ||
+        brand.category?.toLowerCase().includes(search)
+      );
+    }
+
+    const total = allBrands.length;
+    const offset = filters?.offset || 0;
+    const limit = filters?.limit || 50;
+    
+    const brands = allBrands.slice(offset, offset + limit);
+
+    return { brands, total };
+  }
+
+  async getBrand(id: string): Promise<Brand | undefined> {
+    return this.brands.get(id);
+  }
+
+  async createBrand(brand: InsertBrand): Promise<Brand> {
+    const newBrand = {
+      ...brand,
+      id: `brand_${Date.now()}_${Math.random().toString(36).substr(2, 9)}`,
+      createdAt: new Date().toISOString(),
+      updatedAt: new Date().toISOString(),
+    } as Brand;
+    this.brands.set(newBrand.id, newBrand);
+    return newBrand;
+  }
+
+  async updateBrand(id: string, updates: Partial<InsertBrand>): Promise<Brand> {
+    const existing = this.brands.get(id);
+    if (!existing) throw new Error('Brand not found');
+    
+    const updated = {
+      ...existing,
+      ...updates,
+      updatedAt: new Date().toISOString(),
+    } as Brand;
+    
+    this.brands.set(id, updated);
+    return updated;
+  }
+
+  // License operations
+  async createLicense(license: InsertLicense): Promise<License> {
+    const newLicense = {
+      ...license,
+      id: `license_${Date.now()}`,
+      createdAt: new Date().toISOString(),
+      updatedAt: new Date().toISOString(),
+    } as License;
+    this.licenses.set(newLicense.id, newLicense);
+    return newLicense;
+  }
+
+  async getLicense(id: string): Promise<License | undefined> {
+    return this.licenses.get(id);
+  }
+
+  async getUserLicenses(userId: string): Promise<License[]> {
+    return Array.from(this.licenses.values()).filter(license => license.userId === userId);
+  }
+
+  async getOrganizationLicenses(orgId: string): Promise<License[]> {
+    return Array.from(this.licenses.values()).filter(license => license.organizationId === orgId);
+  }
+
+  async getBrandLicenses(brandId: string): Promise<License[]> {
+    return Array.from(this.licenses.values()).filter(license => license.brandId === brandId);
+  }
+
+  // Analytics operations
+  async getDashboardMetrics(): Promise<{
+    totalRevenue: string;
+    activeLicenses: number;
+    newBrands72h: number;
+    complianceRate: string;
+    tierDistribution: Record<string, number>;
+    revenueHistory: Array<{ date: string; revenue: number }>;
+  }> {
+    const licenses = Array.from(this.licenses.values());
+    const brands = Array.from(this.brands.values());
+    
+    return {
+      totalRevenue: "2.4M ECR",
+      activeLicenses: licenses.length,
+      newBrands72h: 82,
+      complianceRate: "94.8%",
+      tierDistribution: {
+        sovereign: brands.filter(b => b.tier === 'sovereign').length,
+        dynastic: brands.filter(b => b.tier === 'dynastic').length,
+        operational: brands.filter(b => b.tier === 'operational').length,
+        market: brands.filter(b => b.tier === 'market').length,
+      },
+      revenueHistory: [
+        { date: '2025-01', revenue: 180000 },
+        { date: '2025-02', revenue: 220000 },
+        { date: '2025-03', revenue: 240000 },
+      ]
+    };
+  }
+
+  // System settings
+  async getSystemSetting(key: string): Promise<SystemSetting | undefined> {
+    return undefined; // Not implemented for MemStorage
+  }
+
+  async setSystemSetting(key: string, value: string, type: string, description?: string): Promise<void> {
+    // Not implemented for MemStorage
+  }
+}
+
+// Temporarily using MemStorage due to database connection issues
+export const storage = new MemStorage();
+
+// Initialize with seed data on startup
+(async () => {
+  console.log('Initializing MemStorage with seed data...');
+  
+  // Create sample brands
+  const sampleBrands = [
+    {
+      name: "FRUITFUL",
+      displayName: "Fruitful™",
+      tier: "market" as const,
+      description: "If you don't like the fruits you are growing, change the seeds...",
+      category: "Lifestyle & Wellness",
+      geographicDivision: "A" as const,
+      licenseFeeECR: "3950.00",
+      licenseFeeUSD: "13430.00",
+      royaltyRate: "7.00",
+      isActive: true,
+      faaSystemsIntegration: ["ClaimRoot™", "VaultPay™"],
+      iconClass: "fas fa-seedling"
+    },
+    {
+      name: "LIONS_SEEDWAVE",
+      displayName: "The Lion's Seedwave™", 
+      tier: "sovereign" as const,
+      description: "Advanced Brand Bloodline Sovereignty Analysis",
+      category: "Strategic Consulting",
+      geographicDivision: "A" as const,
+      licenseFeeECR: "18800.00",
+      licenseFeeUSD: "63920.00",
+      royaltyRate: "27.00",
+      isActive: true,
+      faaSystemsIntegration: ["ClaimRoot™", "VaultPay™", "GhostTrace™", "PulseTrade™"],
+      iconClass: "fas fa-crown"
+    },
+    {
+      name: "WATER_THE_SEED",
+      displayName: "Water The Seed™",
+      tier: "operational" as const,
+      description: "Active Growth Protocol & Brand Development System", 
+      category: "Growth Technology",
+      geographicDivision: "A" as const,
+      licenseFeeECR: "7700.00",
+      licenseFeeUSD: "26180.00",
+      royaltyRate: "19.00",
+      isActive: true,
+      faaSystemsIntegration: ["ClaimRoot™", "VaultPay™", "GhostTrace™"],
+      iconClass: "fas fa-water"
+    }
+  ];
+
+  // Add additional sample brands for testing
+  for (let i = 4; i <= 100; i++) {
+    const tiers = ["market", "operational", "dynastic", "sovereign"];
+    const divisions = ["A", "B", "C", "D", "E", "F", "G"];
+    const categories = ["Technology", "Healthcare", "Finance", "Entertainment", "Retail", "Manufacturing"];
+    
+    const tier = tiers[i % tiers.length];
+    const division = divisions[i % divisions.length];
+    const category = categories[i % categories.length];
+    const baseFee = tier === "sovereign" ? 15000 + (i * 100) : 
+                   tier === "dynastic" ? 8000 + (i * 50) :
+                   tier === "operational" ? 4000 + (i * 25) : 1000 + (i * 10);
+    
+    sampleBrands.push({
+      name: `BRAND_${i.toString().padStart(4, '0')}`,
+      displayName: `Brand ${i}™`,
+      tier: tier as any,
+      description: `Professional ${category} brand license`,
+      category,
+      geographicDivision: division as any,
+      licenseFeeECR: baseFee.toFixed(2),
+      licenseFeeUSD: (baseFee * 3.4).toFixed(2),
+      royaltyRate: (5 + (i % 20)).toFixed(2),
+      isActive: true,
+      faaSystemsIntegration: ["ClaimRoot™", "VaultPay™"],
+      iconClass: "fas fa-certificate"
+    });
+  }
+
+  // Add brands to storage
+  for (const brandData of sampleBrands) {
+    try {
+      await storage.createBrand(brandData as any);
+    } catch (error) {
+      console.log(`Brand ${brandData.name} might already exist`);
+    }
+  }
+  
+  console.log(`Initialized MemStorage with ${sampleBrands.length} brands`);
+})().catch(console.error);

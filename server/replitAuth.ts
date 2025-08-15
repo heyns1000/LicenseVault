@@ -24,21 +24,24 @@ const getOidcConfig = memoize(
 
 export function getSession() {
   const sessionTtl = 7 * 24 * 60 * 60 * 1000; // 1 week
-  const pgStore = connectPg(session);
-  const sessionStore = new pgStore({
-    conString: process.env.DATABASE_URL,
-    createTableIfMissing: false,
-    ttl: sessionTtl,
-    tableName: "sessions",
-  });
+  
+  // Temporarily using memory store due to database connection issues
+  // const pgStore = connectPg(session);
+  // const sessionStore = new pgStore({
+  //   conString: process.env.DATABASE_URL,
+  //   createTableIfMissing: false,
+  //   ttl: sessionTtl,
+  //   tableName: "sessions",
+  // });
+  
   return session({
-    secret: process.env.SESSION_SECRET!,
-    store: sessionStore,
+    secret: process.env.SESSION_SECRET || 'temporary-secret-key-for-development',
+    // store: sessionStore, // Using default in-memory store
     resave: false,
     saveUninitialized: false,
     cookie: {
       httpOnly: true,
-      secure: true,
+      secure: process.env.NODE_ENV === 'production', // Only secure in production
       maxAge: sessionTtl,
     },
   });
