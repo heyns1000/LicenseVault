@@ -6,6 +6,15 @@ This is a full-stack web application for managing FAA™ brand licensing with a 
 
 ## Recent Changes
 
+- **October 17, 2025**: Implemented personalized dashboard welcome animation
+  - Created WelcomeAnimation component with Fruitful™ branding and personalized user greeting
+  - Added localStorage tracking to show animation once per day per user
+  - Integrated framer-motion for smooth entrance animations on dashboard load
+  - Implemented staggered animations for metric cards (0.1s-0.4s delays)
+  - Added cascading animations for brand catalog cards with 0.08s stagger effect
+  - Animation skips on subsequent page loads within 24 hours for better UX
+  - Welcome animation features Fruitful™ logo, personalized greeting, tagline, and progress bar
+
 - **August 15, 2025**: Database connection temporarily switched to in-memory storage
   - Neon database endpoint became disabled, causing connection failures
   - Temporarily using MemStorage with comprehensive seed data for system functionality
@@ -36,9 +45,11 @@ The application follows a monorepo structure with separate client and server dir
 - **Framework**: React 18 with TypeScript and Vite for development/building
 - **UI Library**: Shadcn/ui components built on Radix UI primitives
 - **Styling**: Tailwind CSS with custom FAA brand theming
+- **Animation**: Framer Motion for welcome animations and dashboard transitions
 - **State Management**: TanStack Query (React Query) for server state
 - **Routing**: Wouter for lightweight client-side routing
 - **Forms**: React Hook Form with Zod validation
+- **Persistence**: LocalStorage for welcome animation tracking
 
 ### Backend Architecture
 - **Runtime**: Node.js with Express.js framework

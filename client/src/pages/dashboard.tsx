@@ -29,13 +29,19 @@ export default function Dashboard() {
   // Check if user should see welcome animation
   useEffect(() => {
     if (isAuthenticated && user) {
-      const lastWelcomeShown = localStorage.getItem('faa_last_welcome_shown');
+      const userId = (user as any)?.id || (user as any)?.email || 'default';
+      const storageKey = `faa_last_welcome_shown_${userId}`;
+      const lastWelcomeShown = localStorage.getItem(storageKey);
       const now = Date.now();
       const oneDayMs = 24 * 60 * 60 * 1000;
 
-      if (!lastWelcomeShown || now - parseInt(lastWelcomeShown) > oneDayMs) {
+      // Validate timestamp and check if animation should show
+      const lastShownTime = lastWelcomeShown ? parseInt(lastWelcomeShown, 10) : null;
+      const isValidTimestamp = lastShownTime && !isNaN(lastShownTime);
+      
+      if (!isValidTimestamp || now - lastShownTime > oneDayMs) {
         setShowWelcome(true);
-        localStorage.setItem('faa_last_welcome_shown', now.toString());
+        localStorage.setItem(storageKey, now.toString());
       } else {
         setWelcomeComplete(true);
       }

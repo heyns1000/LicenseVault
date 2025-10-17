@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import fruitfulLogo from "@assets/Fruiful_1753374425252.png";
+import { X } from "lucide-react";
 
 interface WelcomeAnimationProps {
   userName?: string;
@@ -9,6 +10,13 @@ interface WelcomeAnimationProps {
 
 export function WelcomeAnimation({ userName, onComplete }: WelcomeAnimationProps) {
   const [isVisible, setIsVisible] = useState(true);
+
+  const handleSkip = () => {
+    setIsVisible(false);
+    setTimeout(() => {
+      onComplete?.();
+    }, 300);
+  };
 
   useEffect(() => {
     const timer = setTimeout(() => {
@@ -32,6 +40,14 @@ export function WelcomeAnimation({ userName, onComplete }: WelcomeAnimationProps
           className="fixed inset-0 z-50 flex items-center justify-center bg-gradient-to-br from-blue-50 via-white to-green-50"
           data-testid="welcome-animation-overlay"
         >
+          <button
+            onClick={handleSkip}
+            className="absolute top-6 right-6 p-2 rounded-full hover:bg-gray-200 transition-colors"
+            aria-label="Skip animation"
+            data-testid="button-skip-animation"
+          >
+            <X className="w-6 h-6 text-gray-600" />
+          </button>
           <div className="text-center">
             <motion.div
               initial={{ scale: 0.5, opacity: 0 }}
