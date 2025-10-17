@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { useQuery } from "@tanstack/react-query";
+import { motion } from "framer-motion";
 import { useAuth } from "@/hooks/useAuth";
 import { useToast } from "@/hooks/use-toast";
 import { isUnauthorizedError } from "@/lib/authUtils";
@@ -8,6 +9,7 @@ import Sidebar from "@/components/sidebar";
 import BrandCard from "@/components/brand-card";
 import LicensingCalculator from "@/components/licensing-calculator";
 import { FruitfulPreFooter } from "@/components/fruitful-pre-footer";
+import { WelcomeAnimation } from "@/components/welcome-animation";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Skeleton } from "@/components/ui/skeleton";
@@ -16,11 +18,29 @@ export default function Dashboard() {
   const { user, isLoading: authLoading, isAuthenticated } = useAuth();
   const { toast } = useToast();
   const [showLicenseCalculator, setShowLicenseCalculator] = useState(false);
+  const [showWelcome, setShowWelcome] = useState(false);
+  const [welcomeComplete, setWelcomeComplete] = useState(false);
   const [brandFilters, setBrandFilters] = useState({
     tier: [] as string[],
     division: [] as string[],
     search: "",
   });
+
+  // Check if user should see welcome animation
+  useEffect(() => {
+    if (isAuthenticated && user) {
+      const lastWelcomeShown = localStorage.getItem('faa_last_welcome_shown');
+      const now = Date.now();
+      const oneDayMs = 24 * 60 * 60 * 1000;
+
+      if (!lastWelcomeShown || now - parseInt(lastWelcomeShown) > oneDayMs) {
+        setShowWelcome(true);
+        localStorage.setItem('faa_last_welcome_shown', now.toString());
+      } else {
+        setWelcomeComplete(true);
+      }
+    }
+  }, [isAuthenticated, user]);
 
   // Redirect to home if not authenticated
   useEffect(() => {
@@ -117,6 +137,17 @@ export default function Dashboard() {
 
   return (
     <div className="min-h-screen bg-gray-50">
+      {/* Welcome Animation */}
+      {showWelcome && (
+        <WelcomeAnimation 
+          userName={(user as any)?.displayName || (user as any)?.email?.split('@')[0]}
+          onComplete={() => {
+            setShowWelcome(false);
+            setWelcomeComplete(true);
+          }}
+        />
+      )}
+
       <Header 
         user={user} 
         waterTheSeedStatus={waterTheSeedStatus}
@@ -144,84 +175,112 @@ export default function Dashboard() {
               ))
             ) : (
               <>
-                <Card>
-                  <CardContent className="p-6">
-                    <div className="flex items-center justify-between">
-                      <div>
-                        <p className="text-sm text-gray-600">Total Revenue</p>
-                        <p className="text-2xl font-bold text-gray-900">
-                          {metrics?.totalRevenue || "0M ECR"}
-                        </p>
+                <motion.div
+                  initial={welcomeComplete ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.5, delay: welcomeComplete ? 0 : 0.1 }}
+                  data-testid="metric-card-revenue"
+                >
+                  <Card>
+                    <CardContent className="p-6">
+                      <div className="flex items-center justify-between">
+                        <div>
+                          <p className="text-sm text-gray-600">Total Revenue</p>
+                          <p className="text-2xl font-bold text-gray-900">
+                            {metrics?.totalRevenue || "0M ECR"}
+                          </p>
+                        </div>
+                        <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center">
+                          <i className="fas fa-dollar-sign text-blue-600"></i>
+                        </div>
                       </div>
-                      <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center">
-                        <i className="fas fa-dollar-sign text-blue-600"></i>
+                      <div className="mt-2 flex items-center text-sm">
+                        <span className="text-green-600">+12.5%</span>
+                        <span className="text-gray-500 ml-1">vs last month</span>
                       </div>
-                    </div>
-                    <div className="mt-2 flex items-center text-sm">
-                      <span className="text-green-600">+12.5%</span>
-                      <span className="text-gray-500 ml-1">vs last month</span>
-                    </div>
-                  </CardContent>
-                </Card>
+                    </CardContent>
+                  </Card>
+                </motion.div>
 
-                <Card>
-                  <CardContent className="p-6">
-                    <div className="flex items-center justify-between">
-                      <div>
-                        <p className="text-sm text-gray-600">Active Licenses</p>
-                        <p className="text-2xl font-bold text-gray-900">
-                          {metrics?.activeLicenses?.toLocaleString() || "0"}
-                        </p>
+                <motion.div
+                  initial={welcomeComplete ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.5, delay: welcomeComplete ? 0 : 0.2 }}
+                  data-testid="metric-card-licenses"
+                >
+                  <Card>
+                    <CardContent className="p-6">
+                      <div className="flex items-center justify-between">
+                        <div>
+                          <p className="text-sm text-gray-600">Active Licenses</p>
+                          <p className="text-2xl font-bold text-gray-900">
+                            {metrics?.activeLicenses?.toLocaleString() || "0"}
+                          </p>
+                        </div>
+                        <div className="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center">
+                          <i className="fas fa-certificate text-green-600"></i>
+                        </div>
                       </div>
-                      <div className="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center">
-                        <i className="fas fa-certificate text-green-600"></i>
+                      <div className="mt-2 flex items-center text-sm">
+                        <span className="text-green-600">+8.2%</span>
+                        <span className="text-gray-500 ml-1">growth rate</span>
                       </div>
-                    </div>
-                    <div className="mt-2 flex items-center text-sm">
-                      <span className="text-green-600">+8.2%</span>
-                      <span className="text-gray-500 ml-1">growth rate</span>
-                    </div>
-                  </CardContent>
-                </Card>
+                    </CardContent>
+                  </Card>
+                </motion.div>
 
-                <Card>
-                  <CardContent className="p-6">
-                    <div className="flex items-center justify-between">
-                      <div>
-                        <p className="text-sm text-gray-600">New Brands (72h)</p>
-                        <p className="text-2xl font-bold text-gray-900">
-                          +{metrics?.newBrands72h || 0}
-                        </p>
+                <motion.div
+                  initial={welcomeComplete ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.5, delay: welcomeComplete ? 0 : 0.3 }}
+                  data-testid="metric-card-brands"
+                >
+                  <Card>
+                    <CardContent className="p-6">
+                      <div className="flex items-center justify-between">
+                        <div>
+                          <p className="text-sm text-gray-600">New Brands (72h)</p>
+                          <p className="text-2xl font-bold text-gray-900">
+                            +{metrics?.newBrands72h || 0}
+                          </p>
+                        </div>
+                        <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center">
+                          <i className="fas fa-seedling text-blue-600"></i>
+                        </div>
                       </div>
-                      <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center">
-                        <i className="fas fa-seedling text-blue-600"></i>
+                      <div className="mt-2 flex items-center text-sm">
+                        <span className="text-blue-600">Water The Seed™</span>
+                        <span className="text-gray-500 ml-1">protocol active</span>
                       </div>
-                    </div>
-                    <div className="mt-2 flex items-center text-sm">
-                      <span className="text-blue-600">Water The Seed™</span>
-                      <span className="text-gray-500 ml-1">protocol active</span>
-                    </div>
-                  </CardContent>
-                </Card>
+                    </CardContent>
+                  </Card>
+                </motion.div>
 
-                <Card>
-                  <CardContent className="p-6">
-                    <div className="flex items-center justify-between">
-                      <div>
-                        <p className="text-sm text-gray-600">Compliance Rate</p>
-                        <p className="text-2xl font-bold text-gray-900">
-                          {metrics?.complianceRate || "99.7%"}
-                        </p>
+                <motion.div
+                  initial={welcomeComplete ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.5, delay: welcomeComplete ? 0 : 0.4 }}
+                  data-testid="metric-card-compliance"
+                >
+                  <Card>
+                    <CardContent className="p-6">
+                      <div className="flex items-center justify-between">
+                        <div>
+                          <p className="text-sm text-gray-600">Compliance Rate</p>
+                          <p className="text-2xl font-bold text-gray-900">
+                            {metrics?.complianceRate || "99.7%"}
+                          </p>
+                        </div>
+                        <div className="w-12 h-12 bg-yellow-100 rounded-lg flex items-center justify-center">
+                          <i className="fas fa-shield-alt text-yellow-600"></i>
+                        </div>
                       </div>
-                      <div className="w-12 h-12 bg-yellow-100 rounded-lg flex items-center justify-center">
-                        <i className="fas fa-shield-alt text-yellow-600"></i>
+                      <div className="mt-2 flex items-center text-sm">
+                        <span className="text-green-600">FAA™ Verified</span>
                       </div>
-                    </div>
-                    <div className="mt-2 flex items-center text-sm">
-                      <span className="text-green-600">FAA™ Verified</span>
-                    </div>
-                  </CardContent>
-                </Card>
+                    </CardContent>
+                  </Card>
+                </motion.div>
               </>
             )}
           </div>
@@ -260,55 +319,35 @@ export default function Dashboard() {
                 </div>
               ) : (
                 <>
-                  {/* Debug info */}
-                  {brandsData && (
-                    <div className="mb-4 p-4 bg-blue-50 rounded">
-                      <p>Total brands available: {brandsData.total}</p>
-                      <p>Brands returned: {brandsData.brands?.length || 0}</p>
-                      <p>First brand: {brandsData.brands?.[0]?.displayName || 'None'}</p>
-                      <p>First brand ID: {brandsData.brands?.[0]?.id || 'No ID'}</p>
-                      <p>Brands loading: {brandsLoading ? 'Yes' : 'No'}</p>
-                    </div>
-                  )}
-                  
-                  {!brandsData && !brandsLoading && (
-                    <div className="mb-4 p-4 bg-red-50 rounded">
-                      <p>No brands data received - check API response</p>
-                      {brandsError && <p>Error: {String(brandsError)}</p>}
-                      <p>Auth status: {isAuthenticated ? 'Authenticated' : 'Not authenticated'}</p>
-                      <p>Query key: ["/api/brands"]</p>
-                      <p>Loading state: {brandsLoading ? 'Loading' : 'Not loading'}</p>
-                    </div>
-                  )}
-                  
-                  {/* Manual fetch test */}
-                  <div className="mb-4">
-                    <button 
-                      onClick={async () => {
-                        try {
-                          const response = await fetch('/api/brands');
-                          console.log('Manual fetch result:', response.status, response.statusText);
-                          const data = await response.json();
-                          console.log('Manual fetch data:', data);
-                        } catch (error) {
-                          console.error('Manual fetch error:', error);
+                  <motion.div 
+                    className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"
+                    initial="hidden"
+                    animate="visible"
+                    variants={{
+                      visible: {
+                        transition: {
+                          staggerChildren: welcomeComplete ? 0 : 0.08
                         }
-                      }}
-                      className="px-4 py-2 bg-blue-500 text-white rounded"
-                    >
-                      Test Manual Fetch
-                    </button>
-                  </div>
-                  
-                  <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                    {brandsData?.brands?.map((brand: any) => (
-                      <BrandCard 
-                        key={brand.id} 
-                        brand={brand}
-                        onCalculateLicense={() => setShowLicenseCalculator(true)}
-                      />
+                      }
+                    }}
+                  >
+                    {brandsData?.brands?.map((brand: any, index: number) => (
+                      <motion.div
+                        key={brand.id}
+                        variants={{
+                          hidden: { opacity: 0, y: 20 },
+                          visible: { opacity: 1, y: 0 }
+                        }}
+                        transition={{ duration: 0.4 }}
+                        data-testid={`brand-card-${index}`}
+                      >
+                        <BrandCard 
+                          brand={brand}
+                          onCalculateLicense={() => setShowLicenseCalculator(true)}
+                        />
+                      </motion.div>
                     ))}
-                  </div>
+                  </motion.div>
                   
                   {brandsData?.brands?.length === 0 && (
                     <div className="text-center py-12">
