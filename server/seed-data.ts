@@ -232,9 +232,15 @@ export async function seedDatabase() {
   }
 }
 
-// Run seed if called directly
-if (require.main === module) {
+// Run seed if called directly (ES module compatible)
+if (import.meta.url === `file://${process.argv[1]}`) {
   seedDatabase()
-    .then(() => process.exit(0))
-    .catch(() => process.exit(1));
+    .then(() => {
+      console.log("🎉 Seed complete! Exiting...");
+      process.exit(0);
+    })
+    .catch((error) => {
+      console.error("❌ Seed failed:", error);
+      process.exit(1);
+    });
 }

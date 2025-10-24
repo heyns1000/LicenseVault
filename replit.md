@@ -6,6 +6,15 @@ This is a full-stack web application for managing FAA™ brand licensing with a 
 
 ## Recent Changes
 
+- **October 24, 2025**: Restored PostgreSQL database with complete brand catalog
+  - Switched from in-memory storage (MemStorage) to PostgreSQL (DatabaseStorage)
+  - Successfully seeded database with 6,144+ verified brands
+  - Brand names now display properly: AUREUM PATH™, SOLVEMIND™, LIONSTREAM™, GLYPHFRAME™, VAULTSKIN™, etc.
+  - Fixed issue where brands were showing as "Brand 40™", "Brand 50™" (generic numbers)
+  - Database includes proper brand data: tier classifications, geographic divisions, license fees, royalty rates
+  - All features operational: brand catalog, license calculator, agreement generation with real SQL data
+  - Water The Seed protocol tracking 6,144+ brands toward 9,000 target
+
 - **October 17, 2025**: Implemented personalized dashboard welcome animation
   - Created WelcomeAnimation component with Fruitful™ branding and personalized user greeting
   - Added localStorage tracking to show animation once per day per user
@@ -14,13 +23,6 @@ This is a full-stack web application for managing FAA™ brand licensing with a 
   - Added cascading animations for brand catalog cards with 0.08s stagger effect
   - Animation skips on subsequent page loads within 24 hours for better UX
   - Welcome animation features Fruitful™ logo, personalized greeting, tagline, and progress bar
-
-- **August 15, 2025**: Database connection temporarily switched to in-memory storage
-  - Neon database endpoint became disabled, causing connection failures
-  - Temporarily using MemStorage with comprehensive seed data for system functionality
-  - All features remain operational: brand catalog, license calculator, agreement generation
-  - 100+ brands loaded into memory storage including Fruitful™, Seedwave™, and Water The Seed™
-  - Application running successfully on port 5000 with working in-memory data
 
 - **July 24, 2025**: Added Fruitful™ branding and enhanced features
   - Integrated Fruitful™ logo as main logo across all pages
