@@ -475,5 +475,26 @@ export class MemStorage implements IStorage {
   }
 }
 
-// Using PostgreSQL database storage - will automatically wake up sleeping Neon endpoint
-export const storage = new DatabaseStorage();
+// Temporarily using MemStorage - Replit-managed Neon endpoint is disabled
+// Database managed by Replit, not console.neon.tech
+export const storage = new MemStorage();
+
+// Initialize with seed data
+(async () => {
+  const sampleBrands = [
+    { name: "FRUITFUL", displayName: "Fruitful™", tier: "market" as const, description: "If you don't like the fruits you are growing, change the seeds...", category: "Lifestyle & Wellness", geographicDivision: "A" as const, licenseFeeECR: "3950.00", licenseFeeUSD: "13430.00", royaltyRate: "7.00", isActive: true, faaSystemsIntegration: ["ClaimRoot™", "VaultPay™"], iconClass: "fas fa-seedling" },
+    { name: "LIONS_SEEDWAVE", displayName: "The Lion's Seedwave™", tier: "sovereign" as const, description: "Advanced Brand Bloodline Sovereignty Analysis", category: "Strategic Consulting", geographicDivision: "A" as const, licenseFeeECR: "18800.00", licenseFeeUSD: "63920.00", royaltyRate: "27.00", isActive: true, faaSystemsIntegration: ["ClaimRoot™", "VaultPay™", "GhostTrace™", "PulseTrade™"], iconClass: "fas fa-crown" },
+    { name: "WATER_THE_SEED", displayName: "Water The Seed™", tier: "operational" as const, description: "Active Growth Protocol & Brand Development System", category: "Growth Technology", geographicDivision: "A" as const, licenseFeeECR: "7700.00", licenseFeeUSD: "26180.00", royaltyRate: "19.00", isActive: true, faaSystemsIntegration: ["ClaimRoot™", "VaultPay™", "GhostTrace™"], iconClass: "fas fa-water" }
+  ];
+  
+  for (let i = 4; i <= 100; i++) {
+    const tiers = ["market", "operational", "dynastic", "sovereign"];
+    const tier = tiers[i % tiers.length];
+    const baseFee = tier === "sovereign" ? 15000 + (i * 100) : tier === "dynastic" ? 8000 + (i * 50) : tier === "operational" ? 4000 + (i * 25) : 1000 + (i * 10);
+    sampleBrands.push({ name: `BRAND_${i.toString().padStart(4, '0')}`, displayName: `Brand ${i}™`, tier: tier as any, description: `Professional brand license`, category: "Technology", geographicDivision: "A" as any, licenseFeeECR: baseFee.toFixed(2), licenseFeeUSD: (baseFee * 3.4).toFixed(2), royaltyRate: (5 + (i % 20)).toFixed(2), isActive: true, faaSystemsIntegration: ["ClaimRoot™", "VaultPay™"], iconClass: "fas fa-certificate" });
+  }
+  
+  for (const brand of sampleBrands) {
+    try { await storage.createBrand(brand as any); } catch {}
+  }
+})().catch(console.error);
