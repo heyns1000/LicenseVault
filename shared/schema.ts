@@ -112,6 +112,49 @@ export const systemSettings = pgTable("system_settings", {
   updatedAt: timestamp("updated_at").defaultNow(),
 });
 
+// HSOMNI9000 ECOSYSTEM TABLES (imported from FruitfulPlanetChange repository)
+// Separate namespace to avoid conflicts with FAA Brand Licensing system
+
+export const hsomniSectors = pgTable("hsomni_sectors", {
+  id: serial("id").primaryKey(),
+  sectorKey: text("sector_key").notNull().unique(),
+  name: text("name").notNull(),
+  emoji: text("emoji").notNull(),
+  description: text("description"),
+  brandCount: integer("brand_count").default(0),
+  subnodeCount: integer("subnode_count").default(0),
+  price: text("price").default("88.00"),
+  currency: text("currency").default("USD"),
+  metadata: jsonb("metadata"),
+  createdAt: timestamp("created_at").defaultNow(),
+});
+
+export const hsomniBrands = pgTable("hsomni_brands", {
+  id: serial("id").primaryKey(),
+  name: text("name").notNull(),
+  description: text("description"),
+  sectorId: integer("sector_id").references(() => hsomniSectors.id),
+  integration: text("integration").notNull(), // VaultMesh™, GridCore™, etc.
+  status: text("status").notNull().default("active"),
+  isCore: boolean("is_core").default(true),
+  parentId: integer("parent_id"),
+  metadata: jsonb("metadata"),
+  createdAt: timestamp("created_at").defaultNow(),
+});
+
+export const hsomniAdminPanelBrands = pgTable("hsomni_admin_panel_brands", {
+  id: serial("id").primaryKey(),
+  sectorKey: text("sector_key").notNull(),
+  sectorName: text("sector_name").notNull(),
+  sectorEmoji: text("sector_emoji").notNull(),
+  brandName: text("brand_name").notNull(),
+  subNodes: jsonb("sub_nodes").$type<string[]>().default([]),
+  isCore: boolean("is_core").default(true),
+  status: text("status").notNull().default("active"),
+  metadata: jsonb("metadata"),
+  createdAt: timestamp("created_at").defaultNow(),
+});
+
 // Relations
 export const usersRelations = relations(users, ({ one, many }) => ({
   organization: one(organizations, {
