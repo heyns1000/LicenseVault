@@ -155,6 +155,35 @@ export const hsomniAdminPanelBrands = pgTable("hsomni_admin_panel_brands", {
   createdAt: timestamp("created_at").defaultNow(),
 });
 
+// SEEDWAVE VERIFIED BRANDS TABLE (third ecosystem)
+// Premium brands with advanced metadata and licensing features
+export const seedwaveBrands = pgTable("seedwave_brands", {
+  id: serial("id").primaryKey(),
+  brandId: text("brand_id").notNull().unique(), // Original ID from source (01, 02, etc.)
+  name: text("name").notNull(),
+  sector: text("sector").notNull(), // SEEDWAVE VERIFIED BRANDS, SOAZA BRAND FAMILY, etc.
+  subBrands: jsonb("sub_brands").$type<string[]>().default([]),
+  faaSystemLinks: jsonb("faa_system_links").$type<string[]>().default([]),
+  type: text("type").notNull(),
+  masterLicenseFee: text("master_license_fee").notNull(),
+  monthlyFee: text("monthly_fee").notNull(),
+  royalty: text("royalty").notNull(),
+  usePhrase: text("use_phrase"),
+  omnidropKit: text("omnidrop_kit"),
+  claimRoot: text("claim_root"),
+  pulseTrade: text("pulse_trade"),
+  vaultPay: text("vault_pay"),
+  activationTime: text("activation_time"),
+  ghostTrace: text("ghost_trace"),
+  deploymentRegion: text("deployment_region"),
+  familyBundle: text("family_bundle"),
+  description: text("description"),
+  tier: text("tier").notNull(), // Market, Operational, Dynastic, Sovereign
+  status: text("status").notNull().default("active"),
+  metadata: jsonb("metadata"),
+  createdAt: timestamp("created_at").defaultNow(),
+});
+
 // Relations
 export const usersRelations = relations(users, ({ one, many }) => ({
   organization: one(organizations, {

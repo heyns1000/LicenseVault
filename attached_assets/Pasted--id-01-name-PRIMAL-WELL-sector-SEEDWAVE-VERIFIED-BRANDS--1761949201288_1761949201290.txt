@@ -1,0 +1,2671 @@
+
+[
+  {
+    "id": "01",
+    "name": "📦 PRIMAL WELL™ 🦍",
+    "sector": "SEEDWAVE VERIFIED BRANDS",
+    "subBrands": [],
+    "faaSystemLinks": [
+      "CloudPulse™",
+      "VaultCloud™",
+      "ScrollStack"
+    ],
+    "type": "Wellness Calibration / Scroll Function",
+    "masterLicenseFee": "5,800 ECR ($19,720 USD)",
+    "monthlyFee": "Local 99 ECR / Regional 250 ECR / Global 780 ECR",
+    "royalty": "11% // Auto-Split: 9s (multi-node sync)",
+    "usePhrase": "\"Drop into the original stream.\"",
+    "omnidropKit": "CoreWell Flask, WaterCode Sigil, ScrollStack card",
+    "claimRoot": "Active ✅",
+    "pulseTrade": "9s Instant Loop",
+    "vaultPay": "Node Tier II",
+    "activationTime": "12m",
+    "ghostTrace": "Enabled – Gen3 Obfuscation",
+    "deploymentRegion": "Global (Baobab ∆South, Eden Vaults)",
+    "familyBundle": "Waterborn TIER-A // Nodes: 12",
+    "description": "Wellness Calibration / Scroll Function",
+    "tier": "Market"
+  },
+  {
+    "id": "02",
+    "name": "🔲 GLYPHFRAME™",
+    "sector": "SEEDWAVE VERIFIED BRANDS",
+    "subBrands": [],
+    "faaSystemLinks": [
+      "AI SyncPort™",
+      "ScrollStack™",
+      "MetaMesh AI"
+    ],
+    "type": "Creative Stack Tool / AI-integrated Design Layer",
+    "masterLicenseFee": "9,400 ECR ($31,960 USD)",
+    "monthlyFee": "Local 120 ECR / Regional 450 ECR / Global 999 ECR",
+    "royalty": "17% // Auto-Split: 72h sync",
+    "usePhrase": "\"Frame the future in glyphs.\"",
+    "omnidropKit": "Infinite Scroll Grid, FrameKey™ Token",
+    "claimRoot": "Certified",
+    "pulseTrade": "72h sync cycle",
+    "vaultPay": "Tier IV",
+    "activationTime": "6m",
+    "ghostTrace": "Gen2 Encryption Shield",
+    "deploymentRegion": "North VaultMesh + MetaScroll Zones",
+    "familyBundle": "GlyphTether 8x // Nodes: 8",
+    "description": "Creative Stack Tool / AI-integrated Design Layer",
+    "tier": "Dynastic"
+  },
+  {
+    "id": "03",
+    "name": "🧩 SOLVEMIND™",
+    "sector": "SEEDWAVE VERIFIED BRANDS",
+    "subBrands": [],
+    "faaSystemLinks": [
+      "SolveCloud™",
+      "AI Nexus",
+      "VaultPay SyncStream"
+    ],
+    "type": "Cognitive Tools / Strategy Scroll",
+    "masterLicenseFee": "12,000 ECR ($40,800 USD)",
+    "monthlyFee": "Local 399 ECR / Regional 670 ECR / Global 1,200 ECR",
+    "royalty": "22% // Auto-Split: 9s turbo payout",
+    "usePhrase": "\"Solve what minds can't.\"",
+    "omnidropKit": "SolveCube™, PrismNode™, CodeSash",
+    "claimRoot": "Pulse Certified 🔒",
+    "pulseTrade": "Turbo9s Sync",
+    "vaultPay": "Tier V (Black Node)",
+    "activationTime": "18m",
+    "ghostTrace": "Deep Mesh Defense v7",
+    "deploymentRegion": "Baobab West ∆ + OuterZone",
+    "familyBundle": "Cortex Run // Nodes: 16",
+    "description": "Cognitive Tools / Strategy Scroll",
+    "tier": "Dynastic"
+  },
+  {
+    "id": "04",
+    "name": "💛 AUREUM PATH™",
+    "sector": "SEEDWAVE VERIFIED BRANDS",
+    "subBrands": [],
+    "faaSystemLinks": [
+      "AureumNet™",
+      "CloudLedger",
+      "PulseRouter™"
+    ],
+    "type": "Legacy Scroll / Wealthline Expansion",
+    "masterLicenseFee": "18,800 ECR ($63,920 USD)",
+    "monthlyFee": "Local 620 ECR / Regional 1,140 ECR / Global 2,800 ECR",
+    "royalty": "27% // Auto-Split Logic: 72h windowed logic",
+    "usePhrase": "\"Trace the golden.\"",
+    "omnidropKit": "PathMap™, Aureum Sigil Set, ScrollPass",
+    "claimRoot": "Complete // Locked",
+    "pulseTrade": "72h vault-linked",
+    "vaultPay": "Tier VI",
+    "activationTime": "22m",
+    "ghostTrace": "GoldShield Quantum Mirror",
+    "deploymentRegion": "Sovereign Markets only",
+    "familyBundle": "AureLine™ 5x Nodes",
+    "description": "Legacy Scroll / Wealthline Expansion",
+    "tier": "Sovereign"
+  },
+  {
+    "id": "05",
+    "name": "🦁 LIONSTREAM™",
+    "sector": "SEEDWAVE VERIFIED BRANDS",
+    "subBrands": [],
+    "faaSystemLinks": [
+      "BroadcastAPI™",
+      "ScrollSync™",
+      "ClaimCast™"
+    ],
+    "type": "Cultural Broadcast Engine / Scroll TV",
+    "masterLicenseFee": "7,700 ECR ($26,180 USD)",
+    "monthlyFee": "Local 199 ECR / Regional 480 ECR / Global 900 ECR",
+    "royalty": "19% // Auto-Split: 9s (tier-adjusted)",
+    "usePhrase": "\"Broadcast the sovereign flame.\"",
+    "omnidropKit": "FlameGlyph, ScrollStudio™, VoiceSeed™ token",
+    "claimRoot": "Full AudioSync™",
+    "pulseTrade": "Live 9s",
+    "vaultPay": "Tier III",
+    "activationTime": "9m",
+    "ghostTrace": "Enabled + Scroll AudioShield",
+    "deploymentRegion": "Global + MetaCast",
+    "familyBundle": "LionShare Pack (7 Nodes)",
+    "description": "Cultural Broadcast Engine / Scroll TV",
+    "tier": "Dynastic"
+  },
+  {
+    "id": "06",
+    "name": "📦 NESTFORGE™",
+    "sector": "SEEDWAVE VERIFIED BRANDS",
+    "subBrands": [],
+    "faaSystemLinks": [
+      "PulseIndex™",
+      "NodeNest™",
+      "ScrollRelay™"
+    ],
+    "type": "Offline Infrastructure Mesh",
+    "masterLicenseFee": "$4,200 USD",
+    "monthlyFee": "$55 Local / $90 Regional / $220 Global",
+    "royalty": "8%",
+    "usePhrase": "\"Bring the grid where no cloud goes.\"",
+    "omnidropKit": "Setup config, QR-spawn node pack, icon API call",
+    "claimRoot": "Active",
+    "pulseTrade": "15s micro-yield + omni-auth on install",
+    "vaultPay": "Tier II",
+    "deploymentRegion": "Div A, Low LSM, Offline Trade Zones",
+    "description": "Offline Infrastructure Mesh",
+    "tier": "Market"
+  },
+  {
+    "id": "07",
+    "name": "🛡️ VAULTSKIN™",
+    "sector": "SEEDWAVE VERIFIED BRANDS",
+    "subBrands": [],
+    "faaSystemLinks": [
+      "ClaimRoot™",
+      "LiftHalo™",
+      "VaultPay™"
+    ],
+    "type": "Digital Identity Overlay Layer",
+    "masterLicenseFee": "$4,800 USD",
+    "monthlyFee": "$62 Local / $105 Regional / $260 Global",
+    "royalty": "9%",
+    "usePhrase": "\"Own your identity — wrap it in verified skin.\"",
+    "omnidropKit": "FAA brand scroll, token + SVG crest, API patch, licensing contract",
+    "claimRoot": "Active",
+    "pulseTrade": "9s yield pulse + scroll lock within 18h",
+    "vaultPay": "Tier III",
+    "deploymentRegion": "Div B, Div E, Digital Retail Grid",
+    "description": "Digital Identity Overlay Layer",
+    "tier": "Operational"
+  },
+  {
+    "id": "08",
+    "name": "🌿 AURACRATE™",
+    "sector": "SEEDWAVE VERIFIED BRANDS",
+    "subBrands": [],
+    "faaSystemLinks": [
+      "AuraIndex™",
+      "SigilWare™",
+      "ClaimRoot™"
+    ],
+    "type": "Sensory-Encoded Packaging (ritual aware)",
+    "masterLicenseFee": "$3,950 USD",
+    "monthlyFee": "$48 Local / $85 Regional / $200 Global",
+    "royalty": "7%",
+    "usePhrase": "\"The package knows you.\"",
+    "omnidropKit": "CrateLayer config, scent-key chip, glyph wax scroll",
+    "claimRoot": "Active",
+    "pulseTrade": "Unbox ritual in 12m (biometric detect)",
+    "vaultPay": "Tier II",
+    "deploymentRegion": "Herbal Divs, LSM+ Markets, Scroll Vending",
+    "description": "Sensory-Encoded Packaging (ritual aware)",
+    "tier": "Market"
+  },
+  {
+    "id": "09",
+    "name": "🔋 FIREPULSE™",
+    "sector": "SEEDWAVE VERIFIED BRANDS",
+    "subBrands": [],
+    "faaSystemLinks": [
+      "EnergyNest™",
+      "ScrollTrace™",
+      "VaultPay™"
+    ],
+    "type": "Smart Load Grid Controller",
+    "masterLicenseFee": "$5,100 USD",
+    "monthlyFee": "$65 Local / $112 Regional / $275 Global",
+    "royalty": "10%",
+    "usePhrase": "\"Light the grid before it breaks.\"",
+    "omnidropKit": "LoadTile token, FAA flame config, PulseNode adapter",
+    "claimRoot": "Active",
+    "pulseTrade": "Grid snap-on: 9s loop → PulseTrade 72h",
+    "vaultPay": "Tier III",
+    "deploymentRegion": "Div C, Energy MicroMarkets, Fleet Zones",
+    "description": "Smart Load Grid Controller",
+    "tier": "Operational"
+  },
+  {
+    "id": "10",
+    "name": "🎙️ ECHOSEAL™",
+    "sector": "SEEDWAVE VERIFIED BRANDS",
+    "subBrands": [],
+    "faaSystemLinks": [
+      "EchoSynth™",
+      "GhostTrace™",
+      "ClaimRoot™"
+    ],
+    "type": "Voice-Activated Scroll Security",
+    "masterLicenseFee": "$4,400 USD",
+    "monthlyFee": "$59 Local / $92 Regional / $240 Global",
+    "royalty": "8%",
+    "usePhrase": "\"Seal your scrolls with sound.\"",
+    "omnidropKit": "Voice glyph file, FAA audio sigil, claim wallet config",
+    "claimRoot": "Active",
+    "pulseTrade": "First voice seal = scroll unlock in 21s",
+    "vaultPay": "Tier II",
+    "deploymentRegion": "All Divs, Mobile Vendors, Treasury UX nodes",
+    "description": "Voice-Activated Scroll Security",
+    "tier": "Market"
+  },
+  {
+    "id": "11",
+    "name": "🖋️ GLYPHNEST™",
+    "sector": "SEEDWAVE VERIFIED BRANDS",
+    "subBrands": [],
+    "faaSystemLinks": [
+      "DesignAPI™",
+      "ScrollVault™",
+      "ClaimRoot™"
+    ],
+    "type": "Design Layout Engine",
+    "masterLicenseFee": "$3,700 USD",
+    "monthlyFee": "$42 Local / $80 Regional / $190 Global",
+    "royalty": "7%",
+    "usePhrase": "\"Design once, deploy everywhere.\"",
+    "omnidropKit": "NestTemplate pack, scroll guides, SVG brand set",
+    "claimRoot": "Active",
+    "pulseTrade": "Sync when layout hits 3 nodes",
+    "vaultPay": "Tier II",
+    "deploymentRegion": "Div D, Creative Mesh, Indie Shops",
+    "description": "Design Layout Engine",
+    "tier": "Market"
+  },
+  {
+    "id": "12",
+    "name": "📡 NODEWELD™",
+    "sector": "SEEDWAVE VERIFIED BRANDS",
+    "subBrands": [],
+    "faaSystemLinks": [
+      "ScrollNest™",
+      "MeshWeld™",
+      "ClaimRoot™"
+    ],
+    "type": "Micro Vendor Relay Toolkit",
+    "masterLicenseFee": "$4,600 USD",
+    "monthlyFee": "$58 Local / $94 Regional / $225 Global",
+    "royalty": "8%",
+    "usePhrase": "\"Link micro to macro.\"",
+    "omnidropKit": "LinkPatch key, microrelay scroll, sync beacon",
+    "claimRoot": "Active",
+    "pulseTrade": "9s pulse loop at first weld",
+    "vaultPay": "Tier II",
+    "deploymentRegion": "NodeTier II, MicroGrids, VendorGate",
+    "description": "Micro Vendor Relay Toolkit",
+    "tier": "Market"
+  },
+  {
+    "id": "13",
+    "name": "🌀 LOOPHALO™",
+    "sector": "SEEDWAVE VERIFIED BRANDS",
+    "subBrands": [],
+    "faaSystemLinks": [
+      "ScrollSync™",
+      "AuraLoop™",
+      "ClaimRoot™"
+    ],
+    "type": "Aura Yield Tracker",
+    "masterLicenseFee": "$3,990 USD",
+    "monthlyFee": "$51 Local / $88 Regional / $210 Global",
+    "royalty": "7%",
+    "usePhrase": "\"Feel the return.\"",
+    "omnidropKit": "LoopGlyph™, scent-pulse card, sync bracelet",
+    "claimRoot": "Active",
+    "pulseTrade": "72h track-to-trigger scroll pulse",
+    "vaultPay": "Tier II",
+    "deploymentRegion": "Div C, Sensory Markets, Ritual Streams",
+    "description": "Aura Yield Tracker",
+    "tier": "Market"
+  },
+  {
+    "id": "14",
+    "name": "🔐 SIGILLOCK™",
+    "sector": "SEEDWAVE VERIFIED BRANDS",
+    "subBrands": [],
+    "faaSystemLinks": [
+      "ScrollTrace™",
+      "ClaimRoot™",
+      "ProofSync"
+    ],
+    "type": "Clone Protection Sigil Service",
+    "masterLicenseFee": "$5,250 USD",
+    "monthlyFee": "$68 Local / $115 Regional / $290 Global",
+    "royalty": "9%",
+    "usePhrase": "\"What's yours stays encrypted.\"",
+    "omnidropKit": "3x GenSigils, fraud tripwire patch, GhostTrace™ link",
+    "claimRoot": "Active",
+    "pulseTrade": "18s auto-lock → 72h sync + alert node",
+    "vaultPay": "Tier III",
+    "deploymentRegion": "Anti-Piracy Zones, FAA MeshGrid",
+    "description": "Clone Protection Sigil Service",
+    "tier": "Operational"
+  },
+  {
+    "id": "15",
+    "name": "🪙 CLAIMMINT™",
+    "sector": "SEEDWAVE VERIFIED BRANDS",
+    "subBrands": [],
+    "faaSystemLinks": [
+      "ClaimMintAPI™",
+      "VaultPay™",
+      "NodeLock™"
+    ],
+    "type": "Tokenized Claim-to-Scroll Engine",
+    "masterLicenseFee": "$4,900 USD",
+    "monthlyFee": "$66 Local / $108 Regional / $260 Global",
+    "royalty": "8%",
+    "usePhrase": "\"Claim, mint, own.\"",
+    "omnidropKit": "Token scroll, mint index card, sync ledger patch",
+    "claimRoot": "Active",
+    "pulseTrade": "Claim-to-use in 24h, with 72h mint lock",
+    "vaultPay": "Tier III",
+    "deploymentRegion": "ClaimRoot Zone D, NFT-compatible nodes",
+    "description": "Tokenized Claim-to-Scroll Engine",
+    "tier": "Market"
+  },
+  {
+    "id": "16",
+    "name": "📱 NESTLINK™",
+    "sector": "SEEDWAVE VERIFIED BRANDS",
+    "subBrands": [],
+    "faaSystemLinks": [
+      "NodeMesh™",
+      "LinkBridge™",
+      "VaultPay™"
+    ],
+    "type": "Mesh-Powered Mobile Sync",
+    "masterLicenseFee": "$3,850 USD",
+    "monthlyFee": "$45 Local / $80 Regional / $190 Global",
+    "royalty": "6%",
+    "usePhrase": "\"Your scrolls, synced in air.\"",
+    "omnidropKit": "Mesh card, mobile activation QR, FAA badge",
+    "claimRoot": "Active",
+    "pulseTrade": "15s mobile handshake + ClaimRoot lock",
+    "vaultPay": "Tier II",
+    "deploymentRegion": "Mobile Vendors, Scroll POS Chains",
+    "description": "Mesh-Powered Mobile Sync",
+    "tier": "Market"
+  },
+  {
+    "id": "17",
+    "name": "📦 BOXROOT™",
+    "sector": "SEEDWAVE VERIFIED BRANDS",
+    "subBrands": [],
+    "faaSystemLinks": [
+      "ClaimProof™",
+      "RitualLayer™",
+      "NodeLock™"
+    ],
+    "type": "Ritual-Proof Packaging",
+    "masterLicenseFee": "$4,100 USD",
+    "monthlyFee": "$52 Local / $84 Regional / $215 Global",
+    "royalty": "7%",
+    "usePhrase": "\"The box becomes the ritual.\"",
+    "omnidropKit": "Proof wrapper, ritual ink label, glyph seal",
+    "claimRoot": "Active",
+    "pulseTrade": "Box open syncs 3 nodes in 72h",
+    "vaultPay": "Tier II",
+    "deploymentRegion": "Ritual Retail Nodes, Scroll Distributors",
+    "description": "Ritual-Proof Packaging",
+    "tier": "Market"
+  },
+  {
+    "id": "18",
+    "name": "🧩 THREADSIGIL™",
+    "sector": "SEEDWAVE VERIFIED BRANDS",
+    "subBrands": [],
+    "faaSystemLinks": [
+      "BodySync™",
+      "ClaimLoop™",
+      "ScrollNest™"
+    ],
+    "type": "Wearable Scroll Engine",
+    "masterLicenseFee": "$3,980 USD",
+    "monthlyFee": "$48 Local / $86 Regional / $205 Global",
+    "royalty": "7%",
+    "usePhrase": "\"Wear your scroll. Walk your brand.\"",
+    "omnidropKit": "SigilBand™, GlyphCard™, QR attacher",
+    "claimRoot": "Active",
+    "pulseTrade": "Wear-to-activate, first 72h loop",
+    "vaultPay": "Tier II",
+    "deploymentRegion": "Fashion MeshGrid, Tier II Ritualwear",
+    "description": "Wearable Scroll Engine",
+    "tier": "Market"
+  },
+  {
+    "id": "19",
+    "name": "💡 PULSESPARK™",
+    "sector": "SEEDWAVE VERIFIED BRANDS",
+    "subBrands": [],
+    "faaSystemLinks": [
+      "EnergyTrace™",
+      "PulseTrade™",
+      "ClaimRoot™"
+    ],
+    "type": "Energy Micro-Insight Tool",
+    "masterLicenseFee": "$4,500 USD",
+    "monthlyFee": "$60 Local / $100 Regional / $250 Global",
+    "royalty": "8%",
+    "usePhrase": "\"Spot power before it sparks.\"",
+    "omnidropKit": "Spark chip, micro insight scroll, yield pin",
+    "claimRoot": "Active",
+    "pulseTrade": "9s grid-on, 18h insight sync",
+    "vaultPay": "Tier II",
+    "deploymentRegion": "Urban Energy Mesh, Div A",
+    "description": "Energy Micro-Insight Tool",
+    "tier": "Market"
+  },
+  {
+    "id": "20",
+    "name": "🗝️ KEYVAULT™",
+    "sector": "SEEDWAVE VERIFIED BRANDS",
+    "subBrands": [],
+    "faaSystemLinks": [
+      "VaultPay™",
+      "KeyNest™",
+      "GhostTrace™"
+    ],
+    "type": "Scroll Lock + Biometrics",
+    "masterLicenseFee": "$5,100 USD",
+    "monthlyFee": "$67 Local / $112 Regional / $270 Global",
+    "royalty": "10%",
+    "usePhrase": "\"Only you unlock it.\"",
+    "omnidropKit": "FingerScan™, KeyScroll™, VaultPatch",
+    "claimRoot": "Active",
+    "pulseTrade": "Biometric entry → 24h hold → 72h scroll release",
+    "vaultPay": "Tier III",
+    "deploymentRegion": "ScrollTreasury Nodes, Finance Mesh",
+    "description": "Scroll Lock + Biometrics",
+    "tier": "Market"
+  },
+  {
+    "id": "21",
+    "name": "🧠 NEUROGRID™",
+    "sector": "SEEDWAVE VERIFIED BRANDS",
+    "subBrands": [],
+    "faaSystemLinks": [
+      "NeuroSim™",
+      "ScrollMap™",
+      "ClaimRoot™"
+    ],
+    "type": "Cognitive Simulation Grid",
+    "masterLicenseFee": "$5,300 USD",
+    "monthlyFee": "$70 Local / $115 Regional / $280 Global",
+    "royalty": "10%",
+    "usePhrase": "\"Think it, train it, claim it.\"",
+    "omnidropKit": "Sim card, CogBand™, GlyphBridge",
+    "claimRoot": "Active",
+    "pulseTrade": "3-hour cognitive sync, 72h insight echo",
+    "vaultPay": "Tier III",
+    "deploymentRegion": "Neural Training Vaults, MindTech Div",
+    "description": "Cognitive Simulation Grid",
+    "tier": "Market"
+  },
+  {
+    "id": "22",
+    "name": "🎮 SCROLLPLAY™",
+    "sector": "SEEDWAVE VERIFIED BRANDS",
+    "subBrands": [],
+    "faaSystemLinks": [
+      "ScrollSync™",
+      "PlayNode™",
+      "VaultDrop™"
+    ],
+    "type": "Symbolic Game Deployment",
+    "masterLicenseFee": "$3,850 USD",
+    "monthlyFee": "$47 Local / $88 Regional / $220 Global",
+    "royalty": "6%",
+    "usePhrase": "\"Play to remember.\"",
+    "omnidropKit": "Game card, symbol engine, sync code",
+    "claimRoot": "Active",
+    "pulseTrade": "Scroll use → Level 1 unlock in 12h",
+    "vaultPay": "Tier II",
+    "deploymentRegion": "EdTech Nodes, RitualPlay Stores",
+    "description": "Symbolic Game Deployment",
+    "tier": "Market"
+  },
+  {
+    "id": "23",
+    "name": "📻 SIGILCAST™",
+    "sector": "SEEDWAVE VERIFIED BRANDS",
+    "subBrands": [],
+    "faaSystemLinks": [
+      "BroadcastGrid™",
+      "ClaimCast™",
+      "VoiceDrop™"
+    ],
+    "type": "Brand Broadcasting Scrolls",
+    "masterLicenseFee": "$4,450 USD",
+    "monthlyFee": "$58 Local / $92 Regional / $225 Global",
+    "royalty": "8%",
+    "usePhrase": "\"Speak your scroll.\"",
+    "omnidropKit": "Signal glyph, cast token, sync node",
+    "claimRoot": "Active",
+    "pulseTrade": "Broadcast reach = scroll regen",
+    "vaultPay": "Tier II",
+    "deploymentRegion": "Broadcast Nodes, Ritual TV Mesh",
+    "description": "Brand Broadcasting Scrolls",
+    "tier": "Market"
+  },
+  {
+    "id": "24",
+    "name": "🧃 DRIPROOT™",
+    "sector": "SEEDWAVE VERIFIED BRANDS",
+    "subBrands": [],
+    "faaSystemLinks": [
+      "LiquidLoop™",
+      "NodeSync™",
+      "ClaimRoot™"
+    ],
+    "type": "Liquid Ritual Goods Protocol",
+    "masterLicenseFee": "$3,600 USD",
+    "monthlyFee": "$44 Local / $80 Regional / $185 Global",
+    "royalty": "6%",
+    "usePhrase": "\"Drink the brand.\"",
+    "omnidropKit": "Liquid codex, drip seal, label scroll",
+    "claimRoot": "Active",
+    "pulseTrade": "Pour → 72h flavor-sync node",
+    "vaultPay": "Tier II",
+    "deploymentRegion": "Div D, Artisan Drink Mesh",
+    "description": "Liquid Ritual Goods Protocol",
+    "tier": "Market"
+  },
+  {
+    "id": "25",
+    "name": "🚚 CARTNEST™",
+    "sector": "SEEDWAVE VERIFIED BRANDS",
+    "subBrands": [],
+    "faaSystemLinks": [
+      "NestVendor™",
+      "ClaimRoot™",
+      "VaultTrace™"
+    ],
+    "type": "Vendor Cart + License System",
+    "masterLicenseFee": "$3,900 USD",
+    "monthlyFee": "$50 Local / $89 Regional / $210 Global",
+    "royalty": "7%",
+    "usePhrase": "\"Scrolls that move.\"",
+    "omnidropKit": "License pass, cart flag, scroll QR",
+    "claimRoot": "Active",
+    "pulseTrade": "Cart active → 9s sync + vault yield",
+    "vaultPay": "Tier II",
+    "deploymentRegion": "Vendor Mesh Zones, Scroll Streets",
+    "description": "Vendor Cart + License System",
+    "tier": "Market"
+  },
+  {
+    "id": "26",
+    "name": "◆ SOAZA CORE™",
+    "sector": "SOAZA BRAND FAMILY",
+    "subBrands": [],
+    "faaSystemLinks": [
+      "MONSTER OMNI™ + VaultPay™"
+    ],
+    "type": "Anchor Brand / Core Engine",
+    "masterLicenseFee": "ECR 18.2M SaaS ValueX",
+    "monthlyFee": "Controls ecosystem tempo, revenue flow",
+    "royalty": "Split Share: 25%",
+    "usePhrase": "\"The Sovereign Heart. Powers the ecosystem.\"",
+    "omnidropKit": "Full Soaza Ecosystem Controls",
+    "claimRoot": "Active",
+    "pulseTrade": "10 Years Life Span",
+    "vaultPay": "Fused to MONSTER OMNI™",
+    "deploymentRegion": "Global Low–Mid LSM",
+    "familyBundle": "Soaza Complete Stack",
+    "description": "Anchor Brand / Core Engine",
+    "tier": "Sovereign"
+  },
+  {
+    "id": "27",
+    "name": "✿ SOAZA FRESH™",
+    "sector": "SOAZA BRAND FAMILY",
+    "subBrands": [],
+    "faaSystemLinks": [
+      "BareCart™ + MamaFix™"
+    ],
+    "type": "Food & Organics / Food Sovereignty Engine",
+    "masterLicenseFee": "$6.4M SaaS ValueX",
+    "monthlyFee": "Fresh trade loop for family kitchens",
+    "royalty": "Split Share: 12%",
+    "usePhrase": "\"Seed. Soil. Sovereignty.\"",
+    "omnidropKit": "Fresh Trade Loop Components",
+    "claimRoot": "Active",
+    "pulseTrade": "7 Years Life Span",
+    "vaultPay": "Linked to BareCart™",
+    "deploymentRegion": "Urban & Rural Families",
+    "familyBundle": "Soaza Fresh Pack",
+    "description": "Food & Organics / Food Sovereignty Engine",
+    "tier": "Dynastic"
+  },
+  {
+    "id": "28",
+    "name": "✂ SOAZA THREADS™",
+    "sector": "SOAZA BRAND FAMILY",
+    "subBrands": [],
+    "faaSystemLinks": [
+      "LineageFrame™ + SpiritLine™"
+    ],
+    "type": "Apparel & Clanwear / Apparel Lineage Stack",
+    "masterLicenseFee": "$8.7M SaaS ValueX",
+    "monthlyFee": "Cultural expression, clanwear",
+    "royalty": "Split Share: 14%",
+    "usePhrase": "\"Cloth that remembers the clan.\"",
+    "omnidropKit": "Clan Apparel System",
+    "claimRoot": "Active",
+    "pulseTrade": "8 Years Life Span",
+    "vaultPay": "Linked to LineageFrame™",
+    "deploymentRegion": "Youth / Culture Fashion",
+    "familyBundle": "Soaza Threads Collection",
+    "description": "Apparel & Clanwear / Apparel Lineage Stack",
+    "tier": "Operational"
+  },
+  {
+    "id": "29",
+    "name": "☰ SOAZA TRADECART™",
+    "sector": "SOAZA BRAND FAMILY",
+    "subBrands": [],
+    "faaSystemLinks": [
+      "BareCart™ + GhostTrace™"
+    ],
+    "type": "Micro-Kiosk Platform / Portable Retail Engine",
+    "masterLicenseFee": "$7.1M SaaS ValueX",
+    "monthlyFee": "Micro kiosk system",
+    "royalty": "Split Share: 11%",
+    "usePhrase": "\"Where there is no shop, we arrive.\"",
+    "omnidropKit": "TradeCart Mobile System",
+    "claimRoot": "Active",
+    "pulseTrade": "6 Years Life Span",
+    "vaultPay": "Linked to BareCart™",
+    "deploymentRegion": "Vendor Markets / Informal Zones",
+    "familyBundle": "TradeCart Kit",
+    "description": "Micro-Kiosk Platform / Portable Retail Engine",
+    "tier": "Operational"
+  },
+  {
+    "id": "30",
+    "name": "⚗ SOAZA CLEAN™",
+    "sector": "SOAZA BRAND FAMILY",
+    "subBrands": [],
+    "faaSystemLinks": [
+      "Soapdrop™ + AuraKey™"
+    ],
+    "type": "Hygiene & Homecare / Hygiene Sovereign Loop",
+    "masterLicenseFee": "$4.3M SaaS ValueX",
+    "monthlyFee": "Homecare, soapstack",
+    "royalty": "Split Share: 9%",
+    "usePhrase": "\"To clean is to bless. To bless is to protect.\"",
+    "omnidropKit": "Clean Homecare Pack",
+    "claimRoot": "Active",
+    "pulseTrade": "5 Years Life Span",
+    "vaultPay": "Linked to Soapdrop™",
+    "deploymentRegion": "Mothers / Household Buyers",
+    "familyBundle": "Soaza Clean Pack",
+    "description": "Hygiene & Homecare / Hygiene Sovereign Loop",
+    "tier": "Operational"
+  },
+  {
+    "id": "31",
+    "name": "₿ SOAZA VAULTPAY™",
+    "sector": "SOAZA BRAND FAMILY",
+    "subBrands": [],
+    "faaSystemLinks": [
+      "MONSTER OMNI™ + ClanCoin™"
+    ],
+    "type": "Finance Node / Payment Circuit",
+    "masterLicenseFee": "$11.6M SaaS ValueX",
+    "monthlyFee": "Smart wallet, token processor",
+    "royalty": "Split Share: 18%",
+    "usePhrase": "\"We hold the tokens. We hold the time.\"",
+    "omnidropKit": "VaultPay Financial System",
+    "claimRoot": "Active",
+    "pulseTrade": "12 Years Life Span",
+    "vaultPay": "Core System Node",
+    "deploymentRegion": "Digital + Vendor Trade",
+    "familyBundle": "VaultPay Complete",
+    "description": "Finance Node / Payment Circuit",
+    "tier": "Sovereign"
+  },
+  {
+    "id": "32",
+    "name": "☯ SOAZA SPIRITLINE™",
+    "sector": "SOAZA BRAND FAMILY",
+    "subBrands": [],
+    "faaSystemLinks": [
+      "DesignRoot™ + EchoSynth™"
+    ],
+    "type": "Cultural & Aura Asset Node",
+    "masterLicenseFee": "$5.9M SaaS ValueX",
+    "monthlyFee": "Spirit trade, ceremony goods",
+    "royalty": "Split Share: 11%",
+    "usePhrase": "\"The ritual is the brand. The brand is the breath.\"",
+    "omnidropKit": "SpiritLine Ritual Pack",
+    "claimRoot": "Active",
+    "pulseTrade": "9 Years Life Span",
+    "vaultPay": "Linked to DesignRoot™",
+    "deploymentRegion": "Elders, Healers, Spirit Workers",
+    "familyBundle": "SpiritLine Collection",
+    "description": "Cultural & Aura Asset Node",
+    "tier": "Dynastic"
+  },
+  {
+    "id": "33",
+    "name": "AG-0001 SEEDCHAIN™",
+    "sector": "FOOD, SOIL & FARMING SECTOR",
+    "subBrands": [
+      "AG-0001.1 SeedChain Core™ (Seed-to-store scroll ledger)",
+      "AG-0001.2 SeedChain Trace™ (Farm DNA + scroll claim registry)"
+    ],
+    "faaSystemLinks": [
+      "ClaimRoot™",
+      "PulseIndex™"
+    ],
+    "type": "Food, Soil & Farming / Sovereign Seed Tracking",
+    "deploymentRegion": "Div A-E, Rural & Commercial",
+    "description": "Food, Soil & Farming / Sovereign Seed Tracking",
+    "tier": "Operational"
+  },
+  {
+    "id": "34",
+    "name": "AG-0002 HARVESTNODE™",
+    "sector": "FOOD, SOIL & FARMING SECTOR",
+    "subBrands": [
+      "AG-0002.1 HarvestNode Signal™ (Real-time harvest scroll trigger)",
+      "AG-0002.2 HarvestNode Pulse™ (Yield-to-market scroll sync)"
+    ],
+    "faaSystemLinks": [
+      "VaultPay™",
+      "NodeNest™"
+    ],
+    "type": "Food, Soil & Farming / Harvest Yield Management",
+    "deploymentRegion": "Agricultural Divisions",
+    "description": "Food, Soil & Farming / Harvest Yield Management",
+    "tier": "Operational"
+  },
+  {
+    "id": "35",
+    "name": "AG-0003 CROPGLYPH™",
+    "sector": "FOOD, SOIL & FARMING SECTOR",
+    "subBrands": [
+      "AG-0003.1 CropGlyph Icon™ (Farm branding scroll generator)",
+      "AG-0003.2 CropGlyph Mark™ (Scroll certification seal)"
+    ],
+    "faaSystemLinks": [
+      "DesignRoot™",
+      "GlyphCore™"
+    ],
+    "type": "Food, Soil & Farming / Visual Farm Identity",
+    "deploymentRegion": "Global Farm Networks",
+    "description": "Food, Soil & Farming / Visual Farm Identity",
+    "tier": "Operational"
+  },
+  {
+    "id": "36",
+    "name": "AG-0004 SOILSIGIL™",
+    "sector": "FOOD, SOIL & FARMING SECTOR",
+    "subBrands": [
+      "AG-0004.1 SoilSigil Scan™ (Scroll-linked soil analysis)",
+      "AG-0004.2 SoilSigil Vault™ (Historical soil data archive)"
+    ],
+    "faaSystemLinks": [
+      "VaultGrid™",
+      "DataMesh™"
+    ],
+    "type": "Food, Soil & Farming / Soil Health Tracking",
+    "deploymentRegion": "Agricultural R&D Zones",
+    "description": "Food, Soil & Farming / Soil Health Tracking",
+    "tier": "Operational"
+  },
+  {
+    "id": "37",
+    "name": "AG-0005 ROOTCLAIM™",
+    "sector": "FOOD, SOIL & FARMING SECTOR",
+    "subBrands": [
+      "AG-0005.1 RootClaim ID™ (Scroll-based farm title registry)",
+      "AG-0005.2 RootClaim Lock™ (FAA land claim protection)"
+    ],
+    "faaSystemLinks": [
+      "ClaimRoot™",
+      "LegalLayer™"
+    ],
+    "type": "Food, Soil & Farming / Farm Ownership Verification",
+    "deploymentRegion": "Land Registry Divisions",
+    "description": "Food, Soil & Farming / Farm Ownership Verification",
+    "tier": "Operational"
+  },
+  {
+    "id": "38",
+    "name": "AG-0006 GREENLOOP™",
+    "sector": "FOOD, SOIL & FARMING SECTOR",
+    "subBrands": [
+      "AG-0006.1 GreenLoop Cert™ (Eco-certification scroll)",
+      "AG-0006.2 GreenLoop Track™ (Carbon credit scroll ledger)"
+    ],
+    "faaSystemLinks": [
+      "EcoGrid™",
+      "CarbonChain™"
+    ],
+    "type": "Food, Soil & Farming / Sustainable Agriculture",
+    "deploymentRegion": "Eco-Agricultural Zones",
+    "description": "Food, Soil & Farming / Sustainable Agriculture",
+    "tier": "Operational"
+  },
+  {
+    "id": "39",
+    "name": "AG-0007 FIELDNEST™",
+    "sector": "FOOD, SOIL & FARMING SECTOR",
+    "subBrands": [
+      "AG-0007.1 FieldNest Map™ (Plot mapping scroll tool)",
+      "AG-0007.2 FieldNest Sync™ (Multi-field coordination)"
+    ],
+    "faaSystemLinks": [
+      "GeoMesh™",
+      "FieldSync™"
+    ],
+    "type": "Food, Soil & Farming / Field Management System",
+    "deploymentRegion": "Commercial Farms",
+    "description": "Food, Soil & Farming / Field Management System",
+    "tier": "Operational"
+  },
+  {
+    "id": "40",
+    "name": "AG-0008 YIELDVAULT™",
+    "sector": "FOOD, SOIL & FARMING SECTOR",
+    "subBrands": [
+      "AG-0008.1 YieldVault Lock™ (Secure harvest storage scroll)",
+      "AG-0008.2 YieldVault Flow™ (Distribution network sync)"
+    ],
+    "faaSystemLinks": [
+      "VaultPay™",
+      "LogisticsChain™"
+    ],
+    "type": "Food, Soil & Farming / Harvest Storage & Distribution",
+    "deploymentRegion": "Storage & Distribution Hubs",
+    "description": "Food, Soil & Farming / Harvest Storage & Distribution",
+    "tier": "Operational"
+  },
+  {
+    "id": "41",
+    "name": "AG-0009 FARMTOKEN™",
+    "sector": "FOOD, SOIL & FARMING SECTOR",
+    "subBrands": [
+      "AG-0009.1 FarmToken Pay™ (Crop payment scroll system)",
+      "AG-0009.2 FarmToken Yield™ (Harvest-based token rewards)"
+    ],
+    "faaSystemLinks": [
+      "VaultPay™",
+      "TokenMint™"
+    ],
+    "type": "Food, Soil & Farming / Agricultural Finance",
+    "deploymentRegion": "Financial Agricultural Networks",
+    "description": "Food, Soil & Farming / Agricultural Finance",
+    "tier": "Operational"
+  },
+  {
+    "id": "42",
+    "name": "AG-0010 CROPCAST™",
+    "sector": "FOOD, SOIL & FARMING SECTOR",
+    "subBrands": [
+      "AG-0010.1 CropCast Signal™ (Farm news scroll distribution)",
+      "AG-0010.2 CropCast Alert™ (Weather & market scroll alerts)"
+    ],
+    "faaSystemLinks": [
+      "BroadcastGrid™",
+      "AlertMesh™"
+    ],
+    "type": "Food, Soil & Farming / Agricultural Broadcasting",
+    "deploymentRegion": "Agricultural Communication Networks",
+    "description": "Food, Soil & Farming / Agricultural Broadcasting",
+    "tier": "Operational"
+  },
+  {
+    "id": "43",
+    "name": "AG-0011 SOILFORGE™",
+    "sector": "FOOD, SOIL & FARMING SECTOR",
+    "subBrands": [
+      "AG-0011.1 SoilForge Mix™ (Soil composition scroll recipe)",
+      "AG-0011.2 SoilForge Track™ (Amendment tracking scroll)"
+    ],
+    "faaSystemLinks": [
+      "ChemGrid™",
+      "FormulaVault™"
+    ],
+    "type": "Food, Soil & Farming / Soil Enhancement",
+    "deploymentRegion": "Soil Science Divisions",
+    "description": "Food, Soil & Farming / Soil Enhancement",
+    "tier": "Operational"
+  },
+  {
+    "id": "44",
+    "name": "AG-0012 VENDORGEN™",
+    "sector": "FOOD, SOIL & FARMING SECTOR",
+    "subBrands": [
+      "AG-0012.1 VendorGen Market™ (Direct-to-consumer scroll platform)",
+      "AG-0012.2 VendorGen Link™ (Farmer collective scroll network)"
+    ],
+    "faaSystemLinks": [
+      "MarketMesh™",
+      "VendorChain™"
+    ],
+    "type": "Food, Soil & Farming / Farmer Vendor Platform",
+    "deploymentRegion": "Farmer Markets, Urban Distribution",
+    "description": "Food, Soil & Farming / Farmer Vendor Platform",
+    "tier": "Operational"
+  },
+  {
+    "id": "45",
+    "name": "AG-0013 HARVESTFLAG™",
+    "sector": "FOOD, SOIL & FARMING SECTOR",
+    "subBrands": [
+      "AG-0013.1 HarvestFlag Cert™ (Quality certification scroll)",
+      "AG-0013.2 HarvestFlag Trace™ (Quality tracking scroll chain)"
+    ],
+    "faaSystemLinks": [
+      "CertChain™",
+      "QualityMesh™"
+    ],
+    "type": "Food, Soil & Farming / Quality Certification",
+    "deploymentRegion": "Quality Assurance Networks",
+    "description": "Food, Soil & Farming / Quality Certification",
+    "tier": "Operational"
+  },
+  {
+    "id": "46",
+    "name": "AG-0014 GREENPULSE™",
+    "sector": "FOOD, SOIL & FARMING SECTOR",
+    "subBrands": [
+      "AG-0014.1 GreenPulse Scan™ (Environmental sensor scroll)",
+      "AG-0014.2 GreenPulse Report™ (Eco-impact scroll reporting)"
+    ],
+    "faaSystemLinks": [
+      "EcoScan™",
+      "ImpactGrid™"
+    ],
+    "type": "Food, Soil & Farming / Environmental Monitoring",
+    "deploymentRegion": "Environmental Monitoring Zones",
+    "description": "Food, Soil & Farming / Environmental Monitoring",
+    "tier": "Operational"
+  },
+  {
+    "id": "47",
+    "name": "AG-0015 PLANTGRID™",
+    "sector": "FOOD, SOIL & FARMING SECTOR",
+    "subBrands": [
+      "AG-0015.1 PlantGrid Plan™ (Planting schedule scroll)",
+      "AG-0015.2 PlantGrid Rotate™ (Crop rotation scroll optimizer)"
+    ],
+    "faaSystemLinks": [
+      "PlanMesh™",
+      "CycleSync™"
+    ],
+    "type": "Food, Soil & Farming / Crop Planning",
+    "deploymentRegion": "Agricultural Planning Divisions",
+    "description": "Food, Soil & Farming / Crop Planning",
+    "tier": "Operational"
+  },
+  {
+    "id": "48",
+    "name": "AG-0016 FARMFLOW™",
+    "sector": "FOOD, SOIL & FARMING SECTOR",
+    "subBrands": [
+      "AG-0016.1 FarmFlow Ops™ (Daily operations scroll tracker)",
+      "AG-0016.2 FarmFlow Team™ (Labor management scroll)"
+    ],
+    "faaSystemLinks": [
+      "OpsMesh™",
+      "TeamSync™"
+    ],
+    "type": "Food, Soil & Farming / Farm Operations",
+    "deploymentRegion": "Farm Management Systems",
+    "description": "Food, Soil & Farming / Farm Operations",
+    "tier": "Operational"
+  },
+  {
+    "id": "49",
+    "name": "AG-0017 AGRISCORE™",
+    "sector": "FOOD, SOIL & FARMING SECTOR",
+    "subBrands": [
+      "AG-0017.1 AgriScore Index™ (Smart rating for crop cycles)",
+      "AG-0017.2 AgriScore Node™ (Vendor-by-vendor risk tracker)"
+    ],
+    "faaSystemLinks": [
+      "ScoreGrid™",
+      "RiskMesh™"
+    ],
+    "type": "Food, Soil & Farming / Farm Performance Rating",
+    "deploymentRegion": "Agricultural Analytics Networks",
+    "description": "Food, Soil & Farming / Farm Performance Rating",
+    "tier": "Operational"
+  },
+  {
+    "id": "50",
+    "name": "AG-0018 SOILNET™",
+    "sector": "FOOD, SOIL & FARMING SECTOR",
+    "subBrands": [
+      "AG-0018.1 SoilNet Base™ (Scroll for mesh field data storage)",
+      "AG-0018.2 SoilNet UI™ (FAA region dashboard layout)"
+    ],
+    "faaSystemLinks": [
+      "DataVault™",
+      "DashboardMesh™"
+    ],
+    "type": "Food, Soil & Farming / Soil Data Network",
+    "deploymentRegion": "Soil Research Networks",
+    "description": "Food, Soil & Farming / Soil Data Network",
+    "tier": "Operational"
+  },
+  {
+    "id": "51",
+    "name": "AG-0019 CROPDOC™",
+    "sector": "FOOD, SOIL & FARMING SECTOR",
+    "subBrands": [
+      "AG-0019.1 CropDoc Scan™ (Scroll-linked pest/disease identifier)",
+      "AG-0019.2 CropDoc Aid™ (Field remedy upload via ClaimRoot™)"
+    ],
+    "faaSystemLinks": [
+      "HealthGrid™",
+      "RemedyVault™"
+    ],
+    "type": "Food, Soil & Farming / Agricultural Health",
+    "deploymentRegion": "Agricultural Health Services",
+    "description": "Food, Soil & Farming / Agricultural Health",
+    "tier": "Operational"
+  },
+  {
+    "id": "52",
+    "name": "AG-0020 TERRAVAULT™",
+    "sector": "FOOD, SOIL & FARMING SECTOR",
+    "subBrands": [
+      "AG-0020.1 TerraVault Ledger™ (Scroll-linked repository of field IP)",
+      "AG-0020.2 TerraVault View™ (Visualization engine for FAA maps)",
+      "AG-0020.3 TerraVault Chain™ (Multi-node registration and license relay)"
+    ],
+    "faaSystemLinks": [
+      "IPChain™",
+      "VisualMesh™"
+    ],
+    "type": "Food, Soil & Farming / Land IP Repository",
+    "deploymentRegion": "Land IP Management",
+    "description": "Food, Soil & Farming / Land IP Repository",
+    "tier": "Operational"
+  },
+  {
+    "id": "53",
+    "name": "AG-0021 AGRIID™",
+    "sector": "FOOD, SOIL & FARMING SECTOR",
+    "subBrands": [
+      "AG-0021.1 AgriID Chain™ (Scroll-based farmer identity ledger)",
+      "AG-0021.2 AgriID Badge™ (FAA visual + QR cert per vendor)",
+      "AG-0021.3 AgriID Verify™ (Inline vendor claim approval)"
+    ],
+    "faaSystemLinks": [
+      "IDChain™",
+      "BadgeMesh™"
+    ],
+    "type": "Food, Soil & Farming / Farmer Identity",
+    "deploymentRegion": "Farmer Identity Networks",
+    "description": "Food, Soil & Farming / Farmer Identity",
+    "tier": "Operational"
+  },
+  {
+    "id": "54",
+    "name": "AG-0022 SPROUTFLOW™",
+    "sector": "FOOD, SOIL & FARMING SECTOR",
+    "subBrands": [
+      "AG-0022.1 SproutFlow Loop™ (Daily scroll cycle tracker)",
+      "AG-0022.2 SproutFlow Track™ (FAA event-to-yield sync layer)"
+    ],
+    "faaSystemLinks": [
+      "GrowthMesh™",
+      "EventSync™"
+    ],
+    "type": "Food, Soil & Farming / Growth Tracking",
+    "deploymentRegion": "Growth Monitoring Systems",
+    "description": "Food, Soil & Farming / Growth Tracking",
+    "tier": "Operational"
+  },
+  {
+    "id": "55",
+    "name": "AG-0023 GRAINSAFE™",
+    "sector": "FOOD, SOIL & FARMING SECTOR",
+    "subBrands": [
+      "AG-0023.1 GrainSafe Lock™ (Scroll for silo-level security grid)",
+      "AG-0023.2 GrainSafe Audit™ (Temperature + spoilage scan relay)"
+    ],
+    "faaSystemLinks": [
+      "SecurityGrid™",
+      "AuditChain™"
+    ],
+    "type": "Food, Soil & Farming / Grain Storage Security",
+    "deploymentRegion": "Grain Storage Facilities",
+    "description": "Food, Soil & Farming / Grain Storage Security",
+    "tier": "Operational"
+  },
+  {
+    "id": "56",
+    "name": "AG-0024 FIELDSYNC™",
+    "sector": "FOOD, SOIL & FARMING SECTOR",
+    "subBrands": [
+      "AG-0024.1 FieldSync Signal™ (Scroll-linked plot telemetry system)",
+      "AG-0024.2 FieldSync Grid™ (Regional mesh node registration)"
+    ],
+    "faaSystemLinks": [
+      "TelemetryMesh™",
+      "RegionSync™"
+    ],
+    "type": "Food, Soil & Farming / Field Coordination",
+    "deploymentRegion": "Multi-Field Operations",
+    "description": "Food, Soil & Farming / Field Coordination",
+    "tier": "Operational"
+  },
+  {
+    "id": "57",
+    "name": "AG-0025 AGRIDEPOT™",
+    "sector": "FOOD, SOIL & FARMING SECTOR",
+    "subBrands": [
+      "AG-0025.1 AgriDepot Map™ (Scroll-based vendor location tracker)",
+      "AG-0025.2 AgriDepot Sync™ (Node loader for multivendor logistics)",
+      "AG-0025.3 AgriDepot Drop™ (Scroll fulfillment interface)"
+    ],
+    "faaSystemLinks": [
+      "LogisticsMesh™",
+      "FulfillmentChain™"
+    ],
+    "type": "Food, Soil & Farming / Agricultural Logistics",
+    "deploymentRegion": "Agricultural Supply Chain",
+    "description": "Food, Soil & Farming / Agricultural Logistics",
+    "tier": "Operational"
+  },
+  {
+    "id": "58",
+    "name": "AG-0026 DRONECROP™",
+    "sector": "FOOD, SOIL & FARMING SECTOR",
+    "subBrands": [
+      "AG-0026.1 DroneCrop Watch™ (Aerial scan sync to vault trigger)",
+      "AG-0026.2 DroneCrop Sync™ (Scroll-based live data archive)"
+    ],
+    "faaSystemLinks": [
+      "AerialGrid™",
+      "ArchiveVault™"
+    ],
+    "type": "Food, Soil & Farming / Aerial Monitoring",
+    "deploymentRegion": "Advanced Agricultural Monitoring",
+    "description": "Food, Soil & Farming / Aerial Monitoring",
+    "tier": "Operational"
+  },
+  {
+    "id": "59",
+    "name": "AG-0027 CROPTRACE™",
+    "sector": "FOOD, SOIL & FARMING SECTOR",
+    "subBrands": [
+      "AG-0027.1 CropTrace Root™ (Seed-to-store traceability node)",
+      "AG-0027.2 CropTrace Link™ (Vendor trail sync with ClaimRoot™)"
+    ],
+    "faaSystemLinks": [
+      "TraceChain™",
+      "VendorMesh™"
+    ],
+    "type": "Food, Soil & Farming / Traceability",
+    "deploymentRegion": "Food Traceability Networks",
+    "description": "Food, Soil & Farming / Traceability",
+    "tier": "Operational"
+  },
+  {
+    "id": "60",
+    "name": "AG-0028 PULSESOIL™",
+    "sector": "FOOD, SOIL & FARMING SECTOR",
+    "subBrands": [
+      "AG-0028.1 PulseSoil Core™ (Moisture+PH node scroll)",
+      "AG-0028.2 PulseSoil Signal™ (Warning + health alert cycle)"
+    ],
+    "faaSystemLinks": [
+      "SensorGrid™",
+      "AlertChain™"
+    ],
+    "type": "Food, Soil & Farming / Soil Monitoring",
+    "deploymentRegion": "Precision Agriculture",
+    "description": "Food, Soil & Farming / Soil Monitoring",
+    "tier": "Operational"
+  },
+  {
+    "id": "61",
+    "name": "AG-0029 SEEDROOT™",
+    "sector": "FOOD, SOIL & FARMING SECTOR",
+    "subBrands": [
+      "AG-0029.1 SeedRoot Tag™ (Unique scroll identity key)",
+      "AG-0029.2 SeedRoot Layer™ (FAA phase-growth mapping)"
+    ],
+    "faaSystemLinks": [
+      "SeedChain™",
+      "GrowthMap™"
+    ],
+    "type": "Food, Soil & Farming / Seed Identity",
+    "deploymentRegion": "Seed Management Systems",
+    "description": "Food, Soil & Farming / Seed Identity",
+    "tier": "Operational"
+  },
+  {
+    "id": "62",
+    "name": "AG-0030 RURALFLOW™",
+    "sector": "FOOD, SOIL & FARMING SECTOR",
+    "subBrands": [
+      "AG-0030.1 RuralFlow Map™ (Scroll index of rural zone clusters)",
+      "AG-0030.2 RuralFlow Loop™ (Micro-yield cycle timer)",
+      "AG-0030.3 RuralFlow Chain™ (Scroll registration + sync to VaultPay™)"
+    ],
+    "faaSystemLinks": [
+      "RuralMesh™",
+      "YieldSync™"
+    ],
+    "type": "Food, Soil & Farming / Rural Distribution",
+    "deploymentRegion": "Rural Agricultural Networks",
+    "description": "Food, Soil & Farming / Rural Distribution",
+    "tier": "Operational"
+  },
+  {
+    "id": "63",
+    "name": "AG-0031 MARKETGROW™",
+    "sector": "FOOD, SOIL & FARMING SECTOR",
+    "subBrands": [
+      "AG-0031.1 MarketGrow Pulse™ (Scroll-linked daily crop price index)",
+      "AG-0031.2 MarketGrow Cast™ (Broadcast scroll for buyer networks)",
+      "AG-0031.3 MarketGrow Deals™ (ClaimRoot-approved trade log system)"
+    ],
+    "faaSystemLinks": [
+      "PriceGrid™",
+      "TradeChain™"
+    ],
+    "type": "Food, Soil & Farming / Market Intelligence",
+    "deploymentRegion": "Agricultural Markets",
+    "description": "Food, Soil & Farming / Market Intelligence",
+    "tier": "Operational"
+  },
+  {
+    "id": "64",
+    "name": "AG-0032 AGRIRANK™",
+    "sector": "FOOD, SOIL & FARMING SECTOR",
+    "subBrands": [
+      "AG-0032.1 AgriRank Score™ (Live rating scroll for local vendors)",
+      "AG-0032.2 AgriRank Matrix™ (ROI-based ranking for agri-groups)"
+    ],
+    "faaSystemLinks": [
+      "RankGrid™",
+      "ROIMesh™"
+    ],
+    "type": "Food, Soil & Farming / Farm Rating",
+    "deploymentRegion": "Agricultural Performance Networks",
+    "description": "Food, Soil & Farming / Farm Rating",
+    "tier": "Operational"
+  },
+  {
+    "id": "65",
+    "name": "AG-0033 SOILLOGIC™",
+    "sector": "FOOD, SOIL & FARMING SECTOR",
+    "subBrands": [
+      "AG-0033.1 SoilLogic Grid™ (Smart sync mesh for layered analysis)",
+      "AG-0033.2 SoilLogic Forecast™ (FAA-predictive model scroll)"
+    ],
+    "faaSystemLinks": [
+      "AnalyticsMesh™",
+      "ForecastGrid™"
+    ],
+    "type": "Food, Soil & Farming / Soil Analytics",
+    "deploymentRegion": "Soil Science Analytics",
+    "description": "Food, Soil & Farming / Soil Analytics",
+    "tier": "Operational"
+  },
+  {
+    "id": "66",
+    "name": "AG-0034 AGRISYNC™",
+    "sector": "FOOD, SOIL & FARMING SECTOR",
+    "subBrands": [
+      "AG-0034.1 AgriSync UI™ (Vendor-panel dashboard scroll)",
+      "AG-0034.2 AgriSync Chain™ (FAA overlay for multi-node connection)"
+    ],
+    "faaSystemLinks": [
+      "DashGrid™",
+      "MultiChain™"
+    ],
+    "type": "Food, Soil & Farming / Farm Synchronization",
+    "deploymentRegion": "Integrated Farm Systems",
+    "description": "Food, Soil & Farming / Farm Synchronization",
+    "tier": "Operational"
+  },
+  {
+    "id": "67",
+    "name": "AG-0035 NUTRIENTGRID™",
+    "sector": "FOOD, SOIL & FARMING SECTOR",
+    "subBrands": [
+      "AG-0035.1 NutrientGrid Base™ (Scroll registry for plot nutrient profiles)",
+      "AG-0035.2 NutrientGrid Flux™ (Delta-tracking scroll for input change)"
+    ],
+    "faaSystemLinks": [
+      "NutrientChain™",
+      "FluxMesh™"
+    ],
+    "type": "Food, Soil & Farming / Nutrient Management",
+    "deploymentRegion": "Precision Nutrient Management",
+    "description": "Food, Soil & Farming / Nutrient Management",
+    "tier": "Operational"
+  },
+  {
+    "id": "68",
+    "name": "AG-0036 FIELDCAST™",
+    "sector": "FOOD, SOIL & FARMING SECTOR",
+    "subBrands": [
+      "AG-0036.1 FieldCast Audio™ (Scroll-enabled voice logs to scrollchain)",
+      "AG-0036.2 FieldCast Relay™ (Node-to-node signal sync in rural zones)"
+    ],
+    "faaSystemLinks": [
+      "AudioChain™",
+      "SignalMesh™"
+    ],
+    "type": "Food, Soil & Farming / Field Communication",
+    "deploymentRegion": "Rural Communication Networks",
+    "description": "Food, Soil & Farming / Field Communication",
+    "tier": "Operational"
+  },
+  {
+    "id": "69",
+    "name": "AG-0037 CROPSOURCE™",
+    "sector": "FOOD, SOIL & FARMING SECTOR",
+    "subBrands": [
+      "AG-0037.1 CropSource Ledger™ (Source-to-market trace scroll)",
+      "AG-0037.2 CropSource ID™ (FAA glyph for origin claim)"
+    ],
+    "faaSystemLinks": [
+      "SourceChain™",
+      "OriginGrid™"
+    ],
+    "type": "Food, Soil & Farming / Origin Tracking",
+    "deploymentRegion": "Origin Authentication",
+    "description": "Food, Soil & Farming / Origin Tracking",
+    "tier": "Operational"
+  },
+  {
+    "id": "70",
+    "name": "AG-0038 YIELDSTACK™",
+    "sector": "FOOD, SOIL & FARMING SECTOR",
+    "subBrands": [
+      "AG-0038.1 YieldStack UI™ (Dashboard scroll for multiple cycles)",
+      "AG-0038.2 YieldStack Payout™ (Vendor yield log with VaultPay™)",
+      "AG-0038.3 YieldStack Index™ (Multi-year predictive grid scroll)"
+    ],
+    "faaSystemLinks": [
+      "YieldChain™",
+      "PredictMesh™"
+    ],
+    "type": "Food, Soil & Farming / Yield Management",
+    "deploymentRegion": "Advanced Yield Analytics",
+    "description": "Food, Soil & Farming / Yield Management",
+    "tier": "Operational"
+  },
+  {
+    "id": "71",
+    "name": "AG-0039 FARMPULSE™",
+    "sector": "FOOD, SOIL & FARMING SECTOR",
+    "subBrands": [
+      "AG-0039.1 FarmPulse Loop™ (Scroll-based 9s payout grid)",
+      "AG-0039.2 FarmPulse Mesh™ (Rural vendor sync framework)"
+    ],
+    "faaSystemLinks": [
+      "PayoutGrid™",
+      "VendorSync™"
+    ],
+    "type": "Food, Soil & Farming / Farm Operations Pulse",
+    "deploymentRegion": "Rural Farm Operations",
+    "description": "Food, Soil & Farming / Farm Operations Pulse",
+    "tier": "Operational"
+  },
+  {
+    "id": "72",
+    "name": "AG-0040 SOILTECH™",
+    "sector": "FOOD, SOIL & FARMING SECTOR",
+    "subBrands": [
+      "AG-0040.1 SoilTech DNA™ (Soil genome tracker scroll)",
+      "AG-0040.2 SoilTech Live™ (Real-time FAA signal dashboard)"
+    ],
+    "faaSystemLinks": [
+      "GenomeChain™",
+      "LiveDash™"
+    ],
+    "type": "Food, Soil & Farming / Soil Technology",
+    "deploymentRegion": "Soil Science Innovation",
+    "description": "Food, Soil & Farming / Soil Technology",
+    "tier": "Operational"
+  },
+  {
+    "id": "73",
+    "name": "AG-0041 GREENTRACE™",
+    "sector": "FOOD, SOIL & FARMING SECTOR",
+    "subBrands": [
+      "AG-0041.1 GreenTrace Chain™ (Seed-to-store FAA claim scroll)",
+      "AG-0041.2 GreenTrace Pulse™ (Real-time vendor activity beacon)"
+    ],
+    "faaSystemLinks": [
+      "EcoChain™",
+      "ActivityMesh™"
+    ],
+    "type": "Food, Soil & Farming / Environmental Tracing",
+    "deploymentRegion": "Environmental Tracking",
+    "description": "Food, Soil & Farming / Environmental Tracing",
+    "tier": "Operational"
+  },
+  {
+    "id": "74",
+    "name": "AG-0042 CROPVAULT™",
+    "sector": "FOOD, SOIL & FARMING SECTOR",
+    "subBrands": [
+      "AG-0042.1 CropVault Lock™ (Harvest protection scroll for cold-store)",
+      "AG-0042.2 CropVault Ledger™ (FAA-grade batch record scroll)",
+      "AG-0042.3 CropVault Cert™ (Issuance scroll for quality claim)"
+    ],
+    "faaSystemLinks": [
+      "StorageChain™",
+      "QualityCert™"
+    ],
+    "type": "Food, Soil & Farming / Harvest Protection",
+    "deploymentRegion": "Cold Storage Networks",
+    "description": "Food, Soil & Farming / Harvest Protection",
+    "tier": "Operational"
+  },
+  {
+    "id": "75",
+    "name": "AG-0043 AGRICAST™",
+    "sector": "FOOD, SOIL & FARMING SECTOR",
+    "subBrands": [
+      "AG-0043.1 AgriCast Signal™ (Scroll-based weather & radio alert system)",
+      "AG-0043.2 AgriCast Feed™ (Vendor-to-vendor messaging scroll)"
+    ],
+    "faaSystemLinks": [
+      "WeatherGrid™",
+      "MessageChain™"
+    ],
+    "type": "Food, Soil & Farming / Agricultural Broadcasting",
+    "deploymentRegion": "Agricultural Communication",
+    "description": "Food, Soil & Farming / Agricultural Broadcasting",
+    "tier": "Operational"
+  },
+  {
+    "id": "76",
+    "name": "AG-0044 TERRAPULSE™",
+    "sector": "FOOD, SOIL & FARMING SECTOR",
+    "subBrands": [
+      "AG-0044.1 TerraPulse Soil™ (Ground activity sensor scroll)",
+      "AG-0044.2 TerraPulse Vault™ (Scroll of field snapshot uploads to vault)"
+    ],
+    "faaSystemLinks": [
+      "SensorChain™",
+      "SnapshotVault™"
+    ],
+    "type": "Food, Soil & Farming / Land Monitoring",
+    "deploymentRegion": "Land Monitoring Systems",
+    "description": "Food, Soil & Farming / Land Monitoring",
+    "tier": "Operational"
+  },
+  {
+    "id": "77",
+    "name": "AG-0045 SOILTRACE™",
+    "sector": "FOOD, SOIL & FARMING SECTOR",
+    "subBrands": [
+      "AG-0045.1 SoilTrace ID™ (Origin-tracking scroll for soil samples)",
+      "AG-0045.2 SoilTrace Certify™ (Scroll ledger proof for environmental compliance)"
+    ],
+    "faaSystemLinks": [
+      "ComplianceChain™",
+      "CertGrid™"
+    ],
+    "type": "Food, Soil & Farming / Soil Origin",
+    "deploymentRegion": "Environmental Compliance",
+    "description": "Food, Soil & Farming / Soil Origin",
+    "tier": "Operational"
+  },
+  {
+    "id": "78",
+    "name": "AG-0046 PULSEAG™",
+    "sector": "FOOD, SOIL & FARMING SECTOR",
+    "subBrands": [
+      "AG-0046.1 PulseAg Loop™ (Scroll payout timer for agri yields)",
+      "AG-0046.2 PulseAg Node™ (Vendor output validator + trigger)"
+    ],
+    "faaSystemLinks": [
+      "PaymentChain™",
+      "ValidatorMesh™"
+    ],
+    "type": "Food, Soil & Farming / Agricultural Pulse",
+    "deploymentRegion": "Yield Payment Systems",
+    "description": "Food, Soil & Farming / Agricultural Pulse",
+    "tier": "Operational"
+  },
+  {
+    "id": "79",
+    "name": "AG-0047 GROWVAULT™",
+    "sector": "FOOD, SOIL & FARMING SECTOR",
+    "subBrands": [
+      "AG-0047.1 GrowVault Root™ (Seed licensing scroll for multi-year lineage)",
+      "AG-0047.2 GrowVault Share™ (Vendor split scroll with ClaimRoot sync)"
+    ],
+    "faaSystemLinks": [
+      "LineageChain™",
+      "SplitMesh™"
+    ],
+    "type": "Food, Soil & Farming / Growth IP",
+    "deploymentRegion": "Seed IP Management",
+    "description": "Food, Soil & Farming / Growth IP",
+    "tier": "Operational"
+  },
+  {
+    "id": "80",
+    "name": "AG-0048 FIELDNET™",
+    "sector": "FOOD, SOIL & FARMING SECTOR",
+    "subBrands": [
+      "AG-0048.1 FieldNet Mesh™ (FAA-licensed signal net overlay)",
+      "AG-0048.2 FieldNet Ping™ (Fault detection scroll per rural block)"
+    ],
+    "faaSystemLinks": [
+      "NetworkGrid™",
+      "FaultChain™"
+    ],
+    "type": "Food, Soil & Farming / Field Network",
+    "deploymentRegion": "Rural Field Networks",
+    "description": "Food, Soil & Farming / Field Network",
+    "tier": "Operational"
+  },
+  {
+    "id": "81",
+    "name": "AG-0049 DRONESOIL™",
+    "sector": "FOOD, SOIL & FARMING SECTOR",
+    "subBrands": [
+      "AG-0049.1 DroneSoil View™ (UAV scan scroll for topsoil changes)",
+      "AG-0049.2 DroneSoil Trace™ (Scroll-linked thermal layer)"
+    ],
+    "faaSystemLinks": [
+      "ThermalGrid™",
+      "ScanChain™"
+    ],
+    "type": "Food, Soil & Farming / Aerial Soil Analysis",
+    "deploymentRegion": "Advanced Soil Monitoring",
+    "description": "Food, Soil & Farming / Aerial Soil Analysis",
+    "tier": "Operational"
+  },
+  {
+    "id": "82",
+    "name": "AG-0050 SOILGRID™",
+    "sector": "FOOD, SOIL & FARMING SECTOR",
+    "subBrands": [
+      "AG-0050.1 SoilGrid X™ (Scroll for horizontal nutrient sync)",
+      "AG-0050.2 SoilGrid Key™ (FAA key-pair scroll for each vendor sample)",
+      "AG-0050.3 SoilGrid Base™ (Primary registration scroll)"
+    ],
+    "faaSystemLinks": [
+      "NutrientSync™",
+      "KeyChain™"
+    ],
+    "type": "Food, Soil & Farming / Soil Network",
+    "deploymentRegion": "Soil Data Networks",
+    "description": "Food, Soil & Farming / Soil Network",
+    "tier": "Operational"
+  },
+  {
+    "id": "83",
+    "name": "AG-0051 HARVESTLOOP™",
+    "sector": "FOOD, SOIL & FARMING SECTOR",
+    "subBrands": [
+      "AG-0051.1 HarvestLoop Yield™ (Scroll logic for automated crop milestone payout)",
+      "AG-0051.2 HarvestLoop Stack™ (FAA-aligned vendor scroll stack)"
+    ],
+    "faaSystemLinks": [
+      "AutoChain™",
+      "StackMesh™"
+    ],
+    "type": "Food, Soil & Farming / Harvest Automation",
+    "deploymentRegion": "Automated Harvest Systems",
+    "description": "Food, Soil & Farming / Harvest Automation",
+    "tier": "Operational"
+  },
+  {
+    "id": "84",
+    "name": "AG-0052 RURALMESH™",
+    "sector": "FOOD, SOIL & FARMING SECTOR",
+    "subBrands": [
+      "AG-0052.1 RuralMesh Net™ (Micro-signal loop for off-grid trade)",
+      "AG-0052.2 RuralMesh Pulse™ (Scroll-tied to vendor POS logic)"
+    ],
+    "faaSystemLinks": [
+      "OffGridChain™",
+      "POSMesh™"
+    ],
+    "type": "Food, Soil & Farming / Rural Network",
+    "deploymentRegion": "Off-Grid Rural Networks",
+    "description": "Food, Soil & Farming / Rural Network",
+    "tier": "Operational"
+  },
+  {
+    "id": "85",
+    "name": "AG-0053 FARMFLAG™",
+    "sector": "FOOD, SOIL & FARMING SECTOR",
+    "subBrands": [
+      "AG-0053.1 FarmFlag Cert™ (ClaimRoot scroll for certified farms)",
+      "AG-0053.2 FarmFlag Signal™ (Live scroll alert to regional map)"
+    ],
+    "faaSystemLinks": [
+      "CertChain™",
+      "AlertGrid™"
+    ],
+    "type": "Food, Soil & Farming / Farm Certification",
+    "deploymentRegion": "Farm Certification Networks",
+    "description": "Food, Soil & Farming / Farm Certification",
+    "tier": "Operational"
+  },
+  {
+    "id": "86",
+    "name": "AG-0054 AGRIFLOW™",
+    "sector": "FOOD, SOIL & FARMING SECTOR",
+    "subBrands": [
+      "AG-0054.1 AgriFlow Path™ (Yield transfer logic scroll)",
+      "AG-0054.2 AgriFlow Ledger™ (Pulse-based log of cross-farm distribution)"
+    ],
+    "faaSystemLinks": [
+      "TransferChain™",
+      "DistroMesh™"
+    ],
+    "type": "Food, Soil & Farming / Agricultural Flow",
+    "deploymentRegion": "Inter-Farm Distribution",
+    "description": "Food, Soil & Farming / Agricultural Flow",
+    "tier": "Operational"
+  },
+  {
+    "id": "87",
+    "name": "AG-0055 SOILVAULT™",
+    "sector": "FOOD, SOIL & FARMING SECTOR",
+    "subBrands": [
+      "AG-0055.1 SoilVault Lock™ (Scroll storage for batch test results)",
+      "AG-0055.2 SoilVault View™ (Front-end vendor access panel)"
+    ],
+    "faaSystemLinks": [
+      "TestChain™",
+      "AccessGrid™"
+    ],
+    "type": "Food, Soil & Farming / Soil Data Storage",
+    "deploymentRegion": "Soil Testing Networks",
+    "description": "Food, Soil & Farming / Soil Data Storage",
+    "tier": "Operational"
+  },
+  {
+    "id": "88",
+    "name": "AG-0056 FIELDPROOF™",
+    "sector": "FOOD, SOIL & FARMING SECTOR",
+    "subBrands": [
+      "AG-0056.1 FieldProof Claim™ (FAA claim scroll generator for farms)",
+      "AG-0056.2 FieldProof Relay™ (Scroll distribution to market, vault and vendor)"
+    ],
+    "faaSystemLinks": [
+      "ClaimChain™",
+      "RelayMesh™"
+    ],
+    "type": "Food, Soil & Farming / Field Verification",
+    "deploymentRegion": "Farm Verification Networks",
+    "description": "Food, Soil & Farming / Field Verification",
+    "tier": "Operational"
+  },
+  {
+    "id": "89",
+    "name": "AG-0057 DRONETRACE™",
+    "sector": "FOOD, SOIL & FARMING SECTOR",
+    "subBrands": [
+      "AG-0057.1 DroneTrace Tag™ (Scroll-to-batch marker sync)",
+      "AG-0057.2 DroneTrace Vault™ (Historical log chain for plot scans)"
+    ],
+    "faaSystemLinks": [
+      "TagChain™",
+      "HistoryVault™"
+    ],
+    "type": "Food, Soil & Farming / Aerial Tracing",
+    "deploymentRegion": "Aerial Monitoring Networks",
+    "description": "Food, Soil & Farming / Aerial Tracing",
+    "tier": "Operational"
+  },
+  {
+    "id": "90",
+    "name": "AG-0058 MARKETROOTS™",
+    "sector": "FOOD, SOIL & FARMING SECTOR",
+    "subBrands": [
+      "AG-0058.1 MarketRoots X™ (Live market entry scroll for township clusters)",
+      "AG-0058.2 MarketRoots Grid™ (Scroll-linked pricing feedback channel)"
+    ],
+    "faaSystemLinks": [
+      "EntryChain™",
+      "PricingGrid™"
+    ],
+    "type": "Food, Soil & Farming / Market Access",
+    "deploymentRegion": "Township Market Networks",
+    "description": "Food, Soil & Farming / Market Access",
+    "tier": "Operational"
+  },
+  {
+    "id": "91",
+    "name": "AG-0059 NUTRIENTPATH™",
+    "sector": "FOOD, SOIL & FARMING SECTOR",
+    "subBrands": [
+      "AG-0059.1 NutrientPath Map™ (FAA-based scroll for nutrient trail overlays)",
+      "AG-0059.2 NutrientPath Scan™ (Scroll UI + data capture module)"
+    ],
+    "faaSystemLinks": [
+      "TrailChain™",
+      "CaptureGrid™"
+    ],
+    "type": "Food, Soil & Farming / Nutrient Tracking",
+    "deploymentRegion": "Nutrient Management Systems",
+    "description": "Food, Soil & Farming / Nutrient Tracking",
+    "tier": "Operational"
+  },
+  {
+    "id": "92",
+    "name": "AG-0060 CROPPULSE™",
+    "sector": "FOOD, SOIL & FARMING SECTOR",
+    "subBrands": [
+      "AG-0060.1 CropPulse Signal™ (Scroll-based live cycle alerts)",
+      "AG-0060.2 CropPulse Ledger™ (Payout and yield trigger history scroll)"
+    ],
+    "faaSystemLinks": [
+      "CycleChain™",
+      "TriggerMesh™"
+    ],
+    "type": "Food, Soil & Farming / Crop Monitoring",
+    "deploymentRegion": "Crop Monitoring Networks",
+    "description": "Food, Soil & Farming / Crop Monitoring",
+    "tier": "Operational"
+  },
+  {
+    "id": "93",
+    "name": "AG-0061 AGRIPULSE™",
+    "sector": "FOOD, SOIL & FARMING SECTOR",
+    "subBrands": [
+      "AG-0061.1 AgriPulse Loop™ (Scroll timer for synced crop drops)",
+      "AG-0061.2 AgriPulse Ledger™ (FAA-registered vendor pulse log)"
+    ],
+    "faaSystemLinks": [
+      "SyncChain™",
+      "PulseVault™"
+    ],
+    "type": "Food, Soil & Farming / Agricultural Pulse System",
+    "deploymentRegion": "Synchronized Agricultural Operations",
+    "description": "Food, Soil & Farming / Agricultural Pulse System",
+    "tier": "Operational"
+  },
+  {
+    "id": "94",
+    "name": "AG-0062 ECOSEED™",
+    "sector": "FOOD, SOIL & FARMING SECTOR",
+    "subBrands": [
+      "AG-0062.1 EcoSeed Vault™ (Green-certified seed scroll registry)",
+      "AG-0062.2 EcoSeed Sync™ (Scroll timeline for eco-yield tracing)"
+    ],
+    "faaSystemLinks": [
+      "GreenChain™",
+      "YieldTrace™"
+    ],
+    "type": "Food, Soil & Farming / Ecological Seed Management",
+    "deploymentRegion": "Ecological Agriculture",
+    "description": "Food, Soil & Farming / Ecological Seed Management",
+    "tier": "Operational"
+  },
+  {
+    "id": "95",
+    "name": "AG-0063 AGRIMETRICS™",
+    "sector": "FOOD, SOIL & FARMING SECTOR",
+    "subBrands": [
+      "AG-0063.1 AgriMetrics Signal™ (Scroll analytics for field performance)",
+      "AG-0063.2 AgriMetrics Vault™ (Multi-year trend storage scroll)"
+    ],
+    "faaSystemLinks": [
+      "PerformanceChain™",
+      "TrendVault™"
+    ],
+    "type": "Food, Soil & Farming / Agricultural Analytics",
+    "deploymentRegion": "Agricultural Data Analytics",
+    "description": "Food, Soil & Farming / Agricultural Analytics",
+    "tier": "Operational"
+  },
+  {
+    "id": "96",
+    "name": "AG-0064 DRONEGRID™",
+    "sector": "FOOD, SOIL & FARMING SECTOR",
+    "subBrands": [
+      "AG-0064.1 DroneGrid Node™ (Scroll-linked rural airspace routing)",
+      "AG-0064.2 DroneGrid View™ (Camera + sensor sync module)"
+    ],
+    "faaSystemLinks": [
+      "AirspaceChain™",
+      "SensorMesh™"
+    ],
+    "type": "Food, Soil & Farming / Drone Network",
+    "deploymentRegion": "Agricultural Drone Operations",
+    "description": "Food, Soil & Farming / Drone Network",
+    "tier": "Operational"
+  },
+  {
+    "id": "97",
+    "name": "AG-0065 GREENNODE™",
+    "sector": "FOOD, SOIL & FARMING SECTOR",
+    "subBrands": [
+      "AG-0065.1 GreenNode Base™ (Scroll UI for green network entry)",
+      "AG-0065.2 GreenNode Relay™ (FAA payout node for certified farms)"
+    ],
+    "faaSystemLinks": [
+      "EntryGrid™",
+      "PayoutChain™"
+    ],
+    "type": "Food, Soil & Farming / Green Network",
+    "deploymentRegion": "Green Agriculture Networks",
+    "description": "Food, Soil & Farming / Green Network",
+    "tier": "Operational"
+  },
+  {
+    "id": "98",
+    "name": "AG-0066 ROOTVAULT™",
+    "sector": "FOOD, SOIL & FARMING SECTOR",
+    "subBrands": [
+      "AG-0066.1 RootVault Claim™ (Scroll vault for DNA-verified crops)",
+      "AG-0066.2 RootVault Transfer™ (Scroll log for trait transfers)"
+    ],
+    "faaSystemLinks": [
+      "DNAChain™",
+      "TraitVault™"
+    ],
+    "type": "Food, Soil & Farming / Root Management",
+    "deploymentRegion": "Genetic Agriculture",
+    "description": "Food, Soil & Farming / Root Management",
+    "tier": "Operational"
+  },
+  {
+    "id": "99",
+    "name": "AG-0067 FIELDTOKEN™",
+    "sector": "FOOD, SOIL & FARMING SECTOR",
+    "subBrands": [
+      "AG-0067.1 FieldToken ID™ (Scroll for small-farm digital signature)",
+      "AG-0067.2 FieldToken Pay™ (Tokenized payout sync to VaultPay™)"
+    ],
+    "faaSystemLinks": [
+      "SignChain™",
+      "TokenPay™"
+    ],
+    "type": "Food, Soil & Farming / Field Finance",
+    "deploymentRegion": "Small Farm Finance",
+    "description": "Food, Soil & Farming / Field Finance",
+    "tier": "Operational"
+  },
+  {
+    "id": "100",
+    "name": "AG-0068 AGRIPLAN™",
+    "sector": "FOOD, SOIL & FARMING SECTOR",
+    "subBrands": [
+      "AG-0068.1 AgriPlan Builder™ (Scroll planner for planting windows)",
+      "AG-0068.2 AgriPlan Node™ (Farmer-to-agent sync grid scroll)"
+    ],
+    "faaSystemLinks": [
+      "PlanChain™",
+      "AgentSync™"
+    ],
+    "type": "Food, Soil & Farming / Agricultural Planning",
+    "deploymentRegion": "Farm Planning Systems",
+    "description": "Food, Soil & Farming / Agricultural Planning",
+    "tier": "Operational"
+  },
+  {
+    "id": "101",
+    "name": "☰ VENDORGENESIS™",
+    "sector": "ADDITIONAL VERIFIED BRANDS",
+    "subBrands": [
+      "VendorGenesis Light™ (Basic vendor startup kit)",
+      "VendorGenesis Ritual™ (Symbolic vendor pack for cultural markets)",
+      "VendorGenesis ClanPak™ (Multi-vendor clan deployment suite)",
+      "VendorGenesis Fresh™ (Perishable vendor node for urban & rural trade)",
+      "VendorGenesis PopNest™ (Mobile pop-up trade node for fast deployment)",
+      "VendorGenesis Voice™ (Voice-controlled vendor cart interface)"
+    ],
+    "faaSystemLinks": [
+      "VaultPay™",
+      "ClaimRoot™",
+      "PulseIndex™"
+    ],
+    "type": "Vendor Systems / Multi-Node Vendor Platform",
+    "masterLicenseFee": "Varies by node",
+    "monthlyFee": "$39-$195 (per node tier)",
+    "deploymentRegion": "Vendor Markets, Informal Economies",
+    "description": "Vendor Systems / Multi-Node Vendor Platform",
+    "tier": "Operational"
+  },
+  {
+    "id": "102",
+    "name": "₿ LOOPPAY™",
+    "sector": "ADDITIONAL VERIFIED BRANDS",
+    "subBrands": [],
+    "faaSystemLinks": [
+      "PulseTrade™",
+      "ClaimRoot™",
+      "VaultPay™"
+    ],
+    "type": "Finance / Sovereign Payout Utility",
+    "masterLicenseFee": "$6,500",
+    "monthlyFee": "$92",
+    "royalty": "12%",
+    "usePhrase": "\"Atom-level sovereign payout utility\"",
+    "omnidropKit": "VaultSync config, LoopNode setup, ClaimRoot registration",
+    "claimRoot": "Active",
+    "pulseTrade": "9s cycle payouts",
+    "vaultPay": "Core Integration",
+    "deploymentRegion": "Vendor stacks, clan hubs, FAAS ecosystems",
+    "description": "Finance / Sovereign Payout Utility",
+    "tier": "Operational"
+  },
+  {
+    "id": "103",
+    "name": "🛡️ MONSTER OMNI™",
+    "sector": "ADDITIONAL VERIFIED BRANDS",
+    "subBrands": [],
+    "faaSystemLinks": [
+      "Corethink™",
+      "FireRatio™",
+      "PulseIndex™",
+      "NestCortex™",
+      "EchoSynth™",
+      "ClaimRoot™",
+      "AutoSigil™"
+    ],
+    "type": "System Brain / AI Trading SuperPlatform",
+    "masterLicenseFee": "Premium Tier",
+    "description": "Multi-Asset, Multi-Division Trade Platform with Luno Logic",
+    "tier": "Sovereign"
+  },
+  {
+    "id": "104",
+    "name": "📱 BANIMAL™",
+    "sector": "ADDITIONAL VERIFIED BRANDS",
+    "subBrands": [],
+    "faaSystemLinks": [
+      "VendorChain™",
+      "YouthMesh™"
+    ],
+    "type": "Youth Fashion Grid",
+    "description": "Youth product vendor loop",
+    "omnidropKit": "Visual pack, pricing scroll, vendor node logic",
+    "deploymentRegion": "Youth Markets",
+    "tier": "Operational"
+  },
+  {
+    "id": "105",
+    "name": "📱 FOXED.MOBI™",
+    "sector": "ADDITIONAL VERIFIED BRANDS",
+    "subBrands": [],
+    "faaSystemLinks": [
+      "MobileGrid™",
+      "P2PChain™"
+    ],
+    "type": "Offline Mobile Hardware",
+    "description": "Retailer + P2P tech system",
+    "omnidropKit": "UI, bootable image, licensing docs",
+    "deploymentRegion": "Offline Markets",
+    "tier": "Operational"
+  },
+  {
+    "id": "106",
+    "name": "📦 CRATELOGIC™",
+    "sector": "ADDITIONAL VERIFIED BRANDS",
+    "subBrands": [],
+    "faaSystemLinks": [
+      "SupplyChain™",
+      "MicroVendor™"
+    ],
+    "type": "Logistics & Goods Grid",
+    "description": "Crate-to-market systems",
+    "omnidropKit": "Packaging design, microvendor loop, supply AI",
+    "deploymentRegion": "Logistics Networks",
+    "tier": "Operational"
+  },
+  {
+    "id": "107",
+    "name": "🖋️ DESIGNROOT™",
+    "sector": "ADDITIONAL VERIFIED BRANDS",
+    "subBrands": [],
+    "faaSystemLinks": [
+      "GraphicGrid™",
+      "SymbolChain™"
+    ],
+    "type": "Creative Core Brand",
+    "description": "Graphic + symbolic brands",
+    "omnidropKit": "Layout tools, fonts, scroll kit, Print API",
+    "deploymentRegion": "Creative Networks",
+    "tier": "Operational"
+  },
+  {
+    "id": "108",
+    "name": "🧬 CORETHINK™",
+    "sector": "ADDITIONAL VERIFIED BRANDS",
+    "subBrands": [],
+    "faaSystemLinks": [
+      "HSOMNI9000",
+      "AI Mesh"
+    ],
+    "type": "Algorithmic Brand / Primary AI Engine",
+    "description": "Predictshark market movement per vendor sector",
+    "deploymentRegion": "Global AI Infrastructure",
+    "tier": "Operational"
+  },
+  {
+    "id": "109",
+    "name": "📊 SIGNALGRAIN™",
+    "sector": "ADDITIONAL VERIFIED BRANDS",
+    "subBrands": [],
+    "faaSystemLinks": [
+      "HSOMNI9000",
+      "Data Analytics"
+    ],
+    "type": "Algorithmic Brand / Pattern Detection",
+    "description": "Pattern detection and microstream analysis",
+    "deploymentRegion": "Global Forecast Systems",
+    "tier": "Operational"
+  },
+  {
+    "id": "110",
+    "name": "🎲 PROBABLITEA™",
+    "sector": "ADDITIONAL VERIFIED BRANDS",
+    "subBrands": [],
+    "faaSystemLinks": [
+      "HSOMNI9000",
+      "Quantum Mesh"
+    ],
+    "type": "Algorithmic Brand / Quantum Probability",
+    "description": "Quantum probability engine for scenario modeling",
+    "deploymentRegion": "Predictive Analytics",
+    "tier": "Operational"
+  },
+  {
+    "id": "111",
+    "name": "⚖️ TRUTHWEIGHT™",
+    "sector": "ADDITIONAL VERIFIED BRANDS",
+    "subBrands": [],
+    "faaSystemLinks": [
+      "HSOMNI9000",
+      "Ethics Grid"
+    ],
+    "type": "Algorithmic Brand / Ethics Filter",
+    "description": "Bias detection + ethical load balancer",
+    "deploymentRegion": "Ethical AI Systems",
+    "tier": "Operational"
+  },
+  {
+    "id": "112",
+    "name": "✦ ECHOWAVE ROOTS™",
+    "sector": "ADDITIONAL VERIFIED BRANDS",
+    "subBrands": [],
+    "faaSystemLinks": [
+      "EchoSynth™",
+      "PulseIndex™",
+      "OmniTrace™"
+    ],
+    "type": "Memory Commerce / Legacy Brand Revival",
+    "description": "Memory-trigger commerce system",
+    "deploymentRegion": "Legacy Networks",
+    "tier": "Operational"
+  },
+  {
+    "id": "113",
+    "name": "✿ CLANCRATE™",
+    "sector": "ADDITIONAL VERIFIED BRANDS",
+    "subBrands": [],
+    "faaSystemLinks": [
+      "BloodlineChain™",
+      "LogisticsMesh™"
+    ],
+    "type": "Logistics / Bloodline Product Shipments",
+    "description": "Logistics / Bloodline Product Shipments",
+    "deploymentRegion": "Family Distribution Networks",
+    "tier": "Operational"
+  },
+  {
+    "id": "114",
+    "name": "⚗ KINDSOIL™",
+    "sector": "ADDITIONAL VERIFIED BRANDS",
+    "subBrands": [],
+    "faaSystemLinks": [
+      "BioChain™",
+      "AncestralGrid™"
+    ],
+    "type": "Agriculture / Ancestral Bio-Crop",
+    "description": "Rebirth of ancestral bio-crop economy",
+    "deploymentRegion": "Ancestral Agriculture",
+    "tier": "Operational"
+  },
+  {
+    "id": "115",
+    "name": "✂ FOLDNEST™",
+    "sector": "ADDITIONAL VERIFIED BRANDS",
+    "subBrands": [],
+    "faaSystemLinks": [
+      "MemoryGrid™",
+      "BuildChain™"
+    ],
+    "type": "Infrastructure / Home Infrastructure",
+    "description": "Home infrastructure from folded memory prints",
+    "deploymentRegion": "Housing Networks",
+    "tier": "Operational"
+  },
+  {
+    "id": "116",
+    "name": "☯ DRUMBRIDGE™",
+    "sector": "ADDITIONAL VERIFIED BRANDS",
+    "subBrands": [],
+    "faaSystemLinks": [
+      "SonicChain™",
+      "AncestralMesh™"
+    ],
+    "type": "Communication / Sonic Diplomacy",
+    "description": "Sonic diplomacy & ancestral announcement protocol",
+    "deploymentRegion": "Cultural Communication",
+    "tier": "Operational"
+  },
+  {
+    "id": "117",
+    "name": "🧬 LUNO ARC™",
+    "sector": "ADDITIONAL VERIFIED BRANDS",
+    "subBrands": [],
+    "faaSystemLinks": [
+      "MONSTER OMNI™",
+      "AuraChain™",
+      "PulseIndex™"
+    ],
+    "type": "Trading Platform / Multi-Asset Trade",
+    "description": "Trading Platform / Multi-Asset Trade",
+    "deploymentRegion": "Global + Interstellar",
+    "tier": "Operational"
+  },
+  {
+    "id": "118",
+    "name": "🌾 ROOTSIGNAL™",
+    "sector": "SEEDWAVE 03 VERIFIED BRANDS",
+    "subBrands": [],
+    "faaSystemLinks": [
+      "SignalGrid™",
+      "RootChain™"
+    ],
+    "type": "Infrastructure / Legacy Utility + Signal Tech",
+    "description": "Root sovereignty signal technology",
+    "deploymentRegion": "Global",
+    "tier": "Operational"
+  },
+  {
+    "id": "119",
+    "name": "⚡ HAELION GRID™",
+    "sector": "SEEDWAVE 03 VERIFIED BRANDS",
+    "subBrands": [],
+    "faaSystemLinks": [
+      "PowerMesh™",
+      "GridSync™"
+    ],
+    "type": "Infrastructure / Power Grid Management",
+    "description": "Advanced grid management system",
+    "deploymentRegion": "Global",
+    "tier": "Operational"
+  },
+  {
+    "id": "120",
+    "name": "🏗️ ASHRA COREWORKS™",
+    "sector": "SEEDWAVE 03 VERIFIED BRANDS",
+    "subBrands": [],
+    "faaSystemLinks": [
+      "CoreChain™",
+      "BuildMesh™"
+    ],
+    "type": "Infrastructure / Core Systems",
+    "description": "Foundational infrastructure technology",
+    "deploymentRegion": "Global",
+    "tier": "Operational"
+  },
+  {
+    "id": "121",
+    "name": "🧵 VEITEK LOOM™",
+    "sector": "SEEDWAVE 03 VERIFIED BRANDS",
+    "subBrands": [],
+    "faaSystemLinks": [
+      "PatternGrid™",
+      "WeaveMesh™"
+    ],
+    "type": "Creative Tech / Weaving Systems",
+    "description": "Digital weaving and pattern systems",
+    "deploymentRegion": "Creative Networks",
+    "tier": "Operational"
+  },
+  {
+    "id": "122",
+    "name": "🚀 MOTHERSHIP ORCHARD™",
+    "sector": "SEEDWAVE 03 VERIFIED BRANDS",
+    "subBrands": [],
+    "faaSystemLinks": [
+      "SpaceAgri™",
+      "OrbitChain™"
+    ],
+    "type": "Agriculture / Space-Based Farming",
+    "description": "Orbital agriculture platform",
+    "deploymentRegion": "Interstellar",
+    "tier": "Operational"
+  },
+  {
+    "id": "123",
+    "name": "🏆 ECHOGOLD SYSTEMS™",
+    "sector": "SEEDWAVE 03 VERIFIED BRANDS",
+    "subBrands": [],
+    "faaSystemLinks": [
+      "GoldChain™",
+      "EchoVault™"
+    ],
+    "type": "Finance / Premium Asset Management",
+    "description": "Gold-standard echo trading platform",
+    "deploymentRegion": "Global Financial",
+    "tier": "Operational"
+  },
+  {
+    "id": "124",
+    "name": "🧠 BAOBRAIN INDEX™",
+    "sector": "SEEDWAVE 03 VERIFIED BRANDS",
+    "subBrands": [],
+    "faaSystemLinks": [
+      "BrainMesh™",
+      "IndexChain™"
+    ],
+    "type": "AI / Knowledge Management",
+    "description": "Baobab-linked intelligence index",
+    "deploymentRegion": "Global AI Networks",
+    "tier": "Operational"
+  },
+  {
+    "id": "125",
+    "name": "🔮 OMNIPRAXIS V™",
+    "sector": "SEEDWAVE 03 VERIFIED BRANDS",
+    "subBrands": [],
+    "faaSystemLinks": [
+      "PraxisGrid™",
+      "OmniChain™"
+    ],
+    "type": "System Brain / Multi-Function Platform",
+    "description": "Omnidirectional practice platform",
+    "deploymentRegion": "Global",
+    "tier": "Operational"
+  },
+  {
+    "id": "126",
+    "name": "🔥 FLINTCIRCLE™",
+    "sector": "SEEDWAVE 03 VERIFIED BRANDS",
+    "subBrands": [],
+    "faaSystemLinks": [
+      "FireGrid™",
+      "CircleChain™"
+    ],
+    "type": "Energy / Fire Management",
+    "description": "Energy circle management system",
+    "deploymentRegion": "Energy Networks",
+    "tier": "Operational"
+  },
+  {
+    "id": "127",
+    "name": "📋 AUDITTRAIL™",
+    "sector": "FAA PROFESSIONAL SERVICES SCROLLS",
+    "subBrands": [
+      "VaultAudit™ (Secure audit storage)",
+      "QRTrace™ (QR-based tracing)",
+      "NodeForm™ (Form management nodes)",
+      "ControlClaim™ (Claim control systems)",
+      "VerifyRoute™ (Verification routing)"
+    ],
+    "faaSystemLinks": [
+      "AuditChain™",
+      "TrailMesh™"
+    ],
+    "type": "Professional Services / Audit Systems",
+    "deploymentRegion": "Global Professional",
+    "description": "Professional Services / Audit Systems",
+    "tier": "Operational"
+  },
+  {
+    "id": "128",
+    "name": "📄 DOCCLAIM™",
+    "sector": "FAA PROFESSIONAL SERVICES SCROLLS",
+    "subBrands": [
+      "VaultDocs™ (Document vault)",
+      "QRForm™ (QR form systems)",
+      "FormCert™ (Form certification)",
+      "LegalDrop™ (Legal document drops)",
+      "TraceNode™ (Tracing nodes)"
+    ],
+    "faaSystemLinks": [
+      "DocChain™",
+      "ClaimGrid™"
+    ],
+    "type": "Professional Services / Document Management",
+    "deploymentRegion": "Legal Networks",
+    "description": "Professional Services / Document Management",
+    "tier": "Operational"
+  },
+  {
+    "id": "129",
+    "name": "📊 DROPSHEET™",
+    "sector": "FAA PROFESSIONAL SERVICES SCROLLS",
+    "subBrands": [
+      "VaultPlan™ (Planning vault)",
+      "QRDesign™ (Design QR systems)",
+      "BudgetLine™ (Budget management)",
+      "MeshForm™ (Form mesh networks)",
+      "CastApproval™ (Approval casting)"
+    ],
+    "faaSystemLinks": [
+      "SheetChain™",
+      "DataMesh™"
+    ],
+    "type": "Professional Services / Data Management",
+    "deploymentRegion": "Business Networks",
+    "description": "Professional Services / Data Management",
+    "tier": "Operational"
+  },
+  {
+    "id": "130",
+    "name": "🔍 GRIDSCAN™",
+    "sector": "FAA PROFESSIONAL SERVICES SCROLLS",
+    "subBrands": [
+      "VaultSurvey™ (Survey vault)",
+      "QRField™ (Field QR systems)",
+      "TrackDrop™ (Drop tracking)",
+      "PingZone™ (Zone pinging)",
+      "NodeMeasure™ (Measurement nodes)"
+    ],
+    "faaSystemLinks": [
+      "ScanGrid™",
+      "TrackChain™"
+    ],
+    "type": "Professional Services / Scanning Systems",
+    "deploymentRegion": "Survey Networks",
+    "description": "Professional Services / Scanning Systems",
+    "tier": "Operational"
+  },
+  {
+    "id": "131",
+    "name": "⚖️ JUDGETAG™",
+    "sector": "FAA PROFESSIONAL SERVICES SCROLLS",
+    "subBrands": [
+      "VaultCourt™ (Court vault)",
+      "QRSign™ (Signature QR)",
+      "RulingPath™ (Ruling pathways)",
+      "CaseLoop™ (Case management loops)",
+      "LegalCast™ (Legal broadcasting)"
+    ],
+    "faaSystemLinks": [
+      "JudgeChain™",
+      "CourtMesh™"
+    ],
+    "type": "Professional Services / Legal Systems",
+    "deploymentRegion": "Legal Systems",
+    "description": "Professional Services / Legal Systems",
+    "tier": "Operational"
+  },
+  {
+    "id": "132",
+    "name": "👗 FASHIONNEST™",
+    "sector": "FAA FASHION & RETAIL SCROLLS",
+    "subBrands": [],
+    "faaSystemLinks": [
+      "FashionChain™",
+      "StyleMesh™"
+    ],
+    "type": "Fashion / Retail Platform",
+    "deploymentRegion": "Fashion Markets",
+    "description": "Fashion / Retail Platform",
+    "tier": "Market"
+  },
+  {
+    "id": "133",
+    "name": "💎 STYLEFORM™",
+    "sector": "FAA FASHION & RETAIL SCROLLS",
+    "subBrands": [],
+    "faaSystemLinks": [
+      "StyleGrid™",
+      "FormChain™"
+    ],
+    "type": "Fashion / Style Management",
+    "deploymentRegion": "Global Fashion",
+    "description": "Fashion / Style Management",
+    "tier": "Market"
+  },
+  {
+    "id": "134",
+    "name": "✨ CHICCLAIM™",
+    "sector": "FAA FASHION & RETAIL SCROLLS",
+    "subBrands": [],
+    "faaSystemLinks": [
+      "ChicChain™",
+      "TrendMesh™"
+    ],
+    "type": "Fashion / Trend Certification",
+    "deploymentRegion": "Fashion Networks",
+    "description": "Fashion / Trend Certification",
+    "tier": "Market"
+  },
+  {
+    "id": "135",
+    "name": "🌟 RUNWAYPULSE™",
+    "sector": "FAA FASHION & RETAIL SCROLLS",
+    "subBrands": [],
+    "faaSystemLinks": [
+      "RunwayGrid™",
+      "PulseChain™"
+    ],
+    "type": "Fashion / Runway Management",
+    "deploymentRegion": "Fashion Events",
+    "description": "Fashion / Runway Management",
+    "tier": "Market"
+  },
+  {
+    "id": "136",
+    "name": "📺 TRENDCAST™",
+    "sector": "FAA FASHION & RETAIL SCROLLS",
+    "subBrands": [],
+    "faaSystemLinks": [
+      "CastGrid™",
+      "TrendChain™"
+    ],
+    "type": "Fashion / Trend Broadcasting",
+    "deploymentRegion": "Media Fashion",
+    "description": "Fashion / Trend Broadcasting",
+    "tier": "Market"
+  },
+  {
+    "id": "137",
+    "name": "⚡ BRANDX™",
+    "sector": "FAA FASHION & RETAIL SCROLLS",
+    "subBrands": [],
+    "faaSystemLinks": [
+      "BrandChain™",
+      "InnoMesh™"
+    ],
+    "type": "Fashion / Brand Innovation",
+    "deploymentRegion": "Creative Fashion",
+    "description": "Fashion / Brand Innovation",
+    "tier": "Market"
+  },
+  {
+    "id": "138",
+    "name": "💫 LUXLINK™",
+    "sector": "FAA FASHION & RETAIL SCROLLS",
+    "subBrands": [],
+    "faaSystemLinks": [
+      "LuxChain™",
+      "LinkMesh™"
+    ],
+    "type": "Fashion / Luxury Connections",
+    "deploymentRegion": "Luxury Markets",
+    "description": "Fashion / Luxury Connections",
+    "tier": "Market"
+  },
+  {
+    "id": "139",
+    "name": "👑 VOGUESYNC™",
+    "sector": "FAA FASHION & RETAIL SCROLLS",
+    "subBrands": [],
+    "faaSystemLinks": [
+      "VogueGrid™",
+      "SyncChain™"
+    ],
+    "type": "Fashion / Magazine Integration",
+    "deploymentRegion": "Fashion Media",
+    "description": "Fashion / Magazine Integration",
+    "tier": "Market"
+  },
+  {
+    "id": "140",
+    "name": "🎨 MODEFRAME™",
+    "sector": "FAA FASHION & RETAIL SCROLLS",
+    "subBrands": [],
+    "faaSystemLinks": [
+      "ModeChain™",
+      "FrameMesh™"
+    ],
+    "type": "Fashion / Design Framework",
+    "deploymentRegion": "Design Networks",
+    "description": "Fashion / Design Framework",
+    "tier": "Market"
+  },
+  {
+    "id": "141",
+    "name": "💄 GLAMROOT™",
+    "sector": "FAA FASHION & RETAIL SCROLLS",
+    "subBrands": [],
+    "faaSystemLinks": [
+      "GlamChain™",
+      "RootMesh™"
+    ],
+    "type": "Fashion / Beauty Origins",
+    "deploymentRegion": "Beauty Markets",
+    "description": "Fashion / Beauty Origins",
+    "tier": "Market"
+  },
+  {
+    "id": "142",
+    "name": "📏 FITTRACK™",
+    "sector": "FAA FASHION & RETAIL SCROLLS",
+    "subBrands": [],
+    "faaSystemLinks": [
+      "FitGrid™",
+      "TrackChain™"
+    ],
+    "type": "Fashion / Size Management",
+    "deploymentRegion": "Retail Fashion",
+    "description": "Fashion / Size Management",
+    "tier": "Market"
+  },
+  {
+    "id": "143",
+    "name": "🧵 STYLEMESH™",
+    "sector": "FAA FASHION & RETAIL SCROLLS",
+    "subBrands": [],
+    "faaSystemLinks": [
+      "StyleChain™",
+      "MeshGrid™"
+    ],
+    "type": "Fashion / Style Network",
+    "deploymentRegion": "Fashion Mesh",
+    "description": "Fashion / Style Network",
+    "tier": "Market"
+  },
+  {
+    "id": "144",
+    "name": "🎵 VIBECAST™",
+    "sector": "FAA FASHION & RETAIL SCROLLS",
+    "subBrands": [],
+    "faaSystemLinks": [
+      "VibeGrid™",
+      "CastChain™"
+    ],
+    "type": "Fashion / Atmosphere Creation",
+    "deploymentRegion": "Fashion Events",
+    "description": "Fashion / Atmosphere Creation",
+    "tier": "Market"
+  },
+  {
+    "id": "145",
+    "name": "👔 DRESSSYNC™",
+    "sector": "FAA FASHION & RETAIL SCROLLS",
+    "subBrands": [],
+    "faaSystemLinks": [
+      "DressChain™",
+      "SyncMesh™"
+    ],
+    "type": "Fashion / Wardrobe Management",
+    "deploymentRegion": "Personal Fashion",
+    "description": "Fashion / Wardrobe Management",
+    "tier": "Market"
+  },
+  {
+    "id": "146",
+    "name": "📐 FITGRID™",
+    "sector": "FAA FASHION & RETAIL SCROLLS",
+    "subBrands": [],
+    "faaSystemLinks": [
+      "GridChain™",
+      "FitMesh™"
+    ],
+    "type": "Fashion / Fit Mapping",
+    "deploymentRegion": "Retail Networks",
+    "description": "Fashion / Fit Mapping",
+    "tier": "Market"
+  },
+  {
+    "id": "147",
+    "name": "🔥 TRENDPATH™",
+    "sector": "FAA FASHION & RETAIL SCROLLS",
+    "subBrands": [],
+    "faaSystemLinks": [
+      "PathChain™",
+      "TrendGrid™"
+    ],
+    "type": "Fashion / Trend Navigation",
+    "deploymentRegion": "Fashion Analytics",
+    "description": "Fashion / Trend Navigation",
+    "tier": "Market"
+  },
+  {
+    "id": "148",
+    "name": "🌈 STYLENODE™",
+    "sector": "FAA FASHION & RETAIL SCROLLS",
+    "subBrands": [],
+    "faaSystemLinks": [
+      "NodeChain™",
+      "StyleMesh™"
+    ],
+    "type": "Fashion / Style Nodes",
+    "deploymentRegion": "Fashion Network",
+    "description": "Fashion / Style Nodes",
+    "tier": "Market"
+  },
+  {
+    "id": "149",
+    "name": "🚶 CATWALKCORE™",
+    "sector": "FAA FASHION & RETAIL SCROLLS",
+    "subBrands": [],
+    "faaSystemLinks": [
+      "WalkChain™",
+      "CoreMesh™"
+    ],
+    "type": "Fashion / Runway Infrastructure",
+    "deploymentRegion": "Fashion Shows",
+    "description": "Fashion / Runway Infrastructure",
+    "tier": "Market"
+  },
+  {
+    "id": "150",
+    "name": "🔊 ECHOWEAR™",
+    "sector": "FAA FASHION & RETAIL SCROLLS",
+    "subBrands": [],
+    "faaSystemLinks": [
+      "EchoChain™",
+      "WearMesh™"
+    ],
+    "type": "Fashion / Wearable Tech",
+    "deploymentRegion": "Tech Fashion",
+    "description": "Fashion / Wearable Tech",
+    "tier": "Market"
+  }
+]
