@@ -1,6 +1,7 @@
 import express, { type Request, Response, NextFunction } from "express";
 import { registerRoutes } from "./routes";
 import { setupVite, serveStatic, log } from "./vite";
+import { storage } from "./storage";
 
 const app = express();
 app.use(express.json());
@@ -65,7 +66,18 @@ app.use((req, res, next) => {
     port,
     host: "0.0.0.0",
     reusePort: true,
-  }, () => {
+  }, async () => {
     log(`serving on port ${port}`);
+    
+    // Database health check
+    try {
+      const { brands, total } = await storage.getAllBrands({ limit: 1 });
+      const storageType = storage.constructor.name;
+      const status = brands.length > 0 ? 'connected' : 'connected but empty';
+      log(`Storage: ${storageType} - ${status}`);
+      log(`Total brands: ${total} / 9000 target (Water The Seed protocol)`);
+    } catch (error) {
+      log(`Database health check failed: ${error instanceof Error ? error.message : 'Unknown error'}`);
+    }
   });
 })();

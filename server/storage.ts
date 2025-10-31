@@ -475,7 +475,8 @@ export class MemStorage implements IStorage {
   }
 }
 
-// Temporarily using MemStorage due to disabled database endpoint
+// Temporarily using MemStorage - Neon database endpoint is still disabled
+// To restore database: Enable endpoint at https://console.neon.tech then change to: new DatabaseStorage()
 export const storage = new MemStorage();
 
 // Initialize with seed data on startup

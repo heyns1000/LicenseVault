@@ -25,7 +25,7 @@ const getOidcConfig = memoize(
 export function getSession() {
   const sessionTtl = 7 * 24 * 60 * 60 * 1000; // 1 week
   
-  // Temporarily using memory store due to database connection issues
+  // Temporarily using memory store - Neon database endpoint is still disabled
   // const pgStore = connectPg(session);
   // const sessionStore = new pgStore({
   //   conString: process.env.DATABASE_URL,
