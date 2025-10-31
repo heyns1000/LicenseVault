@@ -1,0 +1,195 @@
+{
+  "sectors": [
+    {
+      "sectorKey": "banking",
+      "coreCount": 136,
+      "subnodeCount": 10,
+      "totalCount": 146
+    },
+    {
+      "sectorKey": "agri",
+      "coreCount": 84,
+      "subnodeCount": 4,
+      "totalCount": 88
+    },
+    {
+      "sectorKey": "creative",
+      "coreCount": 10,
+      "subnodeCount": 3,
+      "totalCount": 13
+    },
+    {
+      "sectorKey": "logistics",
+      "coreCount": 101,
+      "subnodeCount": 4,
+      "totalCount": 105
+    },
+    {
+      "sectorKey": "fsf",
+      "coreCount": 83,
+      "subnodeCount": 4,
+      "totalCount": 87
+    },
+    {
+      "sectorKey": "educationIp",
+      "coreCount": 66,
+      "subnodeCount": 5,
+      "totalCount": 71
+    },
+    {
+      "sectorKey": "educationYouth",
+      "coreCount": 10,
+      "subnodeCount": 3,
+      "totalCount": 13
+    },
+    {
+      "sectorKey": "webless",
+      "coreCount": 103,
+      "subnodeCount": 5,
+      "totalCount": 108
+    },
+    {
+      "sectorKey": "health",
+      "coreCount": 93,
+      "subnodeCount": 4,
+      "totalCount": 97
+    },
+    {
+      "sectorKey": "housing",
+      "coreCount": 91,
+      "subnodeCount": 4,
+      "totalCount": 95
+    },
+    {
+      "sectorKey": "media",
+      "coreCount": 78,
+      "subnodeCount": 4,
+      "totalCount": 82
+    },
+    {
+      "sectorKey": "ailogic",
+      "coreCount": 188,
+      "subnodeCount": 4,
+      "totalCount": 192
+    },
+    {
+      "sectorKey": "professional",
+      "coreCount": 50,
+      "subnodeCount": 6,
+      "totalCount": 56
+    },
+    {
+      "sectorKey": "saasLicensing",
+      "coreCount": 20,
+      "subnodeCount": 4,
+      "totalCount": 24
+    },
+    {
+      "sectorKey": "nftOwnership",
+      "coreCount": 20,
+      "subnodeCount": 4,
+      "totalCount": 24
+    },
+    {
+      "sectorKey": "quantum",
+      "coreCount": 20,
+      "subnodeCount": 4,
+      "totalCount": 24
+    },
+    {
+      "sectorKey": "ritualCulture",
+      "coreCount": 20,
+      "subnodeCount": 4,
+      "totalCount": 24
+    },
+    {
+      "sectorKey": "foodChain",
+      "coreCount": 20,
+      "subnodeCount": 4,
+      "totalCount": 24
+    },
+    {
+      "sectorKey": "zeroWaste",
+      "coreCount": 20,
+      "subnodeCount": 4,
+      "totalCount": 24
+    },
+    {
+      "sectorKey": "mining",
+      "coreCount": 30,
+      "subnodeCount": 4,
+      "totalCount": 34
+    },
+    {
+      "sectorKey": "fashion",
+      "coreCount": 138,
+      "subnodeCount": 6,
+      "totalCount": 144
+    },
+    {
+      "sectorKey": "gaming",
+      "coreCount": 10,
+      "subnodeCount": 3,
+      "totalCount": 13
+    },
+    {
+      "sectorKey": "justice",
+      "coreCount": 10,
+      "subnodeCount": 3,
+      "totalCount": 13
+    },
+    {
+      "sectorKey": "knowledge",
+      "coreCount": 10,
+      "subnodeCount": 3,
+      "totalCount": 13
+    },
+    {
+      "sectorKey": "micromesh",
+      "coreCount": 10,
+      "subnodeCount": 3,
+      "totalCount": 13
+    },
+    {
+      "sectorKey": "packaging",
+      "coreCount": 10,
+      "subnodeCount": 3,
+      "totalCount": 13
+    },
+    {
+      "sectorKey": "trade",
+      "coreCount": 10,
+      "subnodeCount": 3,
+      "totalCount": 13
+    },
+    {
+      "sectorKey": "utilities",
+      "coreCount": 10,
+      "subnodeCount": 3,
+      "totalCount": 13
+    },
+    {
+      "sectorKey": "voice",
+      "coreCount": 10,
+      "subnodeCount": 3,
+      "totalCount": 13
+    },
+    {
+      "sectorKey": "payrollMining",
+      "coreCount": 10,
+      "subnodeCount": 3,
+      "totalCount": 13
+    },
+    {
+      "sectorKey": "wildlife",
+      "coreCount": 10,
+      "subnodeCount": 3,
+      "totalCount": 13
+    }
+  ],
+  "totals": {
+    "core": 1481,
+    "subnodes": 124,
+    "total": 1605
+  }
+}
