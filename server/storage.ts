@@ -475,9 +475,9 @@ export class MemStorage implements IStorage {
   }
 }
 
-// Temporarily using MemStorage - Replit-managed Neon endpoint is disabled
-// Database managed by Replit, not console.neon.tech
-export const storage = new MemStorage();
+// Database restored and working! Switched back from MemStorage to DatabaseStorage
+// HSOMNI9000 system: 48 sectors, 782 brand associations imported
+export const storage = new DatabaseStorage();
 
 // Initialize with seed data
 (async () => {
