@@ -475,5 +475,96 @@ export class MemStorage implements IStorage {
   }
 }
 
-// Using PostgreSQL database storage
-export const storage = new DatabaseStorage();
+// Temporarily using MemStorage due to disabled database endpoint
+export const storage = new MemStorage();
+
+// Initialize with seed data on startup
+(async () => {
+  console.log('Initializing MemStorage with seed data...');
+  
+  // Create sample brands
+  const sampleBrands = [
+    {
+      name: "FRUITFUL",
+      displayName: "Fruitful™",
+      tier: "market" as const,
+      description: "If you don't like the fruits you are growing, change the seeds...",
+      category: "Lifestyle & Wellness",
+      geographicDivision: "A" as const,
+      licenseFeeECR: "3950.00",
+      licenseFeeUSD: "13430.00",
+      royaltyRate: "7.00",
+      isActive: true,
+      faaSystemsIntegration: ["ClaimRoot™", "VaultPay™"],
+      iconClass: "fas fa-seedling"
+    },
+    {
+      name: "LIONS_SEEDWAVE",
+      displayName: "The Lion's Seedwave™", 
+      tier: "sovereign" as const,
+      description: "Advanced Brand Bloodline Sovereignty Analysis",
+      category: "Strategic Consulting",
+      geographicDivision: "A" as const,
+      licenseFeeECR: "18800.00",
+      licenseFeeUSD: "63920.00",
+      royaltyRate: "27.00",
+      isActive: true,
+      faaSystemsIntegration: ["ClaimRoot™", "VaultPay™", "GhostTrace™", "PulseTrade™"],
+      iconClass: "fas fa-crown"
+    },
+    {
+      name: "WATER_THE_SEED",
+      displayName: "Water The Seed™",
+      tier: "operational" as const,
+      description: "Active Growth Protocol & Brand Development System", 
+      category: "Growth Technology",
+      geographicDivision: "A" as const,
+      licenseFeeECR: "7700.00",
+      licenseFeeUSD: "26180.00",
+      royaltyRate: "19.00",
+      isActive: true,
+      faaSystemsIntegration: ["ClaimRoot™", "VaultPay™", "GhostTrace™"],
+      iconClass: "fas fa-water"
+    }
+  ];
+
+  // Add additional sample brands for testing
+  for (let i = 4; i <= 100; i++) {
+    const tiers = ["market", "operational", "dynastic", "sovereign"];
+    const divisions = ["A", "B", "C", "D", "E", "F", "G"];
+    const categories = ["Technology", "Healthcare", "Finance", "Entertainment", "Retail", "Manufacturing"];
+    
+    const tier = tiers[i % tiers.length];
+    const division = divisions[i % divisions.length];
+    const category = categories[i % categories.length];
+    const baseFee = tier === "sovereign" ? 15000 + (i * 100) : 
+                   tier === "dynastic" ? 8000 + (i * 50) :
+                   tier === "operational" ? 4000 + (i * 25) : 1000 + (i * 10);
+    
+    sampleBrands.push({
+      name: `BRAND_${i.toString().padStart(4, '0')}`,
+      displayName: `Brand ${i}™`,
+      tier: tier as any,
+      description: `Professional ${category.toLowerCase()} brand license`,
+      category,
+      geographicDivision: division as any,
+      licenseFeeECR: baseFee.toFixed(2),
+      licenseFeeUSD: (baseFee * 3.4).toFixed(2),
+      royaltyRate: (5 + (i % 20)).toFixed(2),
+      isActive: true,
+      faaSystemsIntegration: ["ClaimRoot™", "VaultPay™"],
+      iconClass: "fas fa-certificate"
+    });
+  }
+
+  // Add brands to storage
+  for (const brandData of sampleBrands) {
+    try {
+      await storage.createBrand(brandData as any);
+    } catch (error) {
+      console.log(`Brand ${brandData.name} might already exist`);
+    }
+  }
+  
+  console.log(`Initialized MemStorage with ${sampleBrands.length} brands`);
+})().catch(console.error);
