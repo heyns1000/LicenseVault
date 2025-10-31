@@ -6,6 +6,15 @@ This is a full-stack web application for managing FAA™ brand licensing with a 
 
 ## Recent Changes
 
+- **October 31, 2025**: Temporary switch to MemStorage due to disabled Neon database
+  - **CRITICAL**: Neon PostgreSQL endpoint was disabled, causing app crashes during authentication
+  - Emergency fix applied: switched from DatabaseStorage to MemStorage in server/storage.ts
+  - App now runs with 100 sample brands in memory (Fruitful™, The Lion's Seedwave™, Water The Seed™, plus 97 test brands)
+  - **Data is temporary and lost on restart** - not suitable for production use
+  - **Action Required**: Re-enable Neon database at https://console.neon.tech to restore permanent storage
+  - Once database re-enabled, revert line 482 in server/storage.ts: change `new MemStorage()` back to `new DatabaseStorage()`
+  - Authentication environment variables still missing: ISSUER_URL, ISSUER_DOMAIN, CLIENT_ID, CLIENT_SECRET
+
 - **October 24, 2025**: Restored PostgreSQL database with complete brand catalog
   - Switched from in-memory storage (MemStorage) to PostgreSQL (DatabaseStorage)
   - Successfully seeded database with 6,144+ verified brands
