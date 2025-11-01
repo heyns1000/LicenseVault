@@ -184,6 +184,34 @@ export const seedwaveBrands = pgTable("seedwave_brands", {
   createdAt: timestamp("created_at").defaultNow(),
 });
 
+// HEALTHTRACK MODULE - Legacy integration from ancient codebase (pre-1984)
+// Connects users to HSOMNI Health & Hygiene sector (465 brands)
+export const healthTracks = pgTable("health_tracks", {
+  id: serial("id").primaryKey(),
+  userId: varchar("user_id").notNull().references(() => users.id),
+  hsomniHealthBrandId: integer("hsomni_health_brand_id").references(() => hsomniBrands.id),
+  metricType: varchar("metric_type").notNull(), // vitals, appointments, medications, etc.
+  value: text("value").notNull(),
+  unit: varchar("unit"),
+  recordedAt: timestamp("recorded_at").notNull(),
+  vaultMeshId: text("vault_mesh_id"), // Integration ID for VaultMesh™
+  metadata: jsonb("metadata"),
+  createdAt: timestamp("created_at").defaultNow(),
+});
+
+export const healthConnections = pgTable("health_connections", {
+  id: serial("id").primaryKey(),
+  userId: varchar("user_id").notNull().references(() => users.id),
+  hsomniHealthBrandId: integer("hsomni_health_brand_id").notNull().references(() => hsomniBrands.id),
+  connectionType: varchar("connection_type").notNull(), // provider, monitor, analytics, etc.
+  status: varchar("status").notNull().default("active"), // active, paused, disconnected
+  credentials: jsonb("credentials"), // Encrypted connection credentials
+  lastSync: timestamp("last_sync"),
+  metadata: jsonb("metadata"),
+  createdAt: timestamp("created_at").defaultNow(),
+  updatedAt: timestamp("updated_at").defaultNow(),
+});
+
 // Relations
 export const usersRelations = relations(users, ({ one, many }) => ({
   organization: one(organizations, {
@@ -191,6 +219,8 @@ export const usersRelations = relations(users, ({ one, many }) => ({
     references: [organizations.id],
   }),
   licenses: many(licenses),
+  healthTracks: many(healthTracks),
+  healthConnections: many(healthConnections),
 }));
 
 export const organizationsRelations = relations(organizations, ({ many }) => ({
@@ -276,6 +306,26 @@ export const insertLicenseSchema = createInsertSchema(licenses).pick({
   metadata: true,
 });
 
+export const insertHealthTrackSchema = createInsertSchema(healthTracks).pick({
+  userId: true,
+  hsomniHealthBrandId: true,
+  metricType: true,
+  value: true,
+  unit: true,
+  recordedAt: true,
+  vaultMeshId: true,
+  metadata: true,
+});
+
+export const insertHealthConnectionSchema = createInsertSchema(healthConnections).pick({
+  userId: true,
+  hsomniHealthBrandId: true,
+  connectionType: true,
+  status: true,
+  credentials: true,
+  metadata: true,
+});
+
 // Types
 export type UpsertUser = typeof users.$inferInsert;
 export type User = typeof users.$inferSelect;
@@ -287,6 +337,10 @@ export type License = typeof licenses.$inferSelect;
 export type InsertLicense = z.infer<typeof insertLicenseSchema>;
 export type BrandMetrics = typeof brandMetrics.$inferSelect;
 export type SystemSetting = typeof systemSettings.$inferSelect;
+export type HealthTrack = typeof healthTracks.$inferSelect;
+export type InsertHealthTrack = z.infer<typeof insertHealthTrackSchema>;
+export type HealthConnection = typeof healthConnections.$inferSelect;
+export type InsertHealthConnection = z.infer<typeof insertHealthConnectionSchema>;
 
 // Enums for validation
 export const BRAND_TIERS = ["sovereign", "dynastic", "operational", "market"] as const;

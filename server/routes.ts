@@ -2,9 +2,11 @@ import type { Express } from "express";
 import { createServer, type Server } from "http";
 import { storage } from "./storage";
 import { setupAuth, isAuthenticated } from "./replitAuth";
-import { insertBrandSchema, insertLicenseSchema } from "@shared/schema";
+import { insertBrandSchema, insertLicenseSchema, insertHealthTrackSchema, insertHealthConnectionSchema, healthTracks, healthConnections, hsomniBrands, hsomniSectors } from "@shared/schema";
 // import { createPaypalOrder, capturePaypalOrder, loadPaypalDefault } from "./paypal";
 import { z } from "zod";
+import { db } from "./db";
+import { eq, desc } from "drizzle-orm";
 
 export async function registerRoutes(app: Express): Promise<Server> {
   // Auth middleware
@@ -285,6 +287,78 @@ export async function registerRoutes(app: Express): Promise<Server> {
     } catch (error) {
       console.error("Error fetching Water The Seed status:", error);
       res.status(500).json({ message: "Failed to fetch protocol status" });
+    }
+  });
+
+  // HEALTHTRACK MODULE (Ancient integration - pre-1984 legacy)
+  // Connects to HSOMNI Health & Hygiene sector (465 brands)
+  
+  app.get('/api/healthtrack/brands', isAuthenticated, async (req, res) => {
+    try {
+      const healthBrands = await db.select()
+        .from(hsomniBrands)
+        .innerJoin(hsomniSectors, eq(hsomniBrands.sectorId, hsomniSectors.id))
+        .where(eq(hsomniSectors.sectorKey, 'health'));
+      
+      res.json({ brands: healthBrands.map(b => b.hsomni_brands) });
+    } catch (error) {
+      console.error("Error fetching health brands:", error);
+      res.status(500).json({ message: "Failed to fetch health brands" });
+    }
+  });
+
+  app.get('/api/healthtrack/metrics', isAuthenticated, async (req: any, res) => {
+    try {
+      const userId = req.user.claims.sub;
+      const metrics = await db.select()
+        .from(healthTracks)
+        .where(eq(healthTracks.userId, userId))
+        .orderBy(desc(healthTracks.recordedAt))
+        .limit(100);
+      
+      res.json({ metrics });
+    } catch (error) {
+      console.error("Error fetching health metrics:", error);
+      res.status(500).json({ message: "Failed to fetch health metrics" });
+    }
+  });
+
+  app.post('/api/healthtrack/metrics', isAuthenticated, async (req: any, res) => {
+    try {
+      const userId = req.user.claims.sub;
+      const validatedData = insertHealthTrackSchema.parse({
+        ...req.body,
+        userId,
+        recordedAt: new Date(),
+      });
+      
+      const [metric] = await db.insert(healthTracks).values(validatedData).returning();
+      res.status(201).json(metric);
+    } catch (error) {
+      if (error instanceof z.ZodError) {
+        return res.status(400).json({ message: "Validation error", errors: error.errors });
+      }
+      console.error("Error creating health metric:", error);
+      res.status(500).json({ message: "Failed to create health metric" });
+    }
+  });
+
+  app.post('/api/healthtrack/connect', isAuthenticated, async (req: any, res) => {
+    try {
+      const userId = req.user.claims.sub;
+      const validatedData = insertHealthConnectionSchema.parse({
+        ...req.body,
+        userId,
+      });
+      
+      const [connection] = await db.insert(healthConnections).values(validatedData).returning();
+      res.status(201).json(connection);
+    } catch (error) {
+      if (error instanceof z.ZodError) {
+        return res.status(400).json({ message: "Validation error", errors: error.errors });
+      }
+      console.error("Error creating health connection:", error);
+      res.status(500).json({ message: "Failed to create health connection" });
     }
   });
 
