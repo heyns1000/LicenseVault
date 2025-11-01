@@ -1,0 +1,322 @@
+{
+  "auditDate": "2025-11-01T00:41:27.454Z",
+  "auditType": "GITHUB_REPOS_COMPLETE_AUDIT",
+  "source": "Google Drive - HeynsSchoeman Account",
+  "totalRepoMarkers": 19,
+  "repositories": [
+    {
+      "auditIndex": 1,
+      "id": "1zKq4ysYAOQRnz3fr7-ACaq7-K1_2OlGE",
+      "markerName": ".git",
+      "repositoryName": "HealthTrack 2",
+      "type": "application/vnd.google-apps.folder",
+      "size": 0,
+      "created": "2025-10-30T15:17:22.265Z",
+      "modified": "2025-10-30T15:17:33.504Z",
+      "parentFolder": "Root",
+      "webLink": "https://drive.google.com/drive/folders/1zKq4ysYAOQRnz3fr7-ACaq7-K1_2OlGE",
+      "owners": [
+        "heynsschoeman@gmail.com"
+      ],
+      "shared": false
+    },
+    {
+      "auditIndex": 2,
+      "id": "1KtVQWYdrkJvsiaIA0kSTde1O3U2nwUlV",
+      "markerName": ".github",
+      "repositoryName": "vaultmesh-main",
+      "type": "application/vnd.google-apps.folder",
+      "size": 0,
+      "created": "2025-10-30T15:16:23.723Z",
+      "modified": "2025-10-30T15:17:20.786Z",
+      "parentFolder": "Root",
+      "webLink": "https://drive.google.com/drive/folders/1KtVQWYdrkJvsiaIA0kSTde1O3U2nwUlV",
+      "owners": [
+        "heynsschoeman@gmail.com"
+      ],
+      "shared": false
+    },
+    {
+      "auditIndex": 3,
+      "id": "1z2myiNaCV2GoNFyLPr-IpCTGZ6rq7GEe",
+      "markerName": ".github",
+      "repositoryName": "vaultmesh-main",
+      "type": "application/vnd.google-apps.folder",
+      "size": 0,
+      "created": "2025-10-30T15:16:21.888Z",
+      "modified": "2025-10-30T15:17:18.220Z",
+      "parentFolder": "Root",
+      "webLink": "https://drive.google.com/drive/folders/1z2myiNaCV2GoNFyLPr-IpCTGZ6rq7GEe",
+      "owners": [
+        "heynsschoeman@gmail.com"
+      ],
+      "shared": false
+    },
+    {
+      "auditIndex": 4,
+      "id": "1ZJPn4Zfflj13hJC-Lm4laee6F2vfkOUD",
+      "markerName": ".github",
+      "repositoryName": "FruitfulPlanetChange",
+      "type": "application/vnd.google-apps.folder",
+      "size": 0,
+      "created": "2025-10-30T15:16:13.683Z",
+      "modified": "2025-10-30T15:16:15.522Z",
+      "parentFolder": "Root",
+      "webLink": "https://drive.google.com/drive/folders/1ZJPn4Zfflj13hJC-Lm4laee6F2vfkOUD",
+      "owners": [
+        "heynsschoeman@gmail.com"
+      ],
+      "shared": false
+    },
+    {
+      "auditIndex": 5,
+      "id": "1CBAXogybbyIcV_KgdxcvTaeR0jW4A-Qk",
+      "markerName": ".github",
+      "repositoryName": "fruitful-planet-data",
+      "type": "application/vnd.google-apps.folder",
+      "size": 0,
+      "created": "2025-10-30T15:16:13.665Z",
+      "modified": "2025-10-30T15:16:15.487Z",
+      "parentFolder": "Root",
+      "webLink": "https://drive.google.com/drive/folders/1CBAXogybbyIcV_KgdxcvTaeR0jW4A-Qk",
+      "owners": [
+        "heynsschoeman@gmail.com"
+      ],
+      "shared": false
+    },
+    {
+      "auditIndex": 6,
+      "id": "1KYkaMUc1qz2eVVtB9XTTyVC3vCCgD3EG",
+      "markerName": ".git",
+      "repositoryName": "hotstack",
+      "type": "application/vnd.google-apps.folder",
+      "size": 0,
+      "created": "2025-10-30T15:16:12.550Z",
+      "modified": "2025-10-30T15:16:13.671Z",
+      "parentFolder": "Root",
+      "webLink": "https://drive.google.com/drive/folders/1KYkaMUc1qz2eVVtB9XTTyVC3vCCgD3EG",
+      "owners": [
+        "heynsschoeman@gmail.com"
+      ],
+      "shared": false
+    },
+    {
+      "auditIndex": 7,
+      "id": "1ye2DMl74MMUbXmh7EEZi6AESklLoogDm",
+      "markerName": ".git",
+      "repositoryName": "FruitfulPlanetChange",
+      "type": "application/vnd.google-apps.folder",
+      "size": 0,
+      "created": "2025-09-22T11:53:26.391Z",
+      "modified": "2025-09-07T04:41:54.000Z",
+      "parentFolder": "Root",
+      "webLink": "https://drive.google.com/drive/folders/1ye2DMl74MMUbXmh7EEZi6AESklLoogDm",
+      "owners": [
+        "heynsschoeman@gmail.com"
+      ],
+      "shared": false
+    },
+    {
+      "auditIndex": 8,
+      "id": "1IapmBXWEWPW-K0cHktKQXojYCwOHC5vI",
+      "markerName": ".github",
+      "repositoryName": "vaultmesh-main",
+      "type": "application/vnd.google-apps.folder",
+      "size": 0,
+      "created": "2025-09-22T12:00:00.443Z",
+      "modified": "2025-07-19T15:10:48.000Z",
+      "parentFolder": "Root",
+      "webLink": "https://drive.google.com/drive/folders/1IapmBXWEWPW-K0cHktKQXojYCwOHC5vI",
+      "owners": [
+        "heynsschoeman@gmail.com"
+      ],
+      "shared": false
+    },
+    {
+      "auditIndex": 9,
+      "id": "1xS8Zq1AaWXuZtN31eqJyzvsgw1sddXuG",
+      "markerName": "Pasted--heyns1000-Top-repositories-Find-a-repository-faa-zone-heyns1000-faa-zone-seedwave-heyns1000-seedwa-1753043924961_1753043924962.txt",
+      "repositoryName": "attached_assets",
+      "type": "text/plain",
+      "size": 3040,
+      "created": "2025-10-30T15:16:15.506Z",
+      "modified": "2025-10-17T16:32:05.000Z",
+      "parentFolder": "Root",
+      "webLink": "https://drive.google.com/file/d/1xS8Zq1AaWXuZtN31eqJyzvsgw1sddXuG/view?usp=drivesdk",
+      "owners": [
+        "heynsschoeman@gmail.com"
+      ],
+      "shared": false
+    },
+    {
+      "auditIndex": 10,
+      "id": "1MYR554t2jNAqZNk5iLkqUvoJXOasnn7L",
+      "markerName": "Pasted--Sector-Repository-Routing-Logic-TemplateThis-document-provides-a-clear-templated-file-path-and-1753044256178_1753044256179.txt",
+      "repositoryName": "attached_assets",
+      "type": "text/plain",
+      "size": 12607,
+      "created": "2025-10-30T15:16:15.506Z",
+      "modified": "2025-10-17T16:32:05.000Z",
+      "parentFolder": "Root",
+      "webLink": "https://drive.google.com/file/d/1MYR554t2jNAqZNk5iLkqUvoJXOasnn7L/view?usp=drivesdk",
+      "owners": [
+        "heynsschoeman@gmail.com"
+      ],
+      "shared": false
+    },
+    {
+      "auditIndex": 11,
+      "id": "12i74kzts7PZHzjeAIl6UiyO0IZmwq_I-",
+      "markerName": "Pasted--Sector-Repository-Routing-Logic-Template-This-document-provides-a-clear-templated-file-path-an-1753044235231_1753044235231.txt",
+      "repositoryName": "attached_assets",
+      "type": "text/plain",
+      "size": 12759,
+      "created": "2025-10-30T15:16:15.506Z",
+      "modified": "2025-10-17T16:32:05.000Z",
+      "parentFolder": "Root",
+      "webLink": "https://drive.google.com/file/d/12i74kzts7PZHzjeAIl6UiyO0IZmwq_I-/view?usp=drivesdk",
+      "owners": [
+        "heynsschoeman@gmail.com"
+      ],
+      "shared": false
+    },
+    {
+      "auditIndex": 12,
+      "id": "155SqobxCCQjIo_oNHZ9YmDGRAEU5Txh_",
+      "markerName": "Pasted--Sector-Repository-Routing-Logic-Template-This-document-provides-a-clear-templated-file-path-an-1753044230567_1753044230569.txt",
+      "repositoryName": "attached_assets",
+      "type": "text/plain",
+      "size": 12759,
+      "created": "2025-10-30T15:16:15.506Z",
+      "modified": "2025-10-17T16:32:05.000Z",
+      "parentFolder": "Root",
+      "webLink": "https://drive.google.com/file/d/155SqobxCCQjIo_oNHZ9YmDGRAEU5Txh_/view?usp=drivesdk",
+      "owners": [
+        "heynsschoeman@gmail.com"
+      ],
+      "shared": false
+    },
+    {
+      "auditIndex": 13,
+      "id": "1_mBPqkdrsZp9B9uQclg7y9seHMbeNrk9",
+      "markerName": "repository-hub.tsx",
+      "repositoryName": "portal",
+      "type": "application/octet-stream",
+      "size": 12812,
+      "created": "2025-09-22T12:52:46.749Z",
+      "modified": "2025-08-19T16:45:32.000Z",
+      "parentFolder": "Root",
+      "webLink": "https://drive.google.com/file/d/1_mBPqkdrsZp9B9uQclg7y9seHMbeNrk9/view?usp=drivesdk",
+      "owners": [
+        "heynsschoeman@gmail.com"
+      ],
+      "shared": false
+    },
+    {
+      "auditIndex": 14,
+      "id": "1XiMN0SlG3PHQAVmPStUHAGWc4DDNgDu3",
+      "markerName": "legal-repository-hub.tsx",
+      "repositoryName": "portal",
+      "type": "application/octet-stream",
+      "size": 17862,
+      "created": "2025-09-22T12:52:46.749Z",
+      "modified": "2025-07-21T01:18:50.000Z",
+      "parentFolder": "Root",
+      "webLink": "https://drive.google.com/file/d/1XiMN0SlG3PHQAVmPStUHAGWc4DDNgDu3/view?usp=drivesdk",
+      "owners": [
+        "heynsschoeman@gmail.com"
+      ],
+      "shared": false
+    },
+    {
+      "auditIndex": 15,
+      "id": "12M9Kv6XtiTnuEdSsAWBy7zn416nLfBOR",
+      "markerName": "Pasted--Sector-Repository-Routing-Logic-TemplateThis-document-provides-a-clear-templated-file-path-and-1753044256178_1753044256179.txt",
+      "repositoryName": "attached_assets",
+      "type": "text/plain",
+      "size": 12607,
+      "created": "2025-09-22T11:53:36.790Z",
+      "modified": "2025-07-20T20:44:16.000Z",
+      "parentFolder": "Root",
+      "webLink": "https://drive.google.com/file/d/12M9Kv6XtiTnuEdSsAWBy7zn416nLfBOR/view?usp=drivesdk",
+      "owners": [
+        "heynsschoeman@gmail.com"
+      ],
+      "shared": false
+    },
+    {
+      "auditIndex": 16,
+      "id": "1oYlBtINxb7KBGMF6XQtDxzwlcOrbqv0q",
+      "markerName": "Pasted--Sector-Repository-Routing-Logic-Template-This-document-provides-a-clear-templated-file-path-an-1753044235231_1753044235231.txt",
+      "repositoryName": "attached_assets",
+      "type": "text/plain",
+      "size": 12759,
+      "created": "2025-09-22T11:53:36.790Z",
+      "modified": "2025-07-20T20:43:55.000Z",
+      "parentFolder": "Root",
+      "webLink": "https://drive.google.com/file/d/1oYlBtINxb7KBGMF6XQtDxzwlcOrbqv0q/view?usp=drivesdk",
+      "owners": [
+        "heynsschoeman@gmail.com"
+      ],
+      "shared": false
+    },
+    {
+      "auditIndex": 17,
+      "id": "1vYPAO_f6K3OD6pHKWzX8BtEkto17l0UC",
+      "markerName": "Pasted--Sector-Repository-Routing-Logic-Template-This-document-provides-a-clear-templated-file-path-an-1753044230567_1753044230569.txt",
+      "repositoryName": "attached_assets",
+      "type": "text/plain",
+      "size": 12759,
+      "created": "2025-09-22T11:53:36.790Z",
+      "modified": "2025-07-20T20:43:51.000Z",
+      "parentFolder": "Root",
+      "webLink": "https://drive.google.com/file/d/1vYPAO_f6K3OD6pHKWzX8BtEkto17l0UC/view?usp=drivesdk",
+      "owners": [
+        "heynsschoeman@gmail.com"
+      ],
+      "shared": false
+    },
+    {
+      "auditIndex": 18,
+      "id": "1Sq0Q3cS4EzPM1cLJ4kZl420NjkEkWhVd",
+      "markerName": "Pasted--heyns1000-Top-repositories-Find-a-repository-faa-zone-heyns1000-faa-zone-seedwave-heyns1000-seedwa-1753043924961_1753043924962.txt",
+      "repositoryName": "attached_assets",
+      "type": "text/plain",
+      "size": 3040,
+      "created": "2025-09-22T11:53:36.790Z",
+      "modified": "2025-07-20T20:38:45.000Z",
+      "parentFolder": "Root",
+      "webLink": "https://drive.google.com/file/d/1Sq0Q3cS4EzPM1cLJ4kZl420NjkEkWhVd/view?usp=drivesdk",
+      "owners": [
+        "heynsschoeman@gmail.com"
+      ],
+      "shared": false
+    },
+    {
+      "auditIndex": 19,
+      "id": "1KWQkBitpnvihqkKd3kmJbgiDK1ScM_bq",
+      "markerName": "Reports",
+      "repositoryName": "Facebook",
+      "type": "application/vnd.google-apps.folder",
+      "size": 0,
+      "created": "2022-01-27T09:29:27.329Z",
+      "modified": "2022-03-21T16:01:55.159Z",
+      "parentFolder": "Root",
+      "webLink": "https://drive.google.com/drive/folders/1KWQkBitpnvihqkKd3kmJbgiDK1ScM_bq",
+      "owners": [
+        "samperfox@gmail.com"
+      ],
+      "shared": true
+    }
+  ],
+  "summary": {
+    "totalMarkers": 19,
+    "uniqueRepositories": 8,
+    "gitFolders": 3,
+    "githubFolders": 5,
+    "otherRepoMarkers": 11,
+    "totalSizeBytes": 113004,
+    "oldestRepo": "Facebook",
+    "newestRepo": "HealthTrack 2"
+  }
+}

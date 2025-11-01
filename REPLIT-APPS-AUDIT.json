@@ -1,0 +1,480 @@
+{
+  "auditDate": "2025-11-01T00:41:17.514Z",
+  "auditType": "REPLIT_APPS_COMPLETE_AUDIT",
+  "source": "Google Drive - HeynsSchoeman Account",
+  "totalApps": 29,
+  "apps": [
+    {
+      "auditIndex": 1,
+      "id": "1F8GRqVveuT_fY3ylEhXynzIyuQ-sFvB6",
+      "name": "replit",
+      "type": "application/vnd.google-apps.folder",
+      "size": 0,
+      "created": "2025-10-30T15:18:37.440Z",
+      "modified": "2025-10-30T15:18:37.440Z",
+      "parentFolder": "state",
+      "webLink": "https://drive.google.com/drive/folders/1F8GRqVveuT_fY3ylEhXynzIyuQ-sFvB6",
+      "owners": [
+        "heynsschoeman@gmail.com"
+      ],
+      "shared": false,
+      "description": ""
+    },
+    {
+      "auditIndex": 2,
+      "id": "1BpwyFwp7xUwG0rg68YfJVoxD6IqscCP1",
+      "name": "replit",
+      "type": "application/vnd.google-apps.folder",
+      "size": 0,
+      "created": "2025-10-30T15:18:34.965Z",
+      "modified": "2025-10-30T15:18:34.965Z",
+      "parentFolder": "refs",
+      "webLink": "https://drive.google.com/drive/folders/1BpwyFwp7xUwG0rg68YfJVoxD6IqscCP1",
+      "owners": [
+        "heynsschoeman@gmail.com"
+      ],
+      "shared": false,
+      "description": ""
+    },
+    {
+      "auditIndex": 3,
+      "id": "1lDSRaZFR9zh-5FUKgsJqObxNX39d0iWr",
+      "name": "replit",
+      "type": "application/vnd.google-apps.folder",
+      "size": 0,
+      "created": "2025-10-30T15:16:25.738Z",
+      "modified": "2025-10-30T15:16:25.738Z",
+      "parentFolder": "state",
+      "webLink": "https://drive.google.com/drive/folders/1lDSRaZFR9zh-5FUKgsJqObxNX39d0iWr",
+      "owners": [
+        "heynsschoeman@gmail.com"
+      ],
+      "shared": false,
+      "description": ""
+    },
+    {
+      "auditIndex": 4,
+      "id": "1iY8BnSQ0sf5LDSllpwXUZym1UsQl-7DL",
+      "name": "replit",
+      "type": "application/vnd.google-apps.folder",
+      "size": 0,
+      "created": "2025-10-30T15:16:25.725Z",
+      "modified": "2025-10-30T15:16:25.725Z",
+      "parentFolder": "refs",
+      "webLink": "https://drive.google.com/drive/folders/1iY8BnSQ0sf5LDSllpwXUZym1UsQl-7DL",
+      "owners": [
+        "heynsschoeman@gmail.com"
+      ],
+      "shared": false,
+      "description": ""
+    },
+    {
+      "auditIndex": 5,
+      "id": "1bRmB2S98z6PmyU4Zjk7nY3HZf35JJqJ7",
+      "name": "replit.md",
+      "type": "text/markdown",
+      "size": 4314,
+      "created": "2025-10-30T15:16:16.547Z",
+      "modified": "2025-10-21T15:26:52.000Z",
+      "parentFolder": "hotstack",
+      "webLink": "https://drive.google.com/file/d/1bRmB2S98z6PmyU4Zjk7nY3HZf35JJqJ7/view?usp=drivesdk",
+      "owners": [
+        "heynsschoeman@gmail.com"
+      ],
+      "shared": false,
+      "description": ""
+    },
+    {
+      "auditIndex": 6,
+      "id": "1ghPsQSP22Tqbwof6n8svHPcKvBCZzLBo",
+      "name": ".replit",
+      "type": "application/octet-stream",
+      "size": 1124,
+      "created": "2025-10-30T15:16:16.387Z",
+      "modified": "2025-10-17T18:21:02.000Z",
+      "parentFolder": "hotstack",
+      "webLink": "https://drive.google.com/file/d/1ghPsQSP22Tqbwof6n8svHPcKvBCZzLBo/view?usp=drivesdk",
+      "owners": [
+        "heynsschoeman@gmail.com"
+      ],
+      "shared": false,
+      "description": ""
+    },
+    {
+      "auditIndex": 7,
+      "id": "1hKALlRTIgwUd7vusdlo2SY9hfTgs7ema",
+      "name": "replit.md",
+      "type": "text/markdown",
+      "size": 4619,
+      "created": "2025-10-30T15:16:50.766Z",
+      "modified": "2025-10-17T16:32:07.000Z",
+      "parentFolder": "FruitfulPlanetChange",
+      "webLink": "https://drive.google.com/file/d/1hKALlRTIgwUd7vusdlo2SY9hfTgs7ema/view?usp=drivesdk",
+      "owners": [
+        "heynsschoeman@gmail.com"
+      ],
+      "shared": false,
+      "description": ""
+    },
+    {
+      "auditIndex": 8,
+      "id": "1col1axHcxtptXHQ8Q8REWv7pCbMBQXt-",
+      "name": ".replit",
+      "type": "application/octet-stream",
+      "size": 905,
+      "created": "2025-10-30T15:16:55.181Z",
+      "modified": "2025-10-17T16:32:03.000Z",
+      "parentFolder": "FruitfulPlanetChange",
+      "webLink": "https://drive.google.com/file/d/1col1axHcxtptXHQ8Q8REWv7pCbMBQXt-/view?usp=drivesdk",
+      "owners": [
+        "heynsschoeman@gmail.com"
+      ],
+      "shared": false,
+      "description": ""
+    },
+    {
+      "auditIndex": 9,
+      "id": "1eOtmlS_iFjRV7y8kUJ1WupOYBUrQzkCS",
+      "name": ".replit",
+      "type": "application/octet-stream",
+      "size": 905,
+      "created": "2025-10-30T15:16:18.720Z",
+      "modified": "2025-10-17T13:12:30.000Z",
+      "parentFolder": "fruitful-planet-data",
+      "webLink": "https://drive.google.com/file/d/1eOtmlS_iFjRV7y8kUJ1WupOYBUrQzkCS/view?usp=drivesdk",
+      "owners": [
+        "heynsschoeman@gmail.com"
+      ],
+      "shared": false,
+      "description": ""
+    },
+    {
+      "auditIndex": 10,
+      "id": "1iu8pn25JgGq0MgHLhb8CoLSwhudScR9x",
+      "name": "replit_1760702900138.md",
+      "type": "text/markdown",
+      "size": 7615,
+      "created": "2025-10-30T15:16:22.041Z",
+      "modified": "2025-10-17T12:08:20.000Z",
+      "parentFolder": "attached_assets",
+      "webLink": "https://drive.google.com/file/d/1iu8pn25JgGq0MgHLhb8CoLSwhudScR9x/view?usp=drivesdk",
+      "owners": [
+        "heynsschoeman@gmail.com"
+      ],
+      "shared": false,
+      "description": ""
+    },
+    {
+      "auditIndex": 11,
+      "id": "1FhcJQIqWoBBET0F5RKkhVEqJLiHlB-xD",
+      "name": "replit",
+      "type": "application/vnd.google-apps.folder",
+      "size": 0,
+      "created": "2025-09-22T12:02:06.584Z",
+      "modified": "2025-09-05T05:58:32.000Z",
+      "parentFolder": "refs",
+      "webLink": "https://drive.google.com/drive/folders/1FhcJQIqWoBBET0F5RKkhVEqJLiHlB-xD",
+      "owners": [
+        "heynsschoeman@gmail.com"
+      ],
+      "shared": false,
+      "description": ""
+    },
+    {
+      "auditIndex": 12,
+      "id": "1HPhxURhdhQ-8yX2qmxOj0B1JFn1Zq59l",
+      "name": "replit-agent",
+      "type": "application/octet-stream",
+      "size": 41,
+      "created": "2025-09-22T12:51:49.419Z",
+      "modified": "2025-09-05T05:58:32.000Z",
+      "parentFolder": "heads",
+      "webLink": "https://drive.google.com/file/d/1HPhxURhdhQ-8yX2qmxOj0B1JFn1Zq59l/view?usp=drivesdk",
+      "owners": [
+        "heynsschoeman@gmail.com"
+      ],
+      "shared": false,
+      "description": ""
+    },
+    {
+      "auditIndex": 13,
+      "id": "1PNnePr0XZaK3pM7enyMBRNqNon4Q1zWr",
+      "name": "replit-agent",
+      "type": "application/octet-stream",
+      "size": 67645,
+      "created": "2025-09-22T12:58:43.209Z",
+      "modified": "2025-09-05T05:58:32.000Z",
+      "parentFolder": "heads",
+      "webLink": "https://drive.google.com/file/d/1PNnePr0XZaK3pM7enyMBRNqNon4Q1zWr/view?usp=drivesdk",
+      "owners": [
+        "heynsschoeman@gmail.com"
+      ],
+      "shared": false,
+      "description": ""
+    },
+    {
+      "auditIndex": 14,
+      "id": "1cA6hbky65pNI1QBtP0oxz_D0C4KRYuQf",
+      "name": ".replit",
+      "type": "application/octet-stream",
+      "size": 905,
+      "created": "2025-09-22T11:53:31.081Z",
+      "modified": "2025-09-05T03:51:35.000Z",
+      "parentFolder": "FruitfulPlanetChange",
+      "webLink": "https://drive.google.com/file/d/1cA6hbky65pNI1QBtP0oxz_D0C4KRYuQf/view?usp=drivesdk",
+      "owners": [
+        "heynsschoeman@gmail.com"
+      ],
+      "shared": false,
+      "description": ""
+    },
+    {
+      "auditIndex": 15,
+      "id": "1VoBffobcCJMku0-HeTNtjgxTE9ZRbdhv",
+      "name": "replit.md",
+      "type": "text/markdown",
+      "size": 4619,
+      "created": "2025-09-22T11:53:48.173Z",
+      "modified": "2025-08-26T01:54:23.000Z",
+      "parentFolder": "FruitfulPlanetChange",
+      "webLink": "https://drive.google.com/file/d/1VoBffobcCJMku0-HeTNtjgxTE9ZRbdhv/view?usp=drivesdk",
+      "owners": [
+        "heynsschoeman@gmail.com"
+      ],
+      "shared": false,
+      "description": ""
+    },
+    {
+      "auditIndex": 16,
+      "id": "1drVJwRJjH8ZcHpB4n2HsNYtvocjm3bvx",
+      "name": "Replit",
+      "type": "application/vnd.google-apps.folder",
+      "size": 0,
+      "created": "2025-08-24T10:47:50.428Z",
+      "modified": "2025-08-25T06:36:30.494Z",
+      "parentFolder": "Fruitful_drive",
+      "webLink": "https://drive.google.com/drive/folders/1drVJwRJjH8ZcHpB4n2HsNYtvocjm3bvx",
+      "owners": [
+        "samperfox@gmail.com"
+      ],
+      "shared": true,
+      "description": ""
+    },
+    {
+      "auditIndex": 17,
+      "id": "1dx0NvlBNRSI6G1SLRmqWXjYgmqukN-od",
+      "name": "Replit_template.psd",
+      "type": "image/x-photoshop",
+      "size": 36428847,
+      "created": "2025-08-24T11:18:55.743Z",
+      "modified": "2025-08-25T06:36:29.473Z",
+      "parentFolder": "Replit",
+      "webLink": "https://drive.google.com/file/d/1dx0NvlBNRSI6G1SLRmqWXjYgmqukN-od/view?usp=drivesdk",
+      "owners": [
+        "samperfox@gmail.com"
+      ],
+      "shared": true,
+      "description": ""
+    },
+    {
+      "auditIndex": 18,
+      "id": "1t6gt-he3WcuPmLyuwLEOLD3Vmv2aeiYv",
+      "name": "replitAuth.ts",
+      "type": "text/texmacs",
+      "size": 4220,
+      "created": "2025-09-22T12:00:36.849Z",
+      "modified": "2025-08-19T16:45:32.000Z",
+      "parentFolder": "server",
+      "webLink": "https://drive.google.com/file/d/1t6gt-he3WcuPmLyuwLEOLD3Vmv2aeiYv/view?usp=drivesdk",
+      "owners": [
+        "heynsschoeman@gmail.com"
+      ],
+      "shared": false,
+      "description": ""
+    },
+    {
+      "auditIndex": 19,
+      "id": "1KHLfoT_kJqLTX4qvYjBayWnCIbjFfBB1",
+      "name": "replit",
+      "type": "application/vnd.google-apps.folder",
+      "size": 0,
+      "created": "2025-09-22T12:00:55.699Z",
+      "modified": "2025-07-20T16:31:42.000Z",
+      "parentFolder": "state",
+      "webLink": "https://drive.google.com/drive/folders/1KHLfoT_kJqLTX4qvYjBayWnCIbjFfBB1",
+      "owners": [
+        "heynsschoeman@gmail.com"
+      ],
+      "shared": false,
+      "description": ""
+    },
+    {
+      "auditIndex": 20,
+      "id": "1EiN7yN3iZZHqVo3mHrxsuHzmUXHm3IO20PUegwrYg7c",
+      "name": "reply on my ask first",
+      "type": "application/vnd.google-apps.spreadsheet",
+      "size": 1024,
+      "created": "2025-10-20T12:55:40.172Z",
+      "modified": "2025-10-20T12:55:41.737Z",
+      "parentFolder": "My Drive",
+      "webLink": "https://docs.google.com/spreadsheets/d/1EiN7yN3iZZHqVo3mHrxsuHzmUXHm3IO20PUegwrYg7c/edit?usp=drivesdk",
+      "owners": [
+        "heynsschoeman@gmail.com"
+      ],
+      "shared": false,
+      "description": ""
+    },
+    {
+      "auditIndex": 21,
+      "id": "1sagXpJP2a90E50-2b6PMDChdQexfIss2",
+      "name": "repl_state.bin",
+      "type": "application/x-tex-tfm",
+      "size": 5554,
+      "created": "2025-09-22T12:58:42.672Z",
+      "modified": "2025-09-05T03:53:13.000Z",
+      "parentFolder": "agent",
+      "webLink": "https://drive.google.com/file/d/1sagXpJP2a90E50-2b6PMDChdQexfIss2/view?usp=drivesdk",
+      "owners": [
+        "heynsschoeman@gmail.com"
+      ],
+      "shared": false,
+      "description": ""
+    },
+    {
+      "auditIndex": 22,
+      "id": "1VvINdqo6qcua42B0VKgMqt18yGpuyYDo",
+      "name": "Replace_images",
+      "type": "application/vnd.google-apps.folder",
+      "size": 0,
+      "created": "2022-08-16T07:35:22.266Z",
+      "modified": "2022-08-16T07:35:22.266Z",
+      "parentFolder": "Shopify_LS",
+      "webLink": "https://drive.google.com/drive/folders/1VvINdqo6qcua42B0VKgMqt18yGpuyYDo",
+      "owners": [
+        "samperfox@gmail.com"
+      ],
+      "shared": true,
+      "description": ""
+    },
+    {
+      "auditIndex": 23,
+      "id": "1WGGLOyZXi3fQIZRXGTdtqKgJCsk1T4sj",
+      "name": "Whats_app",
+      "type": "application/vnd.google-apps.folder",
+      "size": 0,
+      "created": "2022-01-26T10:12:26.848Z",
+      "modified": "2024-08-05T21:45:46.309Z",
+      "parentFolder": "Cate-a-bake",
+      "webLink": "https://drive.google.com/drive/folders/1WGGLOyZXi3fQIZRXGTdtqKgJCsk1T4sj",
+      "owners": [
+        "samperfox@gmail.com"
+      ],
+      "shared": true,
+      "description": ""
+    },
+    {
+      "auditIndex": 24,
+      "id": "1J4ajKvr7sbYDj9BJSYyy1iqSWzVmeQ67",
+      "name": "WhatsApp Ads",
+      "type": "application/vnd.google-apps.folder",
+      "size": 0,
+      "created": "2023-11-20T10:51:02.131Z",
+      "modified": "2024-07-29T10:23:14.876Z",
+      "parentFolder": "Jump Socks",
+      "webLink": "https://drive.google.com/drive/folders/1J4ajKvr7sbYDj9BJSYyy1iqSWzVmeQ67",
+      "owners": [
+        "samperfox@gmail.com"
+      ],
+      "shared": true,
+      "description": ""
+    },
+    {
+      "auditIndex": 25,
+      "id": "1Xtxp3-dRM6xkACY90NvOy-0j2bHwAH19",
+      "name": "WhatsApp Ad",
+      "type": "application/vnd.google-apps.folder",
+      "size": 0,
+      "created": "2023-12-19T14:03:20.482Z",
+      "modified": "2024-07-29T08:59:07.890Z",
+      "parentFolder": "Cornice Blocks",
+      "webLink": "https://drive.google.com/drive/folders/1Xtxp3-dRM6xkACY90NvOy-0j2bHwAH19",
+      "owners": [
+        "samperfox@gmail.com"
+      ],
+      "shared": true,
+      "description": ""
+    },
+    {
+      "auditIndex": 26,
+      "id": "1HNw7lMJEnUox_TWPBQlbvCuKewrgNtk3",
+      "name": "WhatsApp Ad",
+      "type": "application/vnd.google-apps.folder",
+      "size": 0,
+      "created": "2023-11-16T11:30:15.570Z",
+      "modified": "2024-07-29T08:33:25.228Z",
+      "parentFolder": "Wheelbarrow",
+      "webLink": "https://drive.google.com/drive/folders/1HNw7lMJEnUox_TWPBQlbvCuKewrgNtk3",
+      "owners": [
+        "samperfox@gmail.com"
+      ],
+      "shared": true,
+      "description": ""
+    },
+    {
+      "auditIndex": 27,
+      "id": "1-MCV2ZKk153w7YNuwEG7ZKJUaP9Lwibk",
+      "name": "Whats App Ads",
+      "type": "application/vnd.google-apps.folder",
+      "size": 0,
+      "created": "2024-07-12T13:53:50.302Z",
+      "modified": "2024-07-22T17:47:58.292Z",
+      "parentFolder": "Active Build and Decor",
+      "webLink": "https://drive.google.com/drive/folders/1-MCV2ZKk153w7YNuwEG7ZKJUaP9Lwibk",
+      "owners": [
+        "samperfox@gmail.com"
+      ],
+      "shared": true,
+      "description": ""
+    },
+    {
+      "auditIndex": 28,
+      "id": "1Jmnf-rt9lyhBCZSIgDBJrzfgQL_EmgVD",
+      "name": "change-our-date-postponed-wedding-phone-app",
+      "type": "application/vnd.google-apps.folder",
+      "size": 0,
+      "created": "2023-04-20T06:50:28.368Z",
+      "modified": "2023-04-20T06:50:28.394Z",
+      "parentFolder": "Templates",
+      "webLink": "https://drive.google.com/drive/folders/1Jmnf-rt9lyhBCZSIgDBJrzfgQL_EmgVD",
+      "owners": [
+        "samperfox@gmail.com"
+      ],
+      "shared": true,
+      "description": ""
+    },
+    {
+      "auditIndex": 29,
+      "id": "1oOn70xuC87aFi5vh5ghYJV13Es7YjCdz",
+      "name": "Whats_app_images",
+      "type": "application/vnd.google-apps.folder",
+      "size": 0,
+      "created": "2022-11-28T09:23:39.030Z",
+      "modified": "2022-11-28T09:23:58.696Z",
+      "parentFolder": "Q_cornice",
+      "webLink": "https://drive.google.com/drive/folders/1oOn70xuC87aFi5vh5ghYJV13Es7YjCdz",
+      "owners": [
+        "samperfox@gmail.com"
+      ],
+      "shared": true,
+      "description": ""
+    }
+  ],
+  "summary": {
+    "totalFiles": 29,
+    "folders": 15,
+    "files": 14,
+    "totalSizeBytes": 36532337,
+    "oldestApp": "Whats_app",
+    "newestApp": "replit"
+  }
+}
