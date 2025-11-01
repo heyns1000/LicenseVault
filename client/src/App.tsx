@@ -8,6 +8,7 @@ import { useAuth } from "@/hooks/useAuth";
 import Landing from "@/pages/landing";
 import Dashboard from "@/pages/dashboard";
 import BrandDetails from "@/pages/brand-details";
+import HealthTrack from "@/pages/HealthTrack";
 import NotFound from "@/pages/not-found";
 
 function Router() {
@@ -21,6 +22,7 @@ function Router() {
         <>
           <Route path="/" component={Dashboard} />
           <Route path="/brands/:id" component={BrandDetails} />
+          <Route path="/healthtrack" component={HealthTrack} />
         </>
       )}
       <Route component={NotFound} />

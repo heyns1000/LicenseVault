@@ -13,6 +13,8 @@ import { WelcomeAnimation } from "@/components/welcome-animation";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Skeleton } from "@/components/ui/skeleton";
+import { Heart } from "lucide-react";
+import { Link } from "wouter";
 
 export default function Dashboard() {
   const { user, isLoading: authLoading, isAuthenticated } = useAuth();
@@ -289,6 +291,46 @@ export default function Dashboard() {
                 </motion.div>
               </>
             )}
+          </div>
+
+          {/* Integration Modules */}
+          <div className="mb-6">
+            <h2 className="text-lg font-semibold text-gray-900 mb-4">HSOMNI Integration Modules</h2>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+              <Link href="/healthtrack">
+                <Card className="hover:shadow-lg transition-shadow cursor-pointer border-2 border-green-200 hover:border-green-400">
+                  <CardContent className="p-6">
+                    <div className="flex items-start gap-4">
+                      <div className="w-12 h-12 bg-red-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                        <Heart className="w-6 h-6 text-red-600" />
+                      </div>
+                      <div className="flex-1">
+                        <h3 className="font-semibold text-gray-900 mb-1" data-testid="module-healthtrack-title">HealthTrack™</h3>
+                        <p className="text-sm text-gray-600 mb-2">Health & Hygiene sector integration</p>
+                        <div className="flex items-center gap-2 text-xs text-gray-500">
+                          <span className="px-2 py-1 bg-green-100 text-green-700 rounded">465 Brands</span>
+                          <span className="px-2 py-1 bg-blue-100 text-blue-700 rounded">VaultMesh™</span>
+                        </div>
+                      </div>
+                    </div>
+                  </CardContent>
+                </Card>
+              </Link>
+
+              <Card className="opacity-50">
+                <CardContent className="p-6">
+                  <div className="flex items-start gap-4">
+                    <div className="w-12 h-12 bg-gray-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                      <i className="fas fa-cogs text-gray-400"></i>
+                    </div>
+                    <div className="flex-1">
+                      <h3 className="font-semibold text-gray-500 mb-1">More Modules</h3>
+                      <p className="text-sm text-gray-400">Coming soon...</p>
+                    </div>
+                  </div>
+                </CardContent>
+              </Card>
+            </div>
           </div>
 
           {/* Brand Catalog */}
