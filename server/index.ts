@@ -2,6 +2,7 @@ import express, { type Request, Response, NextFunction } from "express";
 import { registerRoutes } from "./routes";
 import { setupVite, serveStatic, log } from "./vite";
 import { storage } from "./storage";
+import { validateHealthTrackAlignment } from "./validate-healthtrack-alignment";
 
 const app = express();
 app.use(express.json());
@@ -76,6 +77,12 @@ app.use((req, res, next) => {
       const status = brands.length > 0 ? 'connected' : 'connected but empty';
       log(`Storage: ${storageType} - ${status}`);
       log(`Total brands: ${total} / 9000 target (Water The Seed protocol)`);
+      
+      // Validate HealthTrack alignment with FruitfulPlanetChange
+      const healthTrackValid = await validateHealthTrackAlignment();
+      if (!healthTrackValid) {
+        log(`⚠️  WARNING: HealthTrack alignment check failed - run server/import-fruitful-health-brands.ts`);
+      }
     } catch (error) {
       log(`Database health check failed: ${error instanceof Error ? error.message : 'Unknown error'}`);
     }
