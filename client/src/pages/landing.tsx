@@ -18,33 +18,33 @@ export default function Landing() {
               FAA™ Brand Licensing
             </h1>
             <p className="text-gray-600">
-              Enterprise Management System
+              African Economic Sovereignty Platform
             </p>
           </div>
 
           <div className="space-y-4 mb-6">
             <div className="text-left">
-              <h3 className="font-medium text-gray-900 mb-2">Platform Features:</h3>
+              <h3 className="font-medium text-gray-900 mb-2">Operational Enterprise:</h3>
               <ul className="text-sm text-gray-600 space-y-1">
                 <li className="flex items-center">
                   <i className="fas fa-check text-green-500 mr-2"></i>
-                  4,643+ Trademarked Brands™
+                  13,713 Trademarked Brands™
                 </li>
                 <li className="flex items-center">
                   <i className="fas fa-check text-green-500 mr-2"></i>
-                  Tier-Based Pricing System
+                  FAA™ (7,344) | HSOMNI9000 (6,219) | Seedwave (150)
                 </li>
                 <li className="flex items-center">
                   <i className="fas fa-check text-green-500 mr-2"></i>
-                  Water The Seed Protocol™
+                  Water The Seed Protocol™ - 152% Complete
                 </li>
                 <li className="flex items-center">
                   <i className="fas fa-check text-green-500 mr-2"></i>
-                  Global Division Management
+                  9,000+ Domains on Cloudflare R2
                 </li>
                 <li className="flex items-center">
                   <i className="fas fa-check text-green-500 mr-2"></i>
-                  Advanced Analytics
+                  100M+ Files | 20M Contacts | Fully Automated
                 </li>
               </ul>
             </div>
@@ -60,7 +60,7 @@ export default function Landing() {
           </Button>
 
           <div className="mt-4 text-xs text-gray-500">
-            Powered by FAA™ Systems | Secured by GhostTrace™
+            Powered by HSOMNI9000 | Operated by Heyns | $200-400/month
           </div>
         </CardContent>
       </Card>
