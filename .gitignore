@@ -7,3 +7,7 @@ vite.config.ts.*
 node_modules/
 .env
 .vercel
+
+# License framework audit reports (optional - keep local)
+LICENSE-AUDIT-REPORT.json
+LICENSE-AUDIT-REPORT-*.json

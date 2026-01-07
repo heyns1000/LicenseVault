@@ -11,7 +11,9 @@
     "db:push": "drizzle-kit push",
     "license:dry-run": "tsx server/apply-licenses-to-repos.ts --dry-run",
     "license:apply": "tsx server/apply-licenses-to-repos.ts",
-    "license:audit": "tsx server/apply-licenses-to-repos.ts --dry-run"
+    "license:audit": "tsx server/apply-licenses-to-repos.ts --dry-run",
+    "license:simulate": "tsx server/simulate-license-framework.ts",
+    "license:test": "tsx server/test-license-logic.ts"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.10.0",
