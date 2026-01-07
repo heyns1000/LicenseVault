@@ -120,7 +120,7 @@ export function recommendLicense(repo: RepositoryInfo): LicenseRecommendation {
     }
     
     // C/C++ projects might use GPL for libraries
-    if (lang.includes('c++') || lang.includes('c') && !lang.includes('javascript')) {
+    if ((lang.includes('c++') || lang.includes('c')) && !lang.includes('javascript')) {
       score['GPL-3.0'] += 20;
       score['LGPL-3.0'] += 20;
       score['MIT'] += 30;
